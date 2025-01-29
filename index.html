@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bhagavad Gita Shlokas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {},
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+    <button
+      id="hamburger-btn"
+      class="absolute top-3 right-2 sm:hidden block text-gray-800 dark:text-white focus:outline-none"
+    >
+      <!-- Hamburger Icon -->
+      <svg
+        class="w-8 h-8"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M4 6h16M4 12h16M4 18h16"
+        />
+      </svg>
+    </button>
+    <div class="container mx-auto p-6">
+      <div class="flex justify-between items-center mb-6">
+        <h1 class="text-3xl font-bold text-center">Bhagavad Gita</h1>
+        <button
+          id="theme-toggle"
+          type="button"
+          class="hidden sm:inline-block text-white uppercase bg-gradient-to-r from-gray-600 via-gray-500 to-gray-600 hover:bg-gradient-to-br focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:border-gray-700"
+        ></button>
+      </div>
+
+      <div
+        id="sidebar"
+        class="fixed top-0 right-0 h-full w-64 z-[9999] bg-gray-100 dark:bg-gray-800 transform translate-x-full transition-transform duration-300 shadow-lg"
+      >
+        <button
+          id="close-sidebar"
+          class="absolute top-4 right-4 text-gray-800 dark:text-white focus:outline-none"
+        >
+          <!-- Close Icon -->
+          <svg
+            class="w-6 h-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+        <div class="flex flex-col items-center mt-20 gap-6">
+          <button
+            id="theme-toggle-sidebar"
+            type="button"
+            class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:border-gray-700"
+          ></button>
+        </div>
+      </div>
+
+      <div class="space-y-4">
+        <!-- Chapter 1 -->
+        <div class="bg-white p-3 sm:p-4 rounded-lg shadow-md dark:bg-gray-800">
+          <button
+            class="w-full text-left font-semibold text-lg text-blue-700 dark:text-blue-300"
+            onclick="toggleAccordion('chapter1')"
+          >
+            Chapter 1: Arjuna Vishada Yoga
+          </button>
+          <div id="chapter1" class="hidden mt-4">
+            <div class="relative w-full overflow-hidden">
+              <div
+                id="carousel1"
+                class="flex transition-transform duration-500 ease-in-out"
+              >
+                <!-- Shloka Card 1 -->
+                <div class="w-full sm:p-4 flex-shrink-0">
+                  <div
+                    class="bg-gray-50 min-h-80 rounded-lg shadow-md dark:bg-gray-700"
+                  >
+                    <ul
+                      class="text-sm font-medium text-center text-gray-500 sm:divide-x divide-gray-300 rounded-lg sm:flex dark:divide-gray-600 dark:text-gray-400 rtl:divide-x-reverse"
+                      id="fullWidthTab"
+                      data-tabs-toggle="#fullWidthTabContent"
+                      role="tablist"
+                    >
+                      <li class="w-full">
+                        <button
+                          type="button"
+                          role="tab"
+                          class="inline-block w-full p-4 sm:rounded-ss-lg bg-gray-200 hover:bg-gray-100 focus:outline-none dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
+                          onclick="showTab('shloka1', 'learning1')"
+                        >
+                          Shlok
+                        </button>
+                      </li>
+                      <li class="w-full">
+                        <button
+                          type="button"
+                          role="tab"
+                          class="inline-block w-full p-4 sm:rounded-se-lg bg-gray-200 hover:bg-gray-100 focus:outline-none dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
+                          onclick="showTab('learning1', 'shloka1')"
+                        >
+                          Learning
+                        </button>
+                      </li>
+                    </ul>
+                    <div id="shloka1" class="mt-4 p-2 sm:p-4">
+                      <h2
+                        class="text-xl font-semibold text-blue-700 mb-2 dark:text-blue-200"
+                      >
+                        श्लोक 1.1
+                      </h2>
+
+                      <p
+                        class="text-gray-700 font-semibold dark:text-gray-300 mb-2 sm:mb-4"
+                      >
+                        धृतराष्ट्र उवाच: <br /><br />
+                        धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः।<br />मामकाः
+                        पाण्डवाश्चैव किमकुर्वत सञ्जय॥
+                      </p>
+                      <p class="text-gray-600 mt-2 dark:text-gray-200">
+                        <strong>Meaning (Hindi):</strong> धृतराष्ट्र कहते हैं:
+                        हे संजय! धर्मभूमि कुरुक्षेत्र में एकत्रित होकर युद्ध की
+                        इच्छा रखने वाले मेरे पुत्र और पाण्डुपुत्रों ने क्या
+                        किया?
+                      </p>
+                      <p class="text-gray-600 mt-2 dark:text-gray-200">
+                        <strong>Meaning (English):</strong> Drithrastra says: Oh
+                        Sanjaya, after assembling on the sacred land of
+                        Kurukshetra, desiring to fight, what did my sons
+                        (kauravas) and the sons of Pandu (pandavas) do?
+                      </p>
+                    </div>
+                    <div id="learning1" class="mt-4 p-2 sm:p-4 hidden">
+                      <p class="text-gray-600 dark:text-gray-200">
+                        The term <i> Dharmakshetra </i> refers to the place of
+                        righteousness or duty. It emphasizes the importance of
+                        performing one's duty (dharma) in life, no matter the
+                        situation. Life itself is a battleground where we must
+                        strive to uphold moral and ethical values. The setting
+                        of battle <i> Kurukshetra </i>, symbolizes a place of
+                        conflict, but also of decision-making. It teaches us
+                        that every decision we make should be rooted in an
+                        understanding of the larger context and the impact it
+                        will have on others, not just our own individual
+                        desires. <br />
+                        <br />
+
+                        The question raised by Dhritarashtra symbolizes a moment
+                        of uncertainty in the face of adversity. We are often
+                        faced with challenges in life where we feel unsure of
+                        the outcome, but one should face them with courage and
+                        determination, with trust in righteousness.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Shloka Card 2 -->
+                <div class="w-full sm:p-4 flex-shrink-0">
+                  <div
+                    class="bg-gray-50 min-h-80 rounded-lg shadow-md dark:bg-gray-700"
+                  >
+                    <ul
+                      class="text-sm font-medium text-center text-gray-500 sm:divide-x divide-gray-300 rounded-lg sm:flex dark:divide-gray-600 dark:text-gray-400 rtl:divide-x-reverse"
+                      id="fullWidthTab"
+                      data-tabs-toggle="#fullWidthTabContent"
+                      role="tablist"
+                    >
+                      <li class="w-full">
+                        <button
+                          type="button"
+                          role="tab"
+                          class="inline-block w-full p-4 sm:rounded-ss-lg bg-gray-200 hover:bg-gray-100 focus:outline-none dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
+                          onclick="showTab('shloka2', 'learning2')"
+                        >
+                          Shlok
+                        </button>
+                      </li>
+                      <li class="w-full">
+                        <button
+                          type="button"
+                          role="tab"
+                          class="inline-block w-full p-4 sm:rounded-se-lg bg-gray-200 hover:bg-gray-100 focus:outline-none dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
+                          onclick="showTab('learning2', 'shloka2')"
+                        >
+                          Learning
+                        </button>
+                      </li>
+                    </ul>
+                    <div id="shloka2" class="mt-4 p-2 sm:p-4">
+                      <h2
+                        class="text-xl font-semibold text-blue-700 mb-2 dark:text-blue-200"
+                      >
+                        श्लोक 1.2
+                      </h2>
+                      <p
+                        class="text-gray-700 font-semibold dark:text-gray-300 mb-2 sm:mb-4"
+                      >
+                        सञ्जय उवाच। <br />
+                        <br />
+                        दृष्ट्वा तु पाण्डवानीकं व्यूढं दुर्योधनस्तदा।<br />आचार्यमुपसङ्गम्य
+                        राजा वचनमब्रवीत्॥
+                      </p>
+                      <p class="text-gray-600 mt-2 dark:text-gray-200">
+                        <strong>Meaning (Hindi):</strong> संजय ने कहा: उस समय,
+                        राजा दुर्योधन ने पाण्डवों की व्यूहरचना को देखकर अपने
+                        आचार्य द्रोणाचार्य के पास जाकर ये वचन कहे।
+                      </p>
+                      <p class="text-gray-600 mt-2 dark:text-gray-200">
+                        <strong>Meaning (English):</strong> Sanjaya said: At
+                        that time, King Duryodhana, upon seeing the Pandava army
+                        arranged in military formation, approached his teacher
+                        Dronacharya and spoke these words.
+                      </p>
+                    </div>
+                    <div id="learning2" class="mt-4 p-2 sm:p-4 hidden">
+                      <p class="text-gray-600 dark:text-gray-200">
+                        <strong>
+                          The Importance of Perception in Leadership:
+                        </strong>
+                        Duryodhana, the leader of the Kauravas, immediately
+                        observes the well-organized army of the Pandavas and
+                        feels threatened. This highlights how leaders must
+                        carefully assess situations before making decisions. The
+                        way we perceive a situation influences our
+                        responses—Duryodhana sees a challenge, while Arjuna
+                        (later in the chapter) sees duty and dharma. <br />
+                        <br />
+                        <strong> Strategy and Consultation: </strong> Instead of
+                        reacting impulsively, Duryodhana approaches his teacher,
+                        Dronacharya. This teaches us the importance of seeking
+                        advice from mentors and experienced individuals before
+                        taking significant actions. Seeking counsel from experts
+                        helps in making informed decisions. <br /><br />
+
+                        <strong> The Role of Ego and Fear: </strong>
+
+                        Despite being the king, Duryodhana feels insecure when
+                        he sees the Pandava army arranged strategically. His
+                        approach to Dronacharya reflects his underlying fear.
+                        This teaches that ego-driven leadership often leads to
+                        insecurity and rash decisions. A calm, objective mindset
+                        is essential.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Shloka Card 3 -->
+                <div class="w-full sm:p-4 flex-shrink-0">
+                  <div
+                    class="bg-gray-50 min-h-80 rounded-lg shadow-md dark:bg-gray-700"
+                  >
+                    <ul
+                      class="text-sm font-medium text-center text-gray-500 sm:divide-x divide-gray-300 rounded-lg sm:flex dark:divide-gray-600 dark:text-gray-400 rtl:divide-x-reverse"
+                      id="fullWidthTab"
+                      data-tabs-toggle="#fullWidthTabContent"
+                      role="tablist"
+                    >
+                      <li class="w-full">
+                        <button
+                          type="button"
+                          role="tab"
+                          class="inline-block w-full p-4 sm:rounded-ss-lg bg-gray-200 hover:bg-gray-100 focus:outline-none dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
+                          onclick="showTab('shloka3', 'learning3')"
+                        >
+                          Shlok
+                        </button>
+                      </li>
+                      <li class="w-full">
+                        <button
+                          type="button"
+                          role="tab"
+                          class="inline-block w-full p-4 sm:rounded-se-lg bg-gray-200 hover:bg-gray-100 focus:outline-none dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
+                          onclick="showTab('learning3', 'shloka3')"
+                        >
+                          Learning
+                        </button>
+                      </li>
+                    </ul>
+                    <div id="shloka3" class="mt-4 p-2 sm:p-4">
+                      <h2
+                        class="text-xl font-semibold text-blue-700 mb-2 dark:text-blue-200"
+                      >
+                        श्लोक 1.3
+                      </h2>
+                      <p
+                        class="text-gray-700 font-semibold dark:text-gray-300 mb-2 sm:mb-4"
+                      >
+                        पश्यैतां पाण्डुपुत्राणामाचार्य महतीं चमूम्।<br />व्यूढां
+                        द्रुपदपुत्रेण तव शिष्येण धीमता॥
+                      </p>
+                      <p class="text-gray-600 mt-2 dark:text-gray-200">
+                        <strong>Meaning (Hindi):</strong> हे आचार्य! देखिए, आपके
+                        बुद्धिमान शिष्य द्रुपदपुत्र धृष्टद्युम्न द्वारा
+                        व्यवस्थित पाण्डवों की विशाल सेना।
+                      </p>
+                      <p class="text-gray-600 mt-2 dark:text-gray-200">
+                        <strong>Meaning (English):</strong> Oh teacher, behold
+                        the mighty army of the sons of Pandu (Pandavas),
+                        arranged in battle formation by your intelligent
+                        disciple (Dhrishtadyumna), the son of Drupada.
+                      </p>
+                    </div>
+                    <div id="learning3" class="mt-4 p-2 sm:p-4 hidden">
+                      <p class="text-gray-600 dark:text-gray-200">
+                        <strong>
+                          Respecting the Strength of the Opponent:
+                        </strong>
+
+                        Duryodhana acknowledges the might of the Pandava army
+                        and its strategic preparation. This teaches us to never
+                        underestimate our opponents and to be aware of their
+                        strengths.
+                        <br /><br />
+                        <strong> Wisdom Over Power: </strong>
+
+                        Duryodhana refers to Dhrishtadyumna as dhīmatā
+                        (intelligent). This emphasizes that intelligence and
+                        strategy often hold more power than mere physical
+                        strength.
+                        <br /><br />
+                        <strong>
+                          Unexpected Alliances and Situations in Life:
+                        </strong>
+
+                        Dhrishtadyumna, despite being trained by Dronacharya, is
+                        now leading the opposition. This teaches us that in
+                        life, roles and relationships, situations can change, and we must
+                        adapt accordingly.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex justify-center space-x-2 mt-4 overflow-x-auto max-w-[80%] mx-auto"
+            >
+              <button
+                class="bg-blue-500 text-white px-3 py-1 rounded"
+                onclick="moveCarousel(-1)"
+              >
+                Previous
+              </button>
+              <div class="flex space-x-2 overflow-x-auto">
+                <button
+                  class="bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
+                  onclick="jumpToShloka(0)"
+                >
+                  1
+                </button>
+                <button
+                  class="bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
+                  onclick="jumpToShloka(1)"
+                >
+                  2
+                </button>
+                <button
+                  class="bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
+                  onclick="jumpToShloka(2)"
+                >
+                  3
+                </button>
+              </div>
+              <button
+                class="bg-blue-500 text-white px-3 py-1 rounded"
+                onclick="moveCarousel(1)"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let currentIndex = 0;
+
+      const themeToggle = document.getElementById("theme-toggle");
+      const themeToggleSidebar = document.getElementById(
+        "theme-toggle-sidebar"
+      );
+      const rootElement = document.documentElement;
+
+      const setTheme = () => {
+        const isDarkMode = rootElement.classList.contains("dark");
+        themeToggle.textContent = isDarkMode ? "Light Mode" : "Dark Mode";
+      };
+
+      // Initial state
+      setTheme(rootElement.classList.contains("dark"));
+
+      themeToggle.addEventListener("click", () => {
+        rootElement.classList.toggle("dark");
+        setTheme(rootElement.classList.contains("dark"));
+      });
+
+      themeToggleSidebar.addEventListener("click", () => {
+        rootElement.classList.toggle("dark");
+        setTheme(rootElement.classList.contains("dark"));
+        const isDarkMode = rootElement.classList.contains("dark");
+        themeToggleSidebar.textContent = isDarkMode
+          ? "Light Mode"
+          : "Dark Mode";
+      });
+
+      const hamburgerBtn = document.getElementById("hamburger-btn");
+      const sidebar = document.getElementById("sidebar");
+      const closeSidebar = document.getElementById("close-sidebar");
+
+      // Open sidebar
+      hamburgerBtn.addEventListener("click", () => {
+        const isDarkMode = rootElement.classList.contains("dark");
+        themeToggleSidebar.textContent = isDarkMode
+          ? "Light Mode"
+          : "Dark Mode";
+        sidebar.classList.remove("translate-x-full");
+      });
+
+      // Close sidebar
+      closeSidebar.addEventListener("click", () => {
+        sidebar.classList.add("translate-x-full");
+      });
+
+      function toggleAccordion(id) {
+        document.getElementById(id).classList.toggle("hidden");
+      }
+      function showTab(showId, hideId) {
+        document.getElementById(showId).classList.remove("hidden");
+        document.getElementById(hideId).classList.add("hidden");
+      }
+      function moveCarousel(direction) {
+        const totalSlides =
+          document.querySelectorAll("#carousel1 > div").length;
+        currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
+        document.getElementById("carousel1").style.transform = `translateX(-${
+          currentIndex * 100
+        }%)`;
+      }
+      function jumpToShloka(index) {
+        document.getElementById("carousel1").style.transform = `translateX(-${
+          index * 100
+        }%)`;
+      }
+    </script>
+  </body>
+</html>
