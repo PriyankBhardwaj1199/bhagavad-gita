@@ -80,7 +80,9 @@
 
       <div class="space-y-4">
         <!-- Chapter 1 -->
-        <div class="bg-white p-3 sm:p-4 rounded-lg shadow-md dark:bg-gray-800 flex flex-col items-stretch">
+        <div
+          class="bg-white p-3 sm:p-4 rounded-lg shadow-md dark:bg-gray-800 flex flex-col items-stretch"
+        >
           <button
             class="w-full text-left font-semibold text-lg text-blue-700 dark:text-blue-300"
             onclick="toggleAccordion('chapter1')"
@@ -578,6 +580,154 @@
                     </div>
                   </div>
                 </div>
+
+                <!-- Shloka Card 5 -->
+                <div class="w-full sm:p-4 flex-shrink-0">
+                  <div
+                    class="bg-gray-50 min-h-80 rounded-lg shadow-md dark:bg-gray-700"
+                  >
+                    <ul
+                      class="text-sm font-medium text-center text-gray-500 sm:divide-x divide-gray-300 rounded-lg sm:flex dark:divide-gray-600 dark:text-gray-400 rtl:divide-x-reverse"
+                      id="fullWidthTab"
+                      data-tabs-toggle="#fullWidthTabContent"
+                      role="tablist"
+                    >
+                      <li class="w-full">
+                        <button
+                          type="button"
+                          role="tab"
+                          class="inline-block w-full p-4 sm:rounded-ss-lg bg-gray-200 hover:bg-gray-100 focus:outline-none dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
+                          onclick="showTab('shloka5', 'learning5','characters5')"
+                        >
+                          Shlok
+                        </button>
+                      </li>
+                      <li class="w-full">
+                        <button
+                          type="button"
+                          role="tab"
+                          class="inline-block w-full p-4 bg-gray-200 hover:bg-gray-100 focus:outline-none dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
+                          onclick="showTab('learning5','shloka5','characters5')"
+                        >
+                          Learning
+                        </button>
+                      </li>
+                      <li class="w-full">
+                        <button
+                          type="button"
+                          role="tab"
+                          class="inline-block w-full p-4 sm:rounded-se-lg bg-gray-200 hover:bg-gray-100 focus:outline-none dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
+                          onclick="showTab('characters5','learning5', 'shloka5')"
+                        >
+                          Characters in shlok
+                        </button>
+                      </li>
+                    </ul>
+                    <div id="shloka5" class="mt-4 p-2 sm:p-4">
+                      <h2
+                        class="text-xl font-semibold text-blue-700 mb-2 dark:text-blue-200"
+                      >
+                        श्लोक 1.5
+                      </h2>
+                      <p
+                        class="text-gray-700 font-semibold dark:text-gray-300 mb-2 sm:mb-4"
+                      >
+                        दुर्योधन उवाच। <br /><br />
+                        धृष्टकेतुश्चेकितानः काशिराजश्च वीर्यवान् | <br />
+                        पुरुजित्कुन्तिभोजश्च शैब्यश्च नरपुङ्गवः ||
+                      </p>
+                      <p class="text-gray-600 mt-2 dark:text-gray-200">
+                        <strong>Meaning (Hindi):</strong> इस श्लोक में
+                        पाण्डुपुत्रों की सेना में मौजूद योद्धाओं का
+                        वर्णन किया गया है। दुर्योधन द्रोणाचार्य को बताता है कि
+                        उनकी सेना में वीर योद्धा मौजूद हैं, जैसे - धृष्टकेतु,
+                        चेकितान, काशी के पराक्रमी राजा, पुरुजित, कुन्तिभोज और
+                        श्रेष्ठ राजा शैब्य। ये सभी युद्ध में कुशल और महान योद्धा
+                        हैं।
+                      </p>
+                      <p class="text-gray-600 mt-2 dark:text-gray-200">
+                        <strong>Meaning (English):</strong> Duryodhana describes
+                        the mighty warriors present in pandava's army to
+                        Dronacharya. He mentions <i> Dhrishtaketu </i>,<i>
+                          Chekitana </i
+                        >, the valiant King of Kashi,<i> Purujit </i>,
+                        <i> Kuntibhoja </i>, and the noble king <i> Shaibya </i>. These
+                        are all powerful and experienced warriors who will fight
+                        on their behalf.
+                      </p>
+                    </div>
+                    <div id="learning5" class="mt-4 p-2 sm:p-4 hidden">
+                      <p class="text-gray-600 dark:text-gray-200">
+                        <strong> Leadership and Strategy: </strong>
+
+                        Duryodhana is ensuring that his commander, Dronacharya,
+                        knows about the strong warriors in pandava's army. This
+                        highlights the importance of not only being aware but
+                        understanding the strengths of the resources of your
+                        opponent wisely in leadership.
+
+                        <br /><br />
+
+                        <strong> Respecting Capabilities: </strong>
+
+                        Even though these warriors were not the main leaders,
+                        their contributions were recognized. This teaches us the
+                        importance of acknowledging the strengths of every team
+                        member.
+                        <br /><br />
+
+                        <strong> Value of Teamwork: </strong>
+                        The verse highlights that even a great warrior needs
+                        strong allies. It reminds us that teamwork and the right
+                        support system are crucial for success.
+                      </p>
+                    </div>
+                    <div id="characters5" class="mt-4 p-2 sm:p-4 hidden">
+                      <p class="text-gray-600 dark:text-gray-200">
+                        <strong> Dhrishtaketu: </strong>
+                        He was the king of Chedi and the son of Shishupala, who
+                        was slain by Lord Krishna during the Rajasuya Yagna of
+                        Yudhishthira. He led the Chedi warriors in the war
+                        against the Kauravas. Dhrishtaketu was ultimately killed
+                        by Dronacharya during the battle.
+                        <br />
+                        <br />
+                        <strong> Chekitana: </strong>
+                        He was a Vrishni prince, belonging to the Yadava clan,
+                        and was a great devotee of Lord Krishna. As a Yadava
+                        warrior, Chekitana fought on the side of the Pandavas
+                        during the Kurukshetra War. He led a division of the
+                        Pandava army (an Akshauhini) and participated in several
+                        key battles. He fought valiantly against great warriors
+                        like Kritavarma (another Yadava who sided with the
+                        Kauravas), Duryodhana, and Ashwatthama. Chekitana was
+                        killed by Duryodhana on the 18th day of the war.
+                        <br />
+                        <br />
+                        <strong> Purujit and Kuntibhoja: </strong>
+                        Purujit was the king of the Kuntibhoja clan and the
+                        brother of Kuntibhoja, the foster father of Kunti (the
+                        mother of the Pandavas). He fought in the Kurukshetra
+                        War as part of the Pandava army. He was killed by
+                        Dronacharya, the Kaurava commander-in-chief, during the
+                        battle.
+                        <br />
+                        <br />
+                        <strong> Shaibya: </strong>
+                        He was a king and is often identified as a ruler of Sibi
+                        (Shibi) Kingdom, a region known for its warriors and
+                        noble lineage. Shaibya was a devoted ally of the
+                        Pandavas and contributed his forces to their army.
+                        Shaibya is sometimes confused with King Shibi, a
+                        legendary ruler known for his generosity, but in the
+                        context of the Mahabharata, Shaibya was a warrior allied
+                        with the Pandavas.
+                        <br />
+                        <br />
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div
@@ -613,6 +763,12 @@
                   onclick="jumpToShloka(3)"
                 >
                   4
+                </button>
+                <button
+                  class="bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
+                  onclick="jumpToShloka(4)"
+                >
+                  5
                 </button>
               </div>
               <button
