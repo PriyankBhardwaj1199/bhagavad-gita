@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./favicon-512x512.png" />
     <title>Bhagavad Gita Shlokas</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -580,7 +581,6 @@
                     </div>
                   </div>
                 </div>
-
                 <!-- Shloka Card 5 -->
                 <div class="w-full sm:p-4 flex-shrink-0">
                   <div
@@ -727,8 +727,7 @@
                     </div>
                   </div>
                 </div>
-
-                <!-- Shloka Card 5 -->
+                <!-- Shloka Card 6 -->
                 <div class="w-full sm:p-4 flex-shrink-0">
                   <div
                     class="bg-gray-50 min-h-80 rounded-lg shadow-md dark:bg-gray-700"
@@ -874,6 +873,94 @@
                     </div>
                   </div>
                 </div>
+                <!-- Shloka Card 7 -->
+                <div class="w-full sm:p-4 flex-shrink-0">
+                  <div
+                    class="bg-gray-50 min-h-80 rounded-lg shadow-md dark:bg-gray-700"
+                  >
+                    <ul
+                      class="text-sm font-medium text-center text-gray-500 sm:divide-x divide-gray-300 rounded-lg sm:flex dark:divide-gray-600 dark:text-gray-400 rtl:divide-x-reverse"
+                      id="fullWidthTab"
+                      data-tabs-toggle="#fullWidthTabContent"
+                      role="tablist"
+                    >
+                      <li class="w-full">
+                        <button
+                          type="button"
+                          role="tab"
+                          class="inline-block w-full p-4 sm:rounded-ss-lg bg-gray-200 hover:bg-gray-100 focus:outline-none dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
+                          onclick="showTab('shloka7', 'learning7','noCharacters')"
+                        >
+                          Shlok
+                        </button>
+                      </li>
+                      <li class="w-full">
+                        <button
+                          type="button"
+                          role="tab"
+                          class="inline-block w-full p-4 bg-gray-200 hover:bg-gray-100 focus:outline-none dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
+                          onclick="showTab('learning7','shloka7','noCharacters')"
+                        >
+                          Learning
+                        </button>
+                      </li>
+                    </ul>
+                    <div id="shloka7" class="mt-4 p-2 sm:p-4">
+                      <h2
+                        class="text-xl font-semibold text-blue-700 mb-2 dark:text-blue-200"
+                      >
+                        श्लोक 1.7
+                      </h2>
+                      <p
+                        class="text-gray-700 font-semibold dark:text-gray-300 mb-2 sm:mb-4"
+                      >
+                        दुर्योधन उवाच। <br /><br />
+                        अस्माकं तु विशिष्टा ये तान्निबोध द्विजोत्तम | <br />
+                        नायका मम सैन्यस्य संज्ञार्थं तान्ब्रवीमि ते ||
+                      </p>
+                      <p class="text-gray-600 mt-2 dark:text-gray-200">
+                        <strong>Meaning (Hindi):</strong> हे ब्राह्मणों में
+                        श्रेष्ठ! अब हमारे पक्ष में जो विशिष्ट योद्धा हैं, उन्हें
+                        ध्यानपूर्वक सुनो। मैं अपनी सेना के उन नायकों को तुम्हें
+                        बताता हूँ, जो युद्ध में विशेष रूप से पराक्रमी हैं।
+                      </p>
+                      <p class="text-gray-600 mt-2 dark:text-gray-200">
+                        <strong>Meaning (English):</strong> O best among the
+                        Brahmins! Now, let me tell you about the distinguished
+                        warriors on our side. I shall name the leaders of my
+                        army, who are especially powerful in battle.
+                      </p>
+                    </div>
+                    <div id="learning7" class="mt-4 p-2 sm:p-4 hidden">
+                      <p class="text-gray-600 dark:text-gray-200">
+                        <strong> Strategic Communication: </strong>
+
+                        Effective communication is key in any leadership role.
+                        By addressing his mentor Dronacharya, Duryodhana aims to
+                        boost morale and reinforce the importance of their role
+                        in the war.
+
+                        <br /><br />
+
+                        <strong>
+                          Self-Awareness and Strength Assessment:
+                        </strong>
+
+                        Before taking on any challenge, it is crucial to assess
+                        one's resources, strengths, and allies. A well-prepared
+                        person is more likely to succeed.
+                        <br /><br />
+
+                        <strong> Right Perspective in Life's Battles: </strong>
+                        Life presents us with many struggles, and while
+                        preparation is essential, righteousness and humility
+                        should not be overlooked. Being on the right path is as
+                        important as being strong.
+                      </p>
+                    </div>
+                    
+                  </div>
+                </div>
               </div>
             </div>
             <div
@@ -921,6 +1008,12 @@
                   onclick="jumpToShloka(5)"
                 >
                   6
+                </button>
+                <button
+                  class="bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
+                  onclick="jumpToShloka(6)"
+                >
+                  7
                 </button>
               </div>
               <button
@@ -994,7 +1087,12 @@
       function showTab(showId, hideId1, hideId2) {
         document.getElementById(showId).classList.remove("hidden");
         document.getElementById(hideId1).classList.add("hidden");
-        document.getElementById(hideId2).classList.add("hidden");
+
+        if(hideId2 != 'noCharacters'){
+          console.log(hideId2 + ': condition working')
+          document.getElementById(hideId2).classList.add("hidden");
+        }
+
       }
 
       function moveCarousel(direction) {
