@@ -14,6 +14,27 @@
         },
       };
     </script>
+    <style>
+      @media (min-width: 640px) {
+        .custom-scrollbar::-webkit-scrollbar {
+          height: 6px !important;
+          width: 8px !important;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-track {
+          background: #f1f1f1 !important;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+          background-color: #888 !important;
+          border-radius: 4px !important;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+          background: #555 !important;
+        }
+      }
+    </style>
   </head>
   <body class="bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100">
     <button
@@ -2271,8 +2292,6 @@
                         different backgrounds, stood together for a common
                         cause. It teaches us the power of unity in achieving a
                         greater goal.
-                        <br />
-                        <br />
                       </p>
                     </div>
                   </div>
@@ -2724,6 +2743,92 @@
                     </div>
                   </div>
                 </div>
+                <!-- Shloka Card 23 -->
+                <div class="w-full sm:p-4 flex-shrink-0">
+                  <div
+                    class="bg-gray-50 min-h-80 rounded-lg shadow-md dark:bg-gray-700"
+                  >
+                    <ul
+                      class="text-sm font-medium text-center text-gray-500 sm:divide-x divide-gray-300 rounded-lg sm:flex dark:divide-gray-600 dark:text-gray-400 rtl:divide-x-reverse"
+                      id="fullWidthTab"
+                      data-tabs-toggle="#fullWidthTabContent"
+                      role="tablist"
+                    >
+                      <li class="w-full">
+                        <button
+                          type="button"
+                          role="tab"
+                          class="inline-block w-full p-4 sm:rounded-ss-lg bg-gray-200 hover:bg-gray-100 focus:outline-none dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
+                          onclick="showTab('shloka23', 'learning23','noCharacters')"
+                        >
+                          Shlok
+                        </button>
+                      </li>
+                      <li class="w-full">
+                        <button
+                          type="button"
+                          role="tab"
+                          class="inline-block w-full p-4 bg-gray-200 hover:bg-gray-100 focus:outline-none dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
+                          onclick="showTab('learning23','shloka23','noCharacters')"
+                        >
+                          Learnings
+                        </button>
+                      </li>
+                    </ul>
+                    <div id="shloka23" class="mt-4 p-2 sm:p-4">
+                      <h2
+                        class="text-xl font-semibold text-blue-700 mb-2 dark:text-blue-200"
+                      >
+                        श्लोक 1.23
+                      </h2>
+                      <p
+                        class="text-gray-700 font-semibold dark:text-gray-300 mb-2 sm:mb-4"
+                      >
+                        अर्जुन उवाच। <br /><br />
+                        योत्स्यमानानवेक्षेऽहं य एतेऽत्र समागता: । <br />
+                        धार्तराष्ट्रस्य दुर्बुद्धेर्युद्धे प्रियचिकीर्षव: ॥२३॥
+                      </p>
+                      <p class="text-gray-600 mt-2 dark:text-gray-200">
+                        <strong>Meaning (Hindi):</strong> मैं युद्धभूमि में उन
+                        योद्धाओं को देखना चाहता हूँ जो यहाँ इस उद्देश्य से एकत्र
+                        हुए हैं कि दुर्योधन नामक दुष्टबुद्धि के लिए युद्ध में
+                        प्रिय कार्य (सहायता) करें।
+                      </p>
+                      <p class="text-gray-600 mt-2 dark:text-gray-200">
+                        <strong>Meaning (English):</strong> I desire to see
+                        those warriors who have come here to fight, wishing to
+                        please the evil-minded son of Dhritarashtra (Duryodhana)
+                        in battle.
+                      </p>
+                    </div>
+                    <div id="learning23" class="mt-4 p-2 sm:p-4 hidden">
+                      <p class="text-gray-600 dark:text-gray-200">
+                        <strong> Discernment of Right and Wrong: </strong>
+                        Arjuna's labeling of Duryodhana as “evil-minded” shows
+                        the importance of recognizing unethical actions and
+                        standing for what is right, even when it's difficult.
+
+                        <br /><br />
+
+                        <strong> Evaluating Alliances: </strong>
+                        It teaches us to be mindful of the company we keep and
+                        the causes we support, as aligning with wrongful motives
+                        can lead to destructive consequences.
+                        <br />
+                        <br />
+                        <strong> Self-Reflection Before Action: </strong>
+                        Arjuna's desire to see the opposing warriors signifies
+                        the need for introspection and understanding the full
+                        picture before taking any significant action. <br />
+                        <br />
+                        <strong> Moral Courage: </strong>
+                        Even when facing adversity, having the courage to
+                        question and confront injustice is crucial, no matter
+                        how powerful the opposition may be.
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div
@@ -2735,7 +2840,7 @@
               >
                 Previous
               </button>
-              <div class="flex space-x-2 overflow-x-auto">
+              <div class="flex space-x-2 overflow-x-auto custom-scrollbar">
                 <button
                   class="shloka-button bg-gray-600 text-white px-3 py-1 rounded dark:bg-white dark:text-gray-900"
                   onclick="jumpToShloka(0)"
@@ -2867,6 +2972,12 @@
                   onclick="jumpToShloka(21)"
                 >
                   22
+                </button>
+                <button
+                  class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
+                  onclick="jumpToShloka(22)"
+                >
+                  23
                 </button>
               </div>
               <button
