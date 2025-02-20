@@ -2870,7 +2870,7 @@
                       <p
                         class="text-gray-700 font-semibold dark:text-gray-300 mb-2 sm:mb-4"
                       >
-                        सञ्जय उवाच <br /><br />
+                        सञ्जय उवाच । <br /><br />
                         एवमुक्तो हृषीकेशो गुडाकेशेन भारत । <br />
                         सेनयोरुभयोर्मध्ये स्थापयित्वा रथोत्तमम् ॥२४॥
                       </p>
@@ -2950,6 +2950,89 @@
                         and spiritual awakening. A person who controls their
                         senses and mind attains clarity, wisdom, and deeper
                         self-realization.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Shloka Card 25 -->
+                <div class="w-full sm:p-4 flex-shrink-0">
+                  <div
+                    class="bg-gray-50 min-h-80 rounded-lg shadow-md dark:bg-gray-700"
+                  >
+                    <ul
+                      class="text-sm font-medium text-center text-gray-500 sm:divide-x divide-gray-300 rounded-lg sm:flex dark:divide-gray-600 dark:text-gray-400 rtl:divide-x-reverse"
+                      id="fullWidthTab"
+                      data-tabs-toggle="#fullWidthTabContent"
+                      role="tablist"
+                    >
+                      <li class="w-full">
+                        <button
+                          type="button"
+                          role="tab"
+                          class="inline-block w-full p-4 sm:rounded-ss-lg bg-gray-200 hover:bg-gray-100 focus:outline-none dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
+                          onclick="showTab('shloka25', 'learning25','noCharacters')"
+                        >
+                          Shlok
+                        </button>
+                      </li>
+                      <li class="w-full">
+                        <button
+                          type="button"
+                          role="tab"
+                          class="inline-block w-full p-4 bg-gray-200 hover:bg-gray-100 focus:outline-none dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
+                          onclick="showTab('learning25','shloka25','noCharacters')"
+                        >
+                          Learnings
+                        </button>
+                      </li>
+                    </ul>
+                    <div id="shloka25" class="mt-4 p-2 sm:p-4">
+                      <h2
+                        class="text-xl font-semibold text-blue-700 mb-2 dark:text-blue-200"
+                      >
+                        श्लोक 1.25
+                      </h2>
+                      <p
+                        class="text-gray-700 font-semibold dark:text-gray-300 mb-2 sm:mb-4"
+                      >
+                        सञ्जय उवाच । <br /><br />
+                        भीष्मद्रोणप्रमुखतः सर्वेषां च महीक्षिताम् । <br />
+                        उवाच पार्थ पश्यैतान्समवेतान्कुरूनिति ॥२५॥
+                      </p>
+                      <p class="text-gray-600 mt-2 dark:text-gray-200">
+                        <strong>Meaning (Hindi):</strong> सभी राजाओं और विशेष
+                        रूप से भीष्म तथा द्रोणाचार्य के सामने, भगवान श्रीकृष्ण
+                        ने अर्जुन से कहा - "हे पार्थ! देखो, ये सभी कौरवों की
+                        सेना में एकत्रित योद्धा खड़े हैं।"
+                      </p>
+                      <p class="text-gray-600 mt-2 dark:text-gray-200">
+                        <strong>Meaning (English):</strong> In front of Bhishma,
+                        Dronacharya, and all the kings, Lord Krishna said to
+                        Arjuna: "O Partha (Arjuna), behold these assembled
+                        Kurus."
+                      </p>
+                    </div>
+                    <div id="learning25" class="mt-4 p-2 sm:p-4 hidden">
+                      <p class="text-gray-600 dark:text-gray-200">
+                        <strong> Detachment from Emotions: </strong>
+                        Krishna is guiding Arjuna to look at the situation with
+                        clarity rather than being overwhelmed by emotions. In
+                        life, we should balance emotions with rationality.
+                        <br /><br />
+
+                        <strong> Accepting Challenges: </strong>
+                        This verse reminds us that challenges are inevitable,
+                        but facing them with awareness and clarity is key to
+                        overcoming them.
+                        <br />
+                        <br />
+                        <strong> Inner dilemmas vs duty: </strong>
+                        We often face difficult choices where emotions conflict
+                        with duty. Krishna's act (stopping infront of Bhishma
+                        and Dronacharaya) reminds us that we should confront our
+                        inner dilemmas directly rather than avoiding them.
+                        Making the right decision requires wisdom, clarity, and
+                        detachment from personal biases.
                       </p>
                     </div>
                   </div>
@@ -3109,6 +3192,12 @@
                   onclick="jumpToShloka(23)"
                 >
                   24
+                </button>
+                <button
+                  class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
+                  onclick="jumpToShloka(24)"
+                >
+                  25
                 </button>
               </div>
               <button
@@ -3311,12 +3400,12 @@
 
       document.querySelectorAll(".custom-scrollbar").forEach((el) => {
         el.addEventListener("wheel", function (event) {
-            if (event.deltaY !== 0) {
-                event.preventDefault();
-                el.scrollLeft += event.deltaY;
-            }
+          if (event.deltaY !== 0) {
+            event.preventDefault();
+            el.scrollLeft += event.deltaY;
+          }
         });
-    });
+      });
     </script>
   </body>
 </html>
