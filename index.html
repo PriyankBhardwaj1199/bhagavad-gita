@@ -153,8 +153,61 @@
           </div>
         </div>
       </div>
+      <!-- Itenary modal -->
+      <div
+        id="itenary-modal"
+        data-modal-backdrop="static"
+        tabindex="-1"
+        aria-hidden="true"
+        class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full backdrop-blur-lg"
+      >
+        <div class="relative p-4 w-full max-w-2xl max-h-full">
+          <!-- Modal content -->
+          <div class="relative bg-white rounded-lg shadow-sm dark:bg-gray-700">
+            <!-- Modal header -->
+            <div
+              class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600 border-gray-200"
+            >
+              <h3
+                id="itenaryModalTitle"
+                class="text-xl font-semibold text-blue-700 dark:text-blue-300"
+              ></h3>
+              <button
+                type="button"
+                onclick="closeItenary()"
+                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                data-modal-hide="itenary-modal"
+              >
+                <svg
+                  class="w-3 h-3"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 14"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+                  />
+                </svg>
+                <span class="sr-only">Close modal</span>
+              </button>
+            </div>
+            <!-- Modal body -->
+            <div class="p-4 md:p-5 space-y-4">
+              <div
+                id="itenaryModalContent"
+                class="text-base leading-relaxed text-gray-700 dark:text-gray-300"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <div class="space-y-4">
+      <div class="space-y-4 mb-3">
         <!-- Chapter 1 -->
         <div
           class="bg-white p-3 sm:p-4 rounded-lg shadow-md dark:bg-gray-800 flex flex-col items-stretch"
@@ -166,6 +219,33 @@
             >
               Chapter 1: Arjuna Vishada Yoga
             </button>
+            <div class="relative group me-2">
+              <button
+                onclick="showItenary(1)"
+                data-modal-target="itenary-modal"
+                data-modal-toggle="itenary-modal"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 text-blue-700 dark:text-blue-300"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z"
+                  />
+                </svg>
+              </button>
+              <span
+                class="absolute hidden group-hover:block bg-gray-800 text-white text-xs rounded-lg py-1 px-2 w-max top-full mt-1 left-2/3 -translate-x-2/3"
+              >
+                Click to view itenary
+              </span>
+            </div>
             <div class="relative group">
               <button
                 onclick="showSummary(1)"
@@ -5063,297 +5143,487 @@
             >
               <button
                 class="hidden sm:inline-block bg-blue-500 text-white px-3 py-1 rounded"
-                onclick="moveCarousel(-1)"
+                onclick="moveCarousel(-1,'carousel1')"
               >
                 Previous
               </button>
               <div class="flex space-x-2 overflow-x-auto custom-scrollbar">
                 <button
                   class="shloka-button bg-gray-600 text-white px-3 py-1 rounded dark:bg-white dark:text-gray-900"
-                  onclick="jumpToShloka(0)"
+                  onclick="jumpToShloka(0,'carousel1')"
                 >
                   1
                 </button>
                 <button
                   class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
-                  onclick="jumpToShloka(1)"
+                  onclick="jumpToShloka(1,'carousel1')"
                 >
                   2
                 </button>
                 <button
                   class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
-                  onclick="jumpToShloka(2)"
+                  onclick="jumpToShloka(2,'carousel1')"
                 >
                   3
                 </button>
                 <button
                   class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
-                  onclick="jumpToShloka(3)"
+                  onclick="jumpToShloka(3,'carousel1')"
                 >
                   4
                 </button>
                 <button
                   class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
-                  onclick="jumpToShloka(4)"
+                  onclick="jumpToShloka(4,'carousel1')"
                 >
                   5
                 </button>
                 <button
                   class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
-                  onclick="jumpToShloka(5)"
+                  onclick="jumpToShloka(5,'carousel1')"
                 >
                   6
                 </button>
                 <button
                   class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
-                  onclick="jumpToShloka(6)"
+                  onclick="jumpToShloka(6,'carousel1')"
                 >
                   7
                 </button>
                 <button
                   class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
-                  onclick="jumpToShloka(7)"
+                  onclick="jumpToShloka(7,'carousel1')"
                 >
                   8
                 </button>
                 <button
                   class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
-                  onclick="jumpToShloka(8)"
+                  onclick="jumpToShloka(8,'carousel1')"
                 >
                   9
                 </button>
                 <button
                   class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
-                  onclick="jumpToShloka(9)"
+                  onclick="jumpToShloka(9,'carousel1')"
                 >
                   10
                 </button>
                 <button
                   class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
-                  onclick="jumpToShloka(10)"
+                  onclick="jumpToShloka(10,'carousel1')"
                 >
                   11
                 </button>
                 <button
                   class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
-                  onclick="jumpToShloka(11)"
+                  onclick="jumpToShloka(11,'carousel1')"
                 >
                   12
                 </button>
                 <button
                   class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
-                  onclick="jumpToShloka(12)"
+                  onclick="jumpToShloka(12,'carousel1')"
                 >
                   13
                 </button>
                 <button
                   class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
-                  onclick="jumpToShloka(13)"
+                  onclick="jumpToShloka(13,'carousel1')"
                 >
                   14
                 </button>
                 <button
                   class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
-                  onclick="jumpToShloka(14)"
+                  onclick="jumpToShloka(14,'carousel1')"
                 >
                   15
                 </button>
                 <button
                   class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
-                  onclick="jumpToShloka(15)"
+                  onclick="jumpToShloka(15,'carousel1')"
                 >
                   16
                 </button>
                 <button
                   class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
-                  onclick="jumpToShloka(16)"
+                  onclick="jumpToShloka(16,'carousel1')"
                 >
                   17
                 </button>
                 <button
                   class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
-                  onclick="jumpToShloka(17)"
+                  onclick="jumpToShloka(17,'carousel1')"
                 >
                   18
                 </button>
                 <button
                   class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
-                  onclick="jumpToShloka(18)"
+                  onclick="jumpToShloka(18,'carousel1')"
                 >
                   19
                 </button>
                 <button
                   class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
-                  onclick="jumpToShloka(19)"
+                  onclick="jumpToShloka(19,'carousel1')"
                 >
                   20
                 </button>
                 <button
                   class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
-                  onclick="jumpToShloka(20)"
+                  onclick="jumpToShloka(20,'carousel1')"
                 >
                   21
                 </button>
                 <button
                   class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
-                  onclick="jumpToShloka(21)"
+                  onclick="jumpToShloka(21,'carousel1')"
                 >
                   22
                 </button>
                 <button
                   class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
-                  onclick="jumpToShloka(22)"
+                  onclick="jumpToShloka(22,'carousel1')"
                 >
                   23
                 </button>
                 <button
                   class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
-                  onclick="jumpToShloka(23)"
+                  onclick="jumpToShloka(23,'carousel1')"
                 >
                   24
                 </button>
                 <button
                   class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
-                  onclick="jumpToShloka(24)"
+                  onclick="jumpToShloka(24,'carousel1')"
                 >
                   25
                 </button>
                 <button
                   class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
-                  onclick="jumpToShloka(25)"
+                  onclick="jumpToShloka(25,'carousel1')"
                 >
                   26
                 </button>
                 <button
                   class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
-                  onclick="jumpToShloka(26)"
+                  onclick="jumpToShloka(26,'carousel1')"
                 >
                   27
                 </button>
                 <button
                   class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
-                  onclick="jumpToShloka(27)"
+                  onclick="jumpToShloka(27,'carousel1')"
                 >
                   28
                 </button>
                 <button
                   class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
-                  onclick="jumpToShloka(28)"
+                  onclick="jumpToShloka(28,'carousel1')"
                 >
                   29
                 </button>
                 <button
                   class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
-                  onclick="jumpToShloka(29)"
+                  onclick="jumpToShloka(29,'carousel1')"
                 >
                   30
                 </button>
                 <button
                   class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
-                  onclick="jumpToShloka(30)"
+                  onclick="jumpToShloka(30,'carousel1')"
                 >
                   31
                 </button>
                 <button
                   class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
-                  onclick="jumpToShloka(31)"
+                  onclick="jumpToShloka(31,'carousel1')"
                 >
                   32
                 </button>
                 <button
                   class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
-                  onclick="jumpToShloka(32)"
+                  onclick="jumpToShloka(32,'carousel1')"
                 >
                   33
                 </button>
                 <button
                   class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
-                  onclick="jumpToShloka(33)"
+                  onclick="jumpToShloka(33,'carousel1')"
                 >
                   34
                 </button>
                 <button
                   class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
-                  onclick="jumpToShloka(34)"
+                  onclick="jumpToShloka(34,'carousel1')"
                 >
                   35
                 </button>
                 <button
                   class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
-                  onclick="jumpToShloka(35)"
+                  onclick="jumpToShloka(35,'carousel1')"
                 >
                   36
                 </button>
                 <button
                   class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
-                  onclick="jumpToShloka(36)"
+                  onclick="jumpToShloka(36,'carousel1')"
                 >
                   37
                 </button>
                 <button
                   class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
-                  onclick="jumpToShloka(37)"
+                  onclick="jumpToShloka(37,'carousel1')"
                 >
                   38
                 </button>
                 <button
                   class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
-                  onclick="jumpToShloka(38)"
+                  onclick="jumpToShloka(38,'carousel1')"
                 >
                   39
                 </button>
                 <button
                   class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
-                  onclick="jumpToShloka(39)"
+                  onclick="jumpToShloka(39,'carousel1')"
                 >
                   40
                 </button>
                 <button
                   class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
-                  onclick="jumpToShloka(40)"
+                  onclick="jumpToShloka(40,'carousel1')"
                 >
                   41
                 </button>
                 <button
                   class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
-                  onclick="jumpToShloka(41)"
+                  onclick="jumpToShloka(41,'carousel1')"
                 >
                   42
                 </button>
                 <button
                   class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
-                  onclick="jumpToShloka(42)"
+                  onclick="jumpToShloka(42,'carousel1')"
                 >
                   43
                 </button>
                 <button
                   class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
-                  onclick="jumpToShloka(43)"
+                  onclick="jumpToShloka(43,'carousel1')"
                 >
                   44
                 </button>
                 <button
                   class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
-                  onclick="jumpToShloka(44)"
+                  onclick="jumpToShloka(44,'carousel1')"
                 >
                   45
                 </button>
                 <button
                   class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
-                  onclick="jumpToShloka(45)"
+                  onclick="jumpToShloka(45,'carousel1')"
                 >
                   46
                 </button>
                 <button
                   class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-gray-600 dark:text-gray-200"
-                  onclick="jumpToShloka(46)"
+                  onclick="jumpToShloka(46,'carousel1')"
                 >
                   47
                 </button>
               </div>
               <button
                 class="hidden sm:inline-block bg-blue-500 text-white px-3 py-1 rounded"
-                onclick="moveCarousel(1)"
+                onclick="moveCarousel(1,'carousel1')"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-y-4 mb-3">
+        <!-- Chapter 2 -->
+        <div
+          class="bg-white p-3 sm:p-4 rounded-lg shadow-md dark:bg-gray-800 flex flex-col items-stretch"
+        >
+          <div class="flex flex-row">
+            <button
+              class="w-full text-left font-semibold text-lg text-blue-700 dark:text-blue-300"
+              onclick="toggleAccordion('chapter2')"
+            >
+              Chapter 2: Sankhya Yoga
+            </button>
+            <div class="relative group me-2">
+              <button
+                onclick="showItenary(2)"
+                data-modal-target="itenary-modal"
+                data-modal-toggle="itenary-modal"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 text-blue-700 dark:text-blue-300"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z"
+                  />
+                </svg>
+              </button>
+              <span
+                class="absolute hidden group-hover:block bg-gray-800 text-white text-xs rounded-lg py-1 px-2 w-max top-full mt-1 left-2/3 -translate-x-2/3"
+              >
+                Click to view itenary
+              </span>
+            </div>
+            <div class="relative group">
+              <button
+                onclick="showSummary(2)"
+                data-modal-target="static-modal"
+                data-modal-toggle="static-modal"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="text-blue-700 dark:text-blue-300 size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"
+                  />
+                </svg>
+              </button>
+              <span
+                class="absolute hidden group-hover:block bg-gray-800 text-white text-xs rounded-lg py-1 px-2 w-max top-full mt-1 left-2/3 -translate-x-2/3"
+              >
+                Click to view summary
+              </span>
+            </div>
+          </div>
+
+          <div id="chapter2" class="hidden mt-4">
+            <div class="relative w-full overflow-hidden">
+              <div
+                id="carousel2"
+                class="flex transition-transform duration-500 ease-in-out"
+              >
+                <!-- Shloka Card 1 -->
+                <div class="w-full sm:p-4 flex-shrink-0">
+                  <div
+                    class="bg-gray-50 min-h-80 rounded-lg shadow-md dark:bg-gray-700"
+                  >
+                    <ul
+                      class="text-sm font-medium text-center text-gray-500 sm:divide-x divide-gray-300 rounded-lg sm:flex dark:divide-gray-600 dark:text-gray-400 rtl:divide-x-reverse"
+                      id="fullWidthTab"
+                      data-tabs-toggle="#fullWidthTabContent"
+                      role="tablist"
+                    >
+                      <li class="w-full">
+                        <button
+                          type="button"
+                          role="tab"
+                          class="inline-block w-full p-4 sm:rounded-ss-lg bg-gray-200 hover:bg-gray-100 focus:outline-none dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
+                          onclick="showTab('shloka2_1', 'learning2_1','noCharacters')"
+                        >
+                          Shlok
+                        </button>
+                      </li>
+                      <li class="w-full">
+                        <button
+                          type="button"
+                          role="tab"
+                          class="inline-block w-full p-4 bg-gray-200 hover:bg-gray-100 focus:outline-none dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
+                          onclick="showTab('learning2_1', 'shloka2_1','noCharacters')"
+                        >
+                          Learnings
+                        </button>
+                      </li>
+                    </ul>
+                    <div id="shloka2_1" class="mt-4 p-2 sm:p-4">
+                      <h2
+                        class="text-xl font-semibold text-blue-700 mb-2 dark:text-blue-200"
+                      >
+                        श्लोक 2.1
+                      </h2>
+                      <p
+                        class="text-gray-700 font-semibold dark:text-gray-300 mb-2 sm:mb-4"
+                      >
+                        सञ्जय उवाच। <br /><br />
+                        तं तथा कृपयाविष्टमश्रुपूर्णाकुलेक्षणम् ।<br />
+                        विषीदन्तमिदं वाक्यमुवाच मधुसूदनः ॥१॥
+                      </p>
+                      <p class="text-gray-600 mt-2 dark:text-gray-200">
+                        <strong>Meaning (Hindi):</strong> संजय ने कहा: इस प्रकार
+                        करुणा से व्याप्त, आँसुओं से भरी हुई उदास आँखों वाले,
+                        अत्यधिक शोकाकुल अर्जुन से मधुसूदन (भगवान श्रीकृष्ण) ने
+                        ये वचन कहे।
+                      </p>
+                      <p class="text-gray-600 mt-2 dark:text-gray-200">
+                        <strong>Meaning (English):</strong> Sanjaya said: Seeing
+                        Arjuna overwhelmed with compassion, his eyes filled with
+                        tears and his mind distressed with sorrow, Madhusudana
+                        (Krishna) spoke these words.
+                      </p>
+                    </div>
+                    <div id="learning2_1" class="mt-4 p-2 sm:p-4 hidden">
+                      <p class="text-gray-600 dark:text-gray-200">
+                        <strong>Importance of Mental Stability: </strong>
+                        Arjuna's overwhelmed state illustrates how emotional
+                        instability can cloud judgment. Developing mental
+                        resilience is key to navigating challenging situations
+                        effectively. <br /><br />
+                        <strong
+                          >Crisis is an Opportunity for Transformation:
+                        </strong>
+                        Moments of deep confusion and sorrow often pave the way
+                        for profound self-discovery and personal growth.
+                        <br /><br />
+                        <strong>Compassion Shouldn't Paralyze Action: </strong>
+                        While empathy is essential, it must be balanced with the
+                        courage to act when duty calls. <br /><br />
+                        <strong>True Strength Lies in Facing Problems: </strong>
+                        Arjuna's breakdown reminds us that strength isn't the
+                        absence of fear or sorrow — it's the courage to confront
+                        those emotions and move forward.<br /><br />
+                        <strong> Guidance Can Illuminate the Path: </strong>
+                        Krishna's intervention highlights the importance of
+                        turning to wisdom, spirituality, or mentorship when
+                        emotions cloud our judgment.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex justify-center space-x-2 mt-4 overflow-x-auto max-w-[80%] mx-auto"
+            >
+              <button
+                class="hidden sm:inline-block bg-blue-500 text-white px-3 py-1 rounded"
+                onclick="moveCarousel(-1,'carousel2')"
+              >
+                Previous
+              </button>
+              <div class="flex space-x-2 overflow-x-auto custom-scrollbar">
+                <button
+                  class="shloka-button bg-gray-600 text-white px-3 py-1 rounded dark:bg-white dark:text-gray-900"
+                  onclick="jumpToShloka(0,'carousel2')"
+                >
+                  1
+                </button>
+              </div>
+              <button
+                class="hidden sm:inline-block bg-blue-500 text-white px-3 py-1 rounded"
+                onclick="moveCarousel(1,'carousel2')"
               >
                 Next
               </button>
@@ -5368,6 +5638,7 @@
 
       const chapterName = {
         1: "Arjuna Vishada Yoga",
+        2: "Sankhya Yoga",
       };
 
       const summaries = {
@@ -5380,12 +5651,95 @@
         Torn between duty (dharma) as a warrior and his emotional bonds, Arjuna ultimately lays down his weapons and refuses to fight, expressing his deep despair to Krishna.
 
         This chapter highlights Arjuna's inner conflict, setting the stage for Krishna's teachings on duty, righteousness, and the eternal soul in the following chapters.`,
-        2: "Chapter 2 Summary: The Path of Knowledge...",
+        2: `Chapter 2, known as Sankhya Yoga or the Yoga of Knowledge, addresses Arjuna's inner conflict and Krishna's guidance. Arjuna, overwhelmed with grief and doubt, refuses to fight in the Kurukshetra war. Krishna responds with profound wisdom, emphasizing the eternal nature of the soul (Atma), which neither dies nor is born. He explains that just as the body undergoes changes from childhood to old age, the soul transitions between bodies without perishing.
+
+        Krishna advises Arjuna to fulfill his duty as a Kshatriya without attachment to outcomes. He introduces the concept of Karma Yoga — selfless action performed with detachment. Krishna urges Arjuna to rise above dualities like pleasure and pain, gain and loss, promoting equanimity.
+
+        The chapter also introduces Buddhi Yoga, the disciplined path of wisdom where one focuses on righteous action without desire for results. Krishna warns against attachment to sensory pleasures, which lead to delusion, and emphasizes controlling the mind for spiritual growth.
+
+        By merging spiritual wisdom with practical duty, Krishna inspires Arjuna to embrace his role as a warrior, ensuring righteousness prevails. This chapter forms the foundation of the Gita's core teachings — selfless action, inner peace, and the pursuit of truth.`,
         3: "Chapter 3 Summary: Karma Yoga...",
         // Add all 18 summaries here
       };
 
+      const itenaryData = {
+        1: {
+          title: "Arjuna Vishada Yoga",
+          verses: 47,
+          summary: [
+            {
+              section: "Introduction and Battlefield Setting",
+              verses: "1-11",
+              description:
+                "Dhritarashtra's inquiry about the war; description of the armies and their leaders.",
+            },
+            {
+              section: "Warriors and Their Positions",
+              verses: "12-20",
+              description:
+                "Bhishma's conch declaration and the armies' war cries.",
+            },
+            {
+              section: "Arjuna's Observations",
+              verses: "21-27",
+              description:
+                "Arjuna sees his relatives and mentors in both armies.",
+            },
+            {
+              section: "Arjuna's Moral Dilemma",
+              verses: "28-35",
+              description:
+                "Arjuna struggles with grief, compassion, and doubt about the war.",
+            },
+            {
+              section: "Arjuna's Despondency",
+              verses: "36-47",
+              description:
+                "Arjuna refuses to fight, drops his bow, and sits in despair.",
+            },
+          ],
+        },
+        2: {
+          title: "Sankhya Yoga - The Yoga of Knowledge",
+          verses: 72,
+          summary: [
+            {
+              section: "Arjuna's Dilemma and Grief",
+              verses: "1-10",
+              description:
+                "Arjuna expresses sorrow and confusion, refusing to fight. Krishna rebukes him and encourages strength.",
+            },
+            {
+              section: "Immortality of the Soul (Atma)",
+              verses: "11-30",
+              description:
+                "Krishna explains the eternal nature of the soul, emphasizing its indestructibility and the inevitability of death.",
+            },
+            {
+              section: "Dharma and Duty (Kshatriya's Duty)",
+              verses: "31-38",
+              description:
+                "Krishna urges Arjuna to fulfill his duty as a warrior and fight for righteousness, emphasizing honor in duty.",
+            },
+            {
+              section: "Karma Yoga - The Path of Selfless Action",
+              verses: "39-53",
+              description:
+                "Krishna introduces selfless action with detachment from results, teaching equanimity in success and failure.",
+            },
+            {
+              section:
+                "Characteristics of the Enlightened One (Sthitaprajna Lakshana)",
+              verses: "54-72",
+              description:
+                "Krishna describes the qualities of a wise person — free from desires, attachment, and anger, maintaining inner peace.",
+            },
+          ],
+        },
+      };
+
       const modal = document.getElementById("static-modal");
+      const itenaryModal = document.getElementById("itenary-modal");
 
       function showSummary(chapter) {
         document.getElementById("modalTitle").innerText =
@@ -5405,6 +5759,43 @@
         if (e.target === modal) {
           modal.classList.add("hidden");
           modal.classList.remove("flex");
+        }
+      });
+
+      function showItenary(chapter) {
+        document.getElementById("itenaryModalTitle").innerText =
+          `Chapter ${chapter}: ` +
+          chapterName[chapter] +
+          " (" +
+          itenaryData[chapter].verses +
+          " verses) Itinerary";
+
+        console.log(itenaryData[chapter].summary);
+        const itenaryContent = document.getElementById("itenaryModalContent");
+        itenaryData[chapter].summary.forEach((section) => {
+          const sectionElement = document.createElement("div");
+          sectionElement.className =
+            "bg-blue-50 dark:bg-gray-900 dark:text-white p-3 rounded-lg mb-2";
+          sectionElement.innerHTML = `<strong>${section.section}</strong> (Verses ${section.verses}): ${section.description}`;
+          itenaryContent.appendChild(sectionElement);
+        });
+
+        document.getElementById("itenary-modal").classList.remove("hidden");
+        document.getElementById("itenary-modal").classList.add("flex");
+      }
+
+      function closeItenary() {
+        document.getElementById("itenaryModalContent").innerHTML = "";
+        document.getElementById("itenary-modal").classList.remove("flex");
+        document.getElementById("itenary-modal").classList.add("hidden");
+      }
+
+      // Optional: Close modal if the backdrop is clicked
+      itenaryModal.addEventListener("click", (e) => {
+        if (e.target === itenaryModal) {
+          document.getElementById("itenaryModalContent").innerHTML = "";
+          itenaryModal.classList.add("hidden");
+          itenaryModal.classList.remove("flex");
         }
       });
 
@@ -5474,12 +5865,13 @@
         }
       }
 
-      function moveCarousel(direction) {
+      function moveCarousel(direction, carouselId) {
         showOnlyShlokasOnChange();
-        const totalSlides =
-          document.querySelectorAll("#carousel1 > div").length;
+        const totalSlides = document.querySelectorAll(
+          `#${carouselId} > div`
+        ).length;
         currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
-        document.getElementById("carousel1").style.transform = `translateX(-${
+        document.getElementById(carouselId).style.transform = `translateX(-${
           currentIndex * 100
         }%)`;
 
@@ -5511,10 +5903,10 @@
           block: "nearest",
         });
       }
-      function jumpToShloka(index) {
+      function jumpToShloka(index, carouselId) {
         currentIndex = index;
         showOnlyShlokasOnChange();
-        document.getElementById("carousel1").style.transform = `translateX(-${
+        document.getElementById(carouselId).style.transform = `translateX(-${
           index * 100
         }%)`;
       }
@@ -5535,24 +5927,22 @@
         });
       }
 
-      document
-        .getElementById("carousel1")
-        .addEventListener("touchstart", (event) => {
+      document.querySelectorAll('[id^="carousel"]').forEach((element) => {
+        element.addEventListener("touchstart", (event) => {
           touchStartX = event.touches[0].clientX;
         });
 
-      document
-        .getElementById("carousel1")
-        .addEventListener("touchend", (event) => {
+        element.addEventListener("touchend", (event) => {
           touchEndX = event.changedTouches[0].clientX;
-          handleSwipeGesture();
+          handleSwipeGesture(element.id);
         });
+      });
 
-      function handleSwipeGesture() {
+      function handleSwipeGesture(id) {
         if (touchEndX < touchStartX - 50) {
-          moveCarousel(1); // Swipe left → move right
+          moveCarousel(1,id); // Swipe left → move right
         } else if (touchEndX > touchStartX + 50) {
-          moveCarousel(-1); // Swipe right → move left
+          moveCarousel(-1,id); // Swipe right → move left
         }
       }
 
