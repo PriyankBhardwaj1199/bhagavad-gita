@@ -23,11 +23,11 @@ The Bhagavad Gita consists of 18 chapters, each known as an 'Adhyaya':
 10. Vibhuti Yoga – Yoga of Divine Glories (42 Shlokas -  414 / 700)
 11. Visvarupa Darsana Yoga – The Vision of the Universal Form (55 Shlokas -  469 / 700)
 12. Bhakti Yoga – The Path of Devotion (20 Shlokas -  489 / 700)
-13. Ksetra Ksetrajna Vibhaga Yoga – Yoga of the Field and the Knower of the Field (35 Shlokas -  524 / 700)
-14. Gunatraya Vibhaga Yoga – The Yoga of the Division of the Three Gunas (27 Shlokas -  551 / 700)
-15. Purusottama Yoga – The Yoga of the Supreme Divine Personality (20 Shlokas -  571 / 700)
-16. Daivasura Sampad Vibhaga Yoga – The Yoga of the Division between the Divine and the Demonic (24 Shlokas -  595 / 700)
-17. Sraddhatraya Vibhaga Yoga – The Yoga of the Threefold Faith (28 Shlokas -  623 / 700)
-18. Moksha Sannyaasa Yoga – The Yoga of Liberation and Renunciation (77 Shlokas -  700 / 700)
+13. Ksetra Ksetrajna Vibhaga Yoga – Yoga of the Field and the Knower of the Field (35 Shlokas -  523 / 700)
+14. Gunatraya Vibhaga Yoga – The Yoga of the Division of the Three Gunas (27 Shlokas -  550 / 700)
+15. Purusottama Yoga – The Yoga of the Supreme Divine Personality (20 Shlokas -  570 / 700)
+16. Daivasura Sampad Vibhaga Yoga – The Yoga of the Division between the Divine and the Demonic (24 Shlokas -  594 / 700)
+17. Sraddhatraya Vibhaga Yoga – The Yoga of the Threefold Faith (28 Shlokas -  622 / 700)
+18. Moksha Sannyaasa Yoga – The Yoga of Liberation and Renunciation (78 Shlokas -  700 / 700)
 
 The Bhagavad Gita comprises a total of **700 shlokas**, offering a vast ocean of spiritual knowledge and guidance.
