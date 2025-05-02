@@ -1,5 +1,7 @@
 # Bhagavad Gita
 
+[Bhagwad Geeta Website](https://priyankbhardwaj1199.github.io/bhagavad-gita/)
+
 The **Bhagavad Gita** is a 700-verse Hindu scripture that is part of the ancient Indian epic, the **Mahabharata**. It is a sacred dialogue between **Lord Krishna** and the warrior prince **Arjuna**, set on the battlefield of **Kurukshetra**.
 
 The Gita addresses profound philosophical and spiritual questions, offering timeless wisdom on duty, righteousness, and devotion. It emphasizes the importance of selfless action, inner peace, and the path to spiritual enlightenment.
