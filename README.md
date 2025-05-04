@@ -1,6 +1,6 @@
 # Bhagavad Gita
 
-[Bhagwad Geeta Website](https://priyankbhardwaj1199.github.io/bhagavad-gita/)
+<a href="https://priyankbhardwaj1199.github.io/bhagavad-gita/" target="_blank">Bhagwad Geeta Website</a>
 
 The **Bhagavad Gita** is a 700-verse Hindu scripture that is part of the ancient Indian epic, the **Mahabharata**. It is a sacred dialogue between **Lord Krishna** and the warrior prince **Arjuna**, set on the battlefield of **Kurukshetra**.
 
