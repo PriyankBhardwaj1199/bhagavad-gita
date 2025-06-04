@@ -12605,6 +12605,197 @@
           </div>
         </div>
       </div>
+
+      <div class="space-y-4 mb-3">
+        <!-- Chapter 3 -->
+        <div
+          class="bg-white p-3 sm:p-4 rounded-lg shadow-md dark:bg-gray-800 flex flex-col items-stretch"
+        >
+          <div class="flex flex-row">
+            <button
+              class="w-full text-left font-semibold text-lg text-blue-700 dark:text-blue-300"
+              onclick="toggleAccordion('chapter3')"
+            >
+              Chapter 3: Karma Yoga
+            </button>
+            <div class="relative group me-2">
+              <button
+                onclick="showItenary(3)"
+                data-modal-target="itenary-modal"
+                data-modal-toggle="itenary-modal"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 text-blue-700 dark:text-blue-300"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z"
+                  />
+                </svg>
+              </button>
+              <span
+                class="absolute hidden group-hover:block bg-gray-800 text-white text-xs rounded-lg py-1 px-2 w-max top-full mt-1 left-2/3 -translate-x-2/3"
+              >
+                Click to view Itinerary
+              </span>
+            </div>
+            <div class="relative group">
+              <button
+                onclick="showSummary(3)"
+                data-modal-target="static-modal"
+                data-modal-toggle="static-modal"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="text-blue-700 dark:text-blue-300 size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"
+                  />
+                </svg>
+              </button>
+              <span
+                class="absolute hidden group-hover:block bg-gray-800 text-white text-xs rounded-lg py-1 px-2 w-max top-full mt-1 left-2/3 -translate-x-2/3"
+              >
+                Click to view summary
+              </span>
+            </div>
+          </div>
+
+          <div id="chapter3" class="hidden mt-4">
+            <div class="relative w-full overflow-hidden">
+              <div
+                id="carousel3"
+                class="flex transition-transform duration-500 ease-in-out"
+              >
+                <!-- Shloka Card 1 -->
+                <div class="w-full sm:p-4 flex-shrink-0">
+                  <div
+                    class="bg-gray-50 min-h-80 rounded-lg shadow-md dark:bg-gray-700"
+                  >
+                    <ul
+                      class="text-sm font-medium text-center text-gray-500 sm:divide-x divide-gray-300 rounded-lg sm:flex dark:divide-gray-600 dark:text-gray-400 rtl:divide-x-reverse"
+                      id="fullWidthTab"
+                      data-tabs-toggle="#fullWidthTabContent"
+                      role="tablist"
+                    >
+                      <li class="w-full">
+                        <button
+                          type="button"
+                          role="tab"
+                          class="inline-block w-full p-4 sm:rounded-ss-lg bg-gray-200 hover:bg-gray-100 focus:outline-none dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
+                          onclick="showTab('shloka3_1', 'learning3_1','noCharacters')"
+                        >
+                          Shlok
+                        </button>
+                      </li>
+                      <li class="w-full">
+                        <button
+                          type="button"
+                          role="tab"
+                          class="inline-block w-full p-4 bg-gray-200 hover:bg-gray-100 focus:outline-none dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
+                          onclick="showTab('learning3_1', 'shloka3_1','noCharacters')"
+                        >
+                          Learnings
+                        </button>
+                      </li>
+                    </ul>
+                    <div id="shloka3_1" class="mt-4 p-2 sm:p-4">
+                      <h2
+                        class="text-xl font-semibold text-blue-700 mb-2 dark:text-blue-200"
+                      >
+                        श्लोक 3.1
+                      </h2>
+                      <p
+                        class="text-gray-700 font-semibold dark:text-gray-300 mb-2 sm:mb-4"
+                      >
+                        अर्जुन उवाच। <br /><br />
+                        ज्यायसी चेत्कर्मणस्ते मता बुद्धिर्जनार्दन ।<br />
+                        तत्किं कर्मणि घोरे मां नियोजयसि केशव ॥१॥
+                      </p>
+                      <p class="text-gray-600 mt-2 dark:text-gray-200">
+                        <strong>Meaning (Hindi):</strong> हे जनार्दन! यदि आपकी
+                        बुद्धि में ज्ञान (बुद्धियोग) कर्म से श्रेष्ठ है, तो हे
+                        केशव! आप मुझे इस भयानक कर्म (युद्ध) में क्यों लगाना
+                        चाहते हैं?
+                      </p>
+                      <p class="text-gray-600 mt-2 dark:text-gray-200">
+                        <strong>Meaning (English):</strong> O Janardana
+                        (Krishna), if you consider knowledge (of renunciation)
+                        superior to action, then why do you urge me to engage in
+                        this terrible action (war), O Keshava?
+                      </p>
+                    </div>
+                    <div id="learning3_1" class="mt-4 p-2 sm:p-4 hidden">
+                      <p class="text-gray-600 dark:text-gray-200">
+                        This verse opens Chapter 3, where Arjuna is confused
+                        again. In Chapter 2, Lord Krishna emphasized the value
+                        of Buddhiyoga (the path of knowledge and wisdom),
+                        detachment, and equanimity. Arjuna misunderstood this
+                        and thought Krishna was glorifying the renunciation of
+                        action.
+                        <br /><br />
+                        So here, Arjuna raises a logical doubt:
+                        <br /><br />
+                        "If knowledge is superior to action, then why are you
+                        pushing me into war (action)?"
+                        <br /><br />
+                        This shows a classic confusion between Jnana Yoga (Path
+                        of Knowledge) and Karma Yoga (Path of Action). Arjuna is
+                        trying to reconcile the spiritual path Krishna described
+                        with the physical reality of war in front of him.
+                        <br /><br />
+                        He is essentially saying:
+                        <br /><br />
+                        "Krishna, you just said wisdom and detachment are the
+                        best ways to liberation. If that's true, then why are
+                        you asking me to fight this gruesome war, which seems so
+                        worldly and violent?"
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex justify-center space-x-2 mt-4 overflow-x-auto max-w-[80%] mx-auto"
+            >
+              <button
+                class="hidden sm:inline-block bg-blue-500 text-white px-3 py-1 rounded"
+                onclick="moveCarousel(-1,'carousel3')"
+              >
+                Previous
+              </button>
+              <div class="flex space-x-2 overflow-x-auto custom-scrollbar">
+                <button
+                  class="shloka-button bg-gray-600 text-white px-3 py-1 rounded dark:bg-white dark:text-gray-900"
+                  onclick="jumpToShloka(0,'carousel3')"
+                >
+                  1
+                </button>
+              </div>
+              <button
+                class="hidden sm:inline-block bg-blue-500 text-white px-3 py-1 rounded"
+                onclick="moveCarousel(1,'carousel3')"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script>
@@ -12614,6 +12805,7 @@
       const chapterName = {
         1: "Arjuna Vishada Yoga",
         2: "Sankhya Yoga",
+        3: "Karma Yoga",
       };
 
       const summaries = {
@@ -12633,7 +12825,7 @@
         The chapter also introduces Buddhi Yoga, the disciplined path of wisdom where one focuses on righteous action without desire for results. Krishna warns against attachment to sensory pleasures, which lead to delusion, and emphasizes controlling the mind for spiritual growth.
 
         By merging spiritual wisdom with practical duty, Krishna inspires Arjuna to embrace his role as a warrior, ensuring righteousness prevails. This chapter forms the foundation of the Gita's core teachings — selfless action, inner peace, and the pursuit of truth.`,
-        3: "Chapter 3 Summary: Karma Yoga...",
+        3: `"Karma Yoga - The Path of Action," emphasizes the importance of performing one's duties without attachment to the results. Lord Krishna explains to Arjuna that action is superior to inaction and that selfless action, done as a form of service or sacrifice, purifies the mind and leads to spiritual liberation. Everyone is bound to act according to their nature, and fulfilling one's own duties (swadharma) is better than imitating others. Krishna warns against desire and anger as the main enemies of the soul and urges control through discipline and devotion. Even enlightened beings should act, setting examples for others. Ultimately, the chapter teaches that by surrendering the fruits of action to God and working without ego, one can attain inner peace and freedom.`,
         // Add all 18 summaries here
       };
 
@@ -12708,6 +12900,42 @@
               verses: "54-72",
               description:
                 "Krishna describes the qualities of a wise person — free from desires, attachment, and anger, maintaining inner peace.",
+            },
+          ],
+        },
+        3: {
+          title: "Karma Yoga - The Yoga of Action",
+          verses: 43,
+          summary: [
+            {
+              section: "Arjuna's Confusion on Knowledge vs. Action",
+              verses: "1-8",
+              description:
+                "Arjuna questions why Krishna praises knowledge but urges him to fight. Krishna clarifies that both knowledge and action lead to liberation, but action is necessary and suitable for most people.",
+            },
+            {
+              section: "The Necessity and Purity of Action",
+              verses: "9-16",
+              description:
+                "Krishna explains the importance of performing actions as a sacrifice (Yajna) without attachment to results, maintaining the cosmic order and purifying the mind.",
+            },
+            {
+              section: "Setting an Example Through Duty",
+              verses: "17-26",
+              description:
+                "Even the wise must act to guide others. Krishna uses his own example, stating that though he is beyond duty, he performs action for the good of the world.",
+            },
+            {
+              section: "Understanding Desire and Its Control",
+              verses: "27-35",
+              description:
+                "Krishna explains how the ego misidentifies the self as the doer and emphasizes acting according to one's own dharma. He warns against being driven by desires and urges control through self-awareness.",
+            },
+            {
+              section: "Overcoming Desire - The Enemy Within",
+              verses: "36-43",
+              description:
+                "Arjuna asks what compels a person to sin. Krishna identifies desire and anger as the greatest enemies and advises controlling the senses and desires through intellect and discipline.",
             },
           ],
         },
