@@ -17103,6 +17103,218 @@
           </div>
         </div>
       </div>
+
+      <div class="space-y-4 mb-3">
+        <!-- Chapter 4 -->
+        <div
+          class="bg-white p-3 sm:p-4 rounded-lg shadow-md dark:bg-gray-800 flex flex-col items-stretch"
+        >
+          <div class="flex flex-row">
+            <button
+              class="w-full text-left font-semibold text-lg text-blue-700 dark:text-blue-300"
+              onclick="toggleAccordion('chapter4')"
+            >
+              Chapter 4: Jyana Karma Sanyasa Yoga
+            </button>
+            <div class="relative group me-2">
+              <button
+                onclick="showItenary(4)"
+                data-modal-target="itenary-modal"
+                data-modal-toggle="itenary-modal"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 text-blue-700 dark:text-blue-300"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z"
+                  />
+                </svg>
+              </button>
+              <span
+                class="absolute hidden group-hover:block bg-gray-800 text-white text-xs rounded-lg py-1 px-2 w-max top-full mt-1 left-2/3 -translate-x-2/3"
+              >
+                Click to view Itinerary
+              </span>
+            </div>
+            <div class="relative group">
+              <button
+                onclick="showSummary(4)"
+                data-modal-target="static-modal"
+                data-modal-toggle="static-modal"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="text-blue-700 dark:text-blue-300 size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"
+                  />
+                </svg>
+              </button>
+              <span
+                class="absolute hidden group-hover:block bg-gray-800 text-white text-xs rounded-lg py-1 px-2 w-max top-full mt-1 left-2/3 -translate-x-2/3"
+              >
+                Click to view summary
+              </span>
+            </div>
+          </div>
+
+          <div id="chapter4" class="hidden mt-4">
+            <div class="relative w-full overflow-hidden">
+              <div
+                id="carousel4"
+                class="flex transition-transform duration-500 ease-in-out"
+              >
+                <!-- Shloka Card 1 -->
+                <div class="w-full sm:p-4 flex-shrink-0">
+                  <div
+                    class="bg-gray-50 min-h-80 rounded-lg shadow-md dark:bg-gray-700"
+                  >
+                    <ul
+                      class="text-sm font-medium text-center text-gray-500 sm:divide-x divide-gray-300 rounded-lg sm:flex dark:divide-gray-600 dark:text-gray-400 rtl:divide-x-reverse"
+                      id="fullWidthTab"
+                      data-tabs-toggle="#fullWidthTabContent"
+                      role="tablist"
+                    >
+                      <li class="w-full">
+                        <button
+                          type="button"
+                          role="tab"
+                          class="inline-block w-full p-4 sm:rounded-ss-lg bg-gray-200 hover:bg-gray-100 focus:outline-none dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
+                          onclick="showTab('shloka4_1', 'learning4_1','noCharacters')"
+                        >
+                          Shlok
+                        </button>
+                      </li>
+                      <li class="w-full">
+                        <button
+                          type="button"
+                          role="tab"
+                          class="inline-block w-full p-4 bg-gray-200 hover:bg-gray-100 focus:outline-none dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
+                          onclick="showTab('learning4_1', 'shloka4_1','noCharacters')"
+                        >
+                          Learnings
+                        </button>
+                      </li>
+                    </ul>
+                    <div id="shloka4_1" class="mt-4 p-2 sm:p-4">
+                      <h2
+                        class="text-xl font-semibold text-blue-700 mb-2 dark:text-blue-200"
+                      >
+                        श्लोक 4.1
+                      </h2>
+                      <p
+                        class="text-gray-700 font-semibold dark:text-gray-300 mb-2 sm:mb-4"
+                      >
+                        श्रीभगवानुवाच । <br /><br />
+                        इमं विवस्वते योगं प्रोक्तवानहमव्ययम् ।<br />
+                        विवस्वान्मनवे प्राह मनुरिक्ष्वाकवेऽब्रवीत् ॥१॥
+                      </p>
+                      <p class="text-gray-600 mt-2 dark:text-gray-200">
+                        <strong>Meaning (Hindi): </strong> भगवान श्रीकृष्ण ने
+                        कहा: मैंने यह अविनाशी योग (ज्ञान) पहले विवस्वान
+                        (सूर्यदेव) को बताया। विवस्वान ने इसे मनु को कहा, और मनु
+                        ने इसे इक्ष्वाकु को बताया।
+                      </p>
+                      <p class="text-gray-600 mt-2 dark:text-gray-200">
+                        <strong>Meaning (English): </strong> Lord Krishna said:
+                        I instructed this imperishable yoga (divine knowledge)
+                        to Vivasvan (the Sun God); Vivasvan taught it to Manu
+                        (the father of mankind), and Manu in turn instructed it
+                        to Ikshvaku (a royal sage and ancestor of Lord Rama).
+                      </p>
+                    </div>
+                    <div id="learning4_1" class="mt-4 p-2 sm:p-4 hidden">
+                      <p class="text-gray-600 dark:text-gray-200">
+                        This verse marks the beginning of Chapter 4 - Jnana
+                        Karma Sanyasa Yoga (The Yoga of Knowledge and
+                        Renunciation of Action).
+                        <br /><br />
+                        <strong> Context: </strong><br />
+                        Lord Krishna is highlighting the eternal lineage and
+                        importance of the knowledge He is about to reveal to
+                        Arjuna. He says this yoga (spiritual science) is not
+                        something newly created but is timeless and was handed
+                        down through generations.
+                        <br /><br />
+                        <strong>
+                          Avyayam Yoga (Imperishable Knowledge):
+                        </strong>
+                        <br />
+                        Refers to the eternal truths of Karma, Bhakti, and Jnana
+                        — the knowledge of how to live a righteous life, attain
+                        liberation, and understand one's divine nature.
+                        <br /><br />
+                        <strong> Vivasvan → Manu → Ikshvaku: </strong>
+                        <br />
+                        Vivasvan (Sun God) is symbolic of illumination and
+                        enlightenment. He received this knowledge first.
+                        <br />
+                        Manu: The progenitor of mankind; represents moral law
+                        (Manusmriti).
+                        <br />
+                        Ikshvaku: The founder of the solar dynasty
+                        (Suryavansha), to which Lord Rama belongs.
+                        <br /><br />
+                        <strong>
+                          Guru-Shishya Parampara (Spiritual Lineage):
+                        </strong>
+                        <br />
+                        Knowledge was traditionally passed from guru to
+                        disciple. Krishna shows that He is part of that divine
+                        succession and hence the authority of the knowledge He
+                        imparts.
+                        <br />
+                        Indirectly, Krishna is preparing Arjuna for the
+                        revelation that He (Krishna) is the original source of
+                        this knowledge, subtly hinting at His divine nature
+                        (Avatarhood).
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex justify-center space-x-2 mt-4 overflow-x-auto max-w-[80%] mx-auto"
+            >
+              <button
+                class="hidden sm:inline-block bg-blue-500 text-white px-3 py-1 rounded"
+                onclick="moveCarousel(-1,'carousel4')"
+              >
+                Previous
+              </button>
+              <div class="flex space-x-2 overflow-x-auto custom-scrollbar">
+                <button
+                  class="shloka-button bg-gray-600 text-white px-3 py-1 rounded dark:bg-white dark:text-gray-900"
+                  onclick="jumpToShloka(0,'carousel4')"
+                >
+                  1
+                </button>
+              </div>
+              <button
+                class="hidden sm:inline-block bg-blue-500 text-white px-3 py-1 rounded"
+                onclick="moveCarousel(1,'carousel4')"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script>
@@ -17113,6 +17325,7 @@
         1: "Arjuna Vishada Yoga",
         2: "Sankhya Yoga",
         3: "Karma Yoga",
+        4: "Jyana Karma Sanyasa Yoga",
       };
 
       const summaries = {
@@ -17133,6 +17346,7 @@
 
         By merging spiritual wisdom with practical duty, Krishna inspires Arjuna to embrace his role as a warrior, ensuring righteousness prevails. This chapter forms the foundation of the Gita's core teachings — selfless action, inner peace, and the pursuit of truth.`,
         3: `"Karma Yoga - The Path of Action," emphasizes the importance of performing one's duties without attachment to the results. Lord Krishna explains to Arjuna that action is superior to inaction and that selfless action, done as a form of service or sacrifice, purifies the mind and leads to spiritual liberation. Everyone is bound to act according to their nature, and fulfilling one's own duties (swadharma) is better than imitating others. Krishna warns against desire and anger as the main enemies of the soul and urges control through discipline and devotion. Even enlightened beings should act, setting examples for others. Ultimately, the chapter teaches that by surrendering the fruits of action to God and working without ego, one can attain inner peace and freedom.`,
+        4: `Jyana Karma Sanyasa Yoga of the Bhagavad Gita explores the deep relationship between knowledge, action, and renunciation. Lord Krishna begins by revealing the ancient lineage of this sacred knowledge, emphasizing that it has been passed down through generations but was lost over time. He declares His divine nature and explains that He incarnates whenever there is a decline in righteousness to protect dharma and guide humanity. Krishna clarifies that wise individuals act selflessly without attachment, and such action leads to liberation. He elaborates on different forms of sacrifice (yajna), highlighting the supremacy of knowledge-based sacrifice. The chapter underscores the importance of acquiring spiritual wisdom from a realized teacher through humility, service, and inquiry. Ultimately, Krishna advises Arjuna to destroy ignorance and doubt with the sword of knowledge, urging him to rise and perform his duty with clarity and devotion.`,
         // Add all 18 summaries here
       };
 
@@ -17243,6 +17457,48 @@
               verses: "36-43",
               description:
                 "Arjuna asks what compels a person to sin. Krishna identifies desire and anger as the greatest enemies and advises controlling the senses and desires through intellect and discipline.",
+            },
+          ],
+        },
+        4: {
+          title: "Jyana Karma Sanyasa Yoga",
+          verses: 42,
+          summary: [
+            {
+              section: "Divine Origin of the Knowledge",
+              verses: "1-3",
+              description:
+                "Krishna explains the ancient lineage of the divine knowledge of yoga, passed on to royal sages and lost over time.",
+            },
+            {
+              section: "Krishna's Divine Incarnation",
+              verses: "4-9",
+              description:
+                "Arjuna's doubt about Krishna's age leads to the revelation of His divine nature and purpose of incarnating to protect dharma.",
+            },
+            {
+              section: "Role of Action and Renunciation",
+              verses: "10-15",
+              description:
+                "Krishna speaks about liberated beings who act without attachment and describes His own action as a model for the world.",
+            },
+            {
+              section: "Understanding Sacrifices (Yajna)",
+              verses: "16-24",
+              description:
+                "Various forms of yajna (sacrifices) are explained, highlighting knowledge and selfless action as supreme offerings.",
+            },
+            {
+              section: "Glory of Knowledge and the Wise",
+              verses: "25-34",
+              description:
+                "The path of spiritual knowledge is glorified; seekers are advised to approach a guru for wisdom through humility and service.",
+            },
+            {
+              section: "Destruction of Doubt through Knowledge",
+              verses: "35-42",
+              description:
+                "Krishna urges Arjuna to rise with the sword of knowledge, destroying ignorance and doubt, and to fight with a steady mind.",
             },
           ],
         },
