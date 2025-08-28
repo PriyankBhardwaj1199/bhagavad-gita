@@ -21799,6 +21799,201 @@
           </div>
         </div>
       </div>
+
+      <div class="space-y-4 mb-3">
+        <!-- Chapter 5 -->
+        <div
+          class="bg-white p-3 sm:p-4 rounded-lg shadow-md dark:bg-gray-800 flex flex-col items-stretch"
+        >
+          <div class="flex flex-row">
+            <button
+              class="w-full text-left font-semibold text-lg text-blue-700 dark:text-blue-300"
+              onclick="toggleAccordion('chapter5')"
+            >
+              Chapter 5: Karma Sanyasa Yoga
+            </button>
+            <div class="relative group me-2">
+              <button
+                onclick="showItenary(5)"
+                data-modal-target="itenary-modal"
+                data-modal-toggle="itenary-modal"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 text-blue-700 dark:text-blue-300"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z"
+                  />
+                </svg>
+              </button>
+              <span
+                class="absolute hidden group-hover:block bg-gray-800 text-white text-xs rounded-lg py-1 px-2 w-max top-full mt-1 left-2/3 -translate-x-2/3"
+              >
+                Click to view Itinerary
+              </span>
+            </div>
+            <div class="relative group">
+              <button
+                onclick="showSummary(5)"
+                data-modal-target="static-modal"
+                data-modal-toggle="static-modal"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="text-blue-700 dark:text-blue-300 size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"
+                  />
+                </svg>
+              </button>
+              <span
+                class="absolute hidden group-hover:block bg-gray-800 text-white text-xs rounded-lg py-1 px-2 w-max top-full mt-1 left-2/3 -translate-x-2/3"
+              >
+                Click to view summary
+              </span>
+            </div>
+          </div>
+
+          <div id="chapter5" class="hidden mt-4">
+            <div class="relative w-full overflow-hidden">
+              <div
+                id="carousel5"
+                class="flex transition-transform duration-500 ease-in-out"
+              >
+                <!-- Shloka Card 1 -->
+                <div class="w-full sm:p-4 flex-shrink-0">
+                  <div
+                    class="bg-gray-50 min-h-80 rounded-lg shadow-md dark:bg-gray-700"
+                  >
+                    <ul
+                      class="text-sm font-medium text-center text-gray-500 sm:divide-x divide-gray-300 rounded-lg sm:flex dark:divide-gray-600 dark:text-gray-400 rtl:divide-x-reverse"
+                      id="fullWidthTab"
+                      data-tabs-toggle="#fullWidthTabContent"
+                      role="tablist"
+                    >
+                      <li class="w-full">
+                        <button
+                          type="button"
+                          role="tab"
+                          class="inline-block w-full p-4 sm:rounded-ss-lg bg-gray-200 hover:bg-gray-100 focus:outline-none dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
+                          onclick="showTab('shloka5_1', 'learning5_1','noCharacters')"
+                        >
+                          Shlok
+                        </button>
+                      </li>
+                      <li class="w-full">
+                        <button
+                          type="button"
+                          role="tab"
+                          class="inline-block w-full p-4 bg-gray-200 hover:bg-gray-100 focus:outline-none dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
+                          onclick="showTab('learning5_1', 'shloka5_1','noCharacters')"
+                        >
+                          Learnings
+                        </button>
+                      </li>
+                    </ul>
+                    <div id="shloka5_1" class="mt-4 p-2 sm:p-4">
+                      <h2
+                        class="text-xl font-semibold text-blue-700 mb-2 dark:text-blue-200"
+                      >
+                        श्लोक 5.1
+                      </h2>
+                      <p
+                        class="text-gray-700 font-semibold dark:text-gray-300 mb-2 sm:mb-4"
+                      >
+                        अर्जुन उवाच। <br /><br />
+                        संन्यासं कर्मणां कृष्ण पुनर्योगं च शंससि ।<br />
+                        यच्छ्रेय एतयोरेकं तन्मे ब्रूहि सुनिश्चितम् ॥१॥
+                      </p>
+                      <p class="text-gray-600 mt-2 dark:text-gray-200">
+                        <strong>Meaning (Hindi):</strong> अर्जुन बोले—हे कृष्ण!
+                        आप कभी कर्मों के संन्यास (त्याग) की प्रशंसा करते हैं और
+                        कभी कर्मयोग (कर्तव्य का पालन करते हुए योग) की भी प्रशंसा
+                        करते हैं। इन दोनों में से कौन-सा मार्ग निश्चित रूप से
+                        श्रेष्ठ है, यह कृपया मुझे स्पष्ट रूप से बताइए।
+                      </p>
+                      <p class="text-gray-600 mt-2 dark:text-gray-200">
+                        <strong>Meaning (English):</strong> Arjuna said: O
+                        Krishna, You praise renunciation of actions (sannyāsa),
+                        and again You praise the performance of action (karma
+                        yoga). Of the two, please tell me decisively which one
+                        is superior.
+                      </p>
+                    </div>
+                    <div id="learning5_1" class="mt-4 p-2 sm:p-4 hidden">
+                      <p class="text-gray-600 dark:text-gray-200">
+                        In this shloka, Arjuna expresses confusion.
+                        <br /><br />
+                        Earlier, Krishna praised Sannyāsa (renunciation) in the
+                        context of controlling desires and being detached from
+                        material results.
+                        <br />
+                        At the same time, Krishna also glorified Karma
+                        Yoga—performing one's duties without attachment to
+                        fruits.
+                        <br />
+                        Because both seem noble, Arjuna is confused: Should I
+                        renounce all actions and live as an ascetic, or should I
+                        perform my duties in the world as a yogi? So he directly
+                        asks Krishna for a clear and decisive answer.
+                        <br /><br />
+                        This sets the stage for Chapter 5 (Karma Sannyāsa Yoga),
+                        where Krishna explains the harmony between renunciation
+                        and action, and ultimately shows that Karma Yoga is the
+                        higher and more practical path for most seekers.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex justify-center space-x-2 mt-4 overflow-x-auto max-w-[80%] mx-auto"
+            >
+              <button
+                class="hidden sm:inline-block bg-blue-500 text-white px-3 py-1 rounded"
+                onclick="moveCarousel(-1,'carousel5')"
+              >
+                Previous
+              </button>
+              <div class="flex space-x-2 overflow-x-auto custom-scrollbar">
+                <button
+                  class="shloka-button bg-gray-600 text-white px-3 py-1 rounded dark:bg-white dark:text-gray-900"
+                  onclick="jumpToShloka(0,'carousel5')"
+                >
+                  1
+                </button>
+                <button
+                  class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-white dark:text-gray-900"
+                  onclick="jumpToShloka(1,'carousel5')"
+                >
+                  2
+                </button>
+              </div>
+              <button
+                class="hidden sm:inline-block bg-blue-500 text-white px-3 py-1 rounded"
+                onclick="moveCarousel(1,'carousel5')"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script>
@@ -21810,6 +22005,7 @@
         2: "Sankhya Yoga",
         3: "Karma Yoga",
         4: "Jyana Karma Sanyasa Yoga",
+        5: "Karma Sanyasa Yoga",
       };
 
       const summaries = {
@@ -21831,6 +22027,11 @@
         By merging spiritual wisdom with practical duty, Krishna inspires Arjuna to embrace his role as a warrior, ensuring righteousness prevails. This chapter forms the foundation of the Gita's core teachings — selfless action, inner peace, and the pursuit of truth.`,
         3: `"Karma Yoga - The Path of Action," emphasizes the importance of performing one's duties without attachment to the results. Lord Krishna explains to Arjuna that action is superior to inaction and that selfless action, done as a form of service or sacrifice, purifies the mind and leads to spiritual liberation. Everyone is bound to act according to their nature, and fulfilling one's own duties (swadharma) is better than imitating others. Krishna warns against desire and anger as the main enemies of the soul and urges control through discipline and devotion. Even enlightened beings should act, setting examples for others. Ultimately, the chapter teaches that by surrendering the fruits of action to God and working without ego, one can attain inner peace and freedom.`,
         4: `Jyana Karma Sanyasa Yoga of the Bhagavad Gita explores the deep relationship between knowledge, action, and renunciation. Lord Krishna begins by revealing the ancient lineage of this sacred knowledge, emphasizing that it has been passed down through generations but was lost over time. He declares His divine nature and explains that He incarnates whenever there is a decline in righteousness to protect dharma and guide humanity. Krishna clarifies that wise individuals act selflessly without attachment, and such action leads to liberation. He elaborates on different forms of sacrifice (yajna), highlighting the supremacy of knowledge-based sacrifice. The chapter underscores the importance of acquiring spiritual wisdom from a realized teacher through humility, service, and inquiry. Ultimately, Krishna advises Arjuna to destroy ignorance and doubt with the sword of knowledge, urging him to rise and perform his duty with clarity and devotion.`,
+        5: `In Chapter 5 of the Bhagavad Gita, Arjuna asks Krishna to clarify whether renunciation of action (Sannyasa) or selfless action (Karma Yoga) is superior. Krishna explains that both paths lead to liberation, but Karma Yoga—performing duties without attachment—is easier and more effective for most people. A true yogi neither desires rewards nor clings to outcomes; he remains balanced in success and failure, free from envy, and devoted to the welfare of all.
+
+Krishna emphasizes that renunciation is not abandoning action but renouncing the egoistic sense of doership and attachment to results. The yogi, by offering all actions to the Supreme, transcends the bondage of karma. Through self-control, meditation, and equanimity, he attains peace, realizing the Self as distinct from the body and senses.
+
+Ultimately, the wise see all beings equally—be it a scholar, a cow, an elephant, or even an outcaste. Such vision, rooted in knowledge and detachment, leads to supreme peace and union with Brahman.`,
         // Add all 18 summaries here
       };
 
@@ -21983,6 +22184,48 @@
               verses: "35-42",
               description:
                 "Krishna urges Arjuna to rise with the sword of knowledge, destroying ignorance and doubt, and to fight with a steady mind.",
+            },
+          ],
+        },
+        5: {
+          title: "Karma Sanyasa Yoga (The Yoga of Renunciation of Action)",
+          verses: 29,
+          summary: [
+            {
+              section: "Arjuna's Question on Renunciation vs Action",
+              verses: "1",
+              description:
+                "Arjuna asks Krishna to clarify whether the path of renunciation (Sannyasa) or selfless action (Karma Yoga) is superior.",
+            },
+            {
+              section: "Krishna's Reply - Both Lead to Liberation",
+              verses: "2-6",
+              description:
+                "Krishna explains that both renunciation and selfless action lead to liberation, but Karma Yoga is easier and more effective for most seekers.",
+            },
+            {
+              section: "True Renunciation Defined",
+              verses: "7-12",
+              description:
+                "A true yogi is detached, pure, self-controlled, and equal in joy and sorrow; he performs actions without attachment, attaining peace.",
+            },
+            {
+              section: "Seeing All Beings Equally",
+              verses: "13-18",
+              description:
+                "The wise renunciant sees all beings—be it a Brahmana, cow, elephant, dog, or outcaste—with equal vision, grounded in knowledge.",
+            },
+            {
+              section: "Attaining Supreme Peace",
+              verses: "19-24",
+              description:
+                "By transcending dualities like pleasure and pain, and remaining steady in the Self, the yogi attains peace and liberation.",
+            },
+            {
+              section: "Path of Meditation and Union with Brahman",
+              verses: "25-29",
+              description:
+                "Through meditation, self-control, and devotion, the yogi attains liberation, realizing the Supreme as the ultimate enjoyer, Lord, and friend of all beings.",
             },
           ],
         },
