@@ -25102,6 +25102,212 @@
           </div>
         </div>
       </div>
+
+      <div class="space-y-4 mb-3">
+        <!-- Chapter 6 -->
+        <div
+          class="bg-white p-3 sm:p-4 rounded-lg shadow-md dark:bg-gray-800 flex flex-col items-stretch"
+        >
+          <div class="flex flex-row">
+            <button
+              class="w-full text-left font-semibold text-lg text-blue-700 dark:text-blue-300"
+              onclick="toggleAccordion('chapter6')"
+            >
+              Chapter 6: Dhyāna Yoga
+            </button>
+            <div class="relative group me-2">
+              <button
+                onclick="showItenary(6)"
+                data-modal-target="itenary-modal"
+                data-modal-toggle="itenary-modal"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 text-blue-700 dark:text-blue-300"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z"
+                  />
+                </svg>
+              </button>
+              <span
+                class="absolute hidden group-hover:block bg-gray-800 text-white text-xs rounded-lg py-1 px-2 w-max top-full mt-1 left-2/3 -translate-x-2/3"
+              >
+                Click to view Itinerary
+              </span>
+            </div>
+            <div class="relative group">
+              <button
+                onclick="showSummary(6)"
+                data-modal-target="static-modal"
+                data-modal-toggle="static-modal"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="text-blue-700 dark:text-blue-300 size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"
+                  />
+                </svg>
+              </button>
+              <span
+                class="absolute hidden group-hover:block bg-gray-800 text-white text-xs rounded-lg py-1 px-2 w-max top-full mt-1 left-2/3 -translate-x-2/3"
+              >
+                Click to view summary
+              </span>
+            </div>
+          </div>
+
+          <div id="chapter6" class="hidden mt-4">
+            <div class="relative w-full overflow-hidden">
+              <div
+                id="carousel6"
+                class="flex transition-transform duration-500 ease-in-out"
+              >
+                <!-- Shloka Card 1 -->
+                <div class="w-full sm:p-4 flex-shrink-0">
+                  <div
+                    class="bg-gray-50 min-h-80 rounded-lg shadow-md dark:bg-gray-700"
+                  >
+                    <ul
+                      class="text-sm font-medium text-center text-gray-500 sm:divide-x divide-gray-300 rounded-lg sm:flex dark:divide-gray-600 dark:text-gray-400 rtl:divide-x-reverse"
+                      id="fullWidthTab"
+                      data-tabs-toggle="#fullWidthTabContent"
+                      role="tablist"
+                    >
+                      <li class="w-full">
+                        <button
+                          type="button"
+                          role="tab"
+                          class="inline-block w-full p-4 sm:rounded-ss-lg bg-gray-200 hover:bg-gray-100 focus:outline-none dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
+                          onclick="showTab('shloka6_1', 'learning6_1','noCharacters')"
+                        >
+                          Shlok
+                        </button>
+                      </li>
+                      <li class="w-full">
+                        <button
+                          type="button"
+                          role="tab"
+                          class="inline-block w-full p-4 bg-gray-200 hover:bg-gray-100 focus:outline-none dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
+                          onclick="showTab('learning6_1', 'shloka6_1','noCharacters')"
+                        >
+                          Learnings
+                        </button>
+                      </li>
+                    </ul>
+                    <div id="shloka6_1" class="mt-4 p-2 sm:p-4">
+                      <h2
+                        class="text-xl font-semibold text-blue-700 mb-2 dark:text-blue-200"
+                      >
+                        श्लोक 6.1
+                      </h2>
+                      <p
+                        class="text-gray-700 font-semibold dark:text-gray-300 mb-2 sm:mb-4"
+                      >
+                        श्रीभगवानुवाच। <br /><br />
+                        अनाश्रितः कर्मफलं कार्यं कर्म करोति यः ।<br />
+                        स संन्यासी च योगी च न निरग्निर्न चाक्रियः ॥१॥
+                      </p>
+                      <p class="text-gray-600 mt-2 dark:text-gray-200">
+                        <strong>Meaning (Hindi):</strong> भगवान श्रीकृष्ण ने कहा
+                        — जो मनुष्य अपने कर्मों के फल पर आश्रित नहीं होता और
+                        केवल कर्तव्य समझकर कर्म करता है, वही सच्चा संन्यासी और
+                        योगी है; न कि वह जो अग्नि (यज्ञ की अग्नि या गृहस्थ की
+                        अग्नि) को त्याग देता है और न ही वह जो कर्म करना छोड़
+                        देता है।
+                      </p>
+                      <p class="text-gray-600 mt-2 dark:text-gray-200">
+                        <strong>Meaning (English):</strong> Krishna said — He
+                        who performs his prescribed duty without depending on
+                        the fruits of action, he is a true renunciate (sannyasi)
+                        and a true yogi; not he who merely renounces the sacred
+                        fire or abstains from action.
+                      </p>
+                    </div>
+                    <div id="learning6_1" class="mt-4 p-2 sm:p-4 hidden">
+                      <p class="text-gray-600 dark:text-gray-200">
+                        <strong>
+                          False Idea of Sannyasa (Renunciation):
+                        </strong>
+                        <br />
+                        Many people think renunciation (sannyasa) means giving
+                        up all worldly duties, family life, or external rituals
+                        (like maintaining the sacred fire in Vedic tradition).
+                        Krishna corrects this misconception. True renunciation
+                        is not about running away from life or ceasing action.
+                        <br /><br />
+                        <strong> True Sannyasa and Yoga: </strong> <br />
+                        A real sannyasi and yogi is one who performs his duties
+                        but does not get attached to the results.
+                        <br />
+                        Sannyasi = one who has renounced attachment to results.
+                        <br />
+                        Yogi = one who is disciplined in action and mind. Both
+                        are essentially the same when understood rightly.
+                        <br /><br />
+                        <strong> Action vs. Inaction: </strong> <br />
+                        Simply abandoning duties is not yoga. Doing one's duty
+                        with detachment is yoga. This means even a householder,
+                        student, or professional can be a yogi if they act with
+                        the right mindset.
+                        <br /><br />
+                        <strong> Essence of Karma Yoga: </strong> <br />
+                        The foundation of Yoga lies in karma performed without
+                        expectation — “Work is worship, but without selfish
+                        desire.”
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex justify-center space-x-2 mt-4 overflow-x-auto max-w-[80%] mx-auto"
+            >
+              <button
+                class="hidden sm:inline-block bg-blue-500 text-white px-3 py-1 rounded"
+                onclick="moveCarousel(-1,'carousel6')"
+              >
+                Previous
+              </button>
+              <div class="flex space-x-2 overflow-x-auto custom-scrollbar">
+                <button
+                  class="shloka-button bg-gray-600 text-white px-3 py-1 rounded dark:bg-white dark:text-gray-900"
+                  onclick="jumpToShloka(0,'carousel6')"
+                >
+                  1
+                </button>
+                <button
+                  class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-white dark:text-gray-900"
+                  onclick="jumpToShloka(1,'carousel6')"
+                >
+                  2
+                </button>
+              </div>
+              <button
+                class="hidden sm:inline-block bg-blue-500 text-white px-3 py-1 rounded"
+                onclick="moveCarousel(1,'carousel6')"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script>
@@ -25114,6 +25320,7 @@
         3: "Karma Yoga",
         4: "Jyana Karma Sanyasa Yoga",
         5: "Karma Sanyasa Yoga",
+        6: "Dhyana Yoga",
       };
 
       const summaries = {
@@ -25140,6 +25347,7 @@
         Krishna emphasizes that renunciation is not abandoning action but renouncing the egoistic sense of doership and attachment to results. The yogi, by offering all actions to the Supreme, transcends the bondage of karma. Through self-control, meditation, and equanimity, he attains peace, realizing the Self as distinct from the body and senses.
 
         Ultimately, the wise see all beings equally—be it a scholar, a cow, an elephant, or even an outcaste. Such vision, rooted in knowledge and detachment, leads to supreme peace and union with Brahman.`,
+        6: `In this chapter, Krishna explains the discipline of meditation and the qualities of a true yogi. He clarifies that a genuine renunciate is not one who merely gives up worldly duties, but one who performs actions without attachment to results. Such a yogi is superior to ascetics, scholars, and ritualists. Krishna describes the ideal practice of yoga: living with discipline, moderation in eating, sleeping, work, and recreation, and meditating in solitude with a steady mind fixed on the Self or God. Through meditation, the yogi attains inner peace, detachment from material desires, and equanimity towards all beings, seeing friend and foe alike with equal vision. Arjuna raises the concern about those who begin the spiritual path but fail to complete it. Krishna assures him that such seekers are never lost; they are reborn in favorable circumstances and continue their journey until perfection is achieved. The chapter culminates with Krishna declaring that among all yogis, the highest is the one who, with unwavering faith and devotion, unites with Him through meditation and love. Thus, Dhyana Yoga establishes meditation as a powerful path to self-realization, while devotion to Krishna is the supreme expression of yoga.`,
         // Add all 18 summaries here
       };
 
@@ -25334,6 +25542,42 @@
               verses: "25-29",
               description:
                 "Through meditation, self-control, and devotion, the yogi attains liberation, realizing the Supreme as the ultimate enjoyer, Lord, and friend of all beings.",
+            },
+          ],
+        },
+        6: {
+          title: "Dhyana Yoga",
+          verses: 47,
+          summary: [
+            {
+              section: "True Renunciation and Yogi Defined",
+              verses: "1-9",
+              description:
+                "Krishna explains that true renunciation is performing duties without attachment. A yogi is superior to ascetics, ritualists, and scholars.",
+            },
+            {
+              section: "Discipline of Yoga Practice",
+              verses: "10-17",
+              description:
+                "The yogi should live in seclusion, practice self-control, and maintain moderation in food, sleep, work, and recreation.",
+            },
+            {
+              section: "Meditative Process and Vision",
+              verses: "18-32",
+              description:
+                "By steady meditation, the yogi attains peace, bliss, and equanimity. Such a yogi sees all beings equally, with no distinction between friend and enemy.",
+            },
+            {
+              section: "Fate of the Unsuccessful Yogi",
+              verses: "33-44",
+              description:
+                "Arjuna's concern about incomplete yoga is addressed. Krishna assures that such a yogi is reborn in favorable circumstances to continue their spiritual progress.",
+            },
+            {
+              section: "The Supreme Yogi",
+              verses: "45-47",
+              description:
+                "Among all yogis, the greatest is the one who, with faith and devotion, unites with Krishna through meditation and love.",
             },
           ],
         },

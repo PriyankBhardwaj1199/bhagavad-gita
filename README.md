@@ -18,7 +18,7 @@ The Bhagavad Gita consists of 18 chapters, each known as an 'Adhyaya':
 3. Karma Yoga – The Path of Selfless Action (43 Shlokas -  162 / 700)
 4. Jnana Yoga – The Path of Knowledge (42 Shlokas -  204 / 700)
 5. Karma Vairagya Yoga – The Path of Renunciation (29 Shlokas -  233 / 700)
-6. Abhyasa Yoga – The Path of Meditation (47 Shlokas -  280 / 700)
+6. Dhyana Yoga – The Path of Meditation (47 Shlokas -  280 / 700)
 7. Paramahansa Vijnana Yoga – Self-Knowledge and Enlightenment (30 Shlokas -  310 / 700)
 8. Aksara Brahma Yoga – The Eternal God (28 Shlokas -  338 / 700)
 9. Raja Vidya Raja Guhya Yoga – Yoga of Royal Knowledge and Royal Secret (34 Shlokas -  372 / 700)
