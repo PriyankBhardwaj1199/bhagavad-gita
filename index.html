@@ -30771,6 +30771,243 @@
           </div>
         </div>
       </div>
+
+      <div class="space-y-4 mb-3">
+        <!-- Chapter 7 -->
+        <div
+          class="bg-white p-3 sm:p-4 rounded-lg shadow-md dark:bg-gray-800 flex flex-col items-stretch"
+        >
+          <div class="flex flex-row">
+            <button
+              class="w-full text-left font-semibold text-lg text-blue-700 dark:text-blue-300"
+              onclick="toggleAccordion('chapter7')"
+            >
+              Chapter 7: Gyana Vigyana Yoga
+            </button>
+            <div class="relative group me-2">
+              <button
+                onclick="showItenary(7)"
+                data-modal-target="itenary-modal"
+                data-modal-toggle="itenary-modal"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 text-blue-700 dark:text-blue-300"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z"
+                  />
+                </svg>
+              </button>
+              <span
+                class="absolute hidden group-hover:block bg-gray-800 text-white text-xs rounded-lg py-1 px-2 w-max top-full mt-1 left-2/3 -translate-x-2/3"
+              >
+                Click to view Itinerary
+              </span>
+            </div>
+            <div class="relative group">
+              <button
+                onclick="showSummary(7)"
+                data-modal-target="static-modal"
+                data-modal-toggle="static-modal"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="text-blue-700 dark:text-blue-300 size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"
+                  />
+                </svg>
+              </button>
+              <span
+                class="absolute hidden group-hover:block bg-gray-800 text-white text-xs rounded-lg py-1 px-2 w-max top-full mt-1 left-2/3 -translate-x-2/3"
+              >
+                Click to view summary
+              </span>
+            </div>
+          </div>
+
+          <div id="chapter7" class="hidden mt-4">
+            <div class="relative w-full overflow-hidden">
+              <div
+                id="carousel7"
+                class="flex transition-transform duration-500 ease-in-out"
+              >
+                <!-- Shloka Card 1 -->
+                <div class="w-full sm:p-4 flex-shrink-0">
+                  <div
+                    class="bg-gray-50 min-h-80 rounded-lg shadow-md dark:bg-gray-700"
+                  >
+                    <ul
+                      class="text-sm font-medium text-center text-gray-500 sm:divide-x divide-gray-300 rounded-lg sm:flex dark:divide-gray-600 dark:text-gray-400 rtl:divide-x-reverse"
+                      id="fullWidthTab"
+                      data-tabs-toggle="#fullWidthTabContent"
+                      role="tablist"
+                    >
+                      <li class="w-full">
+                        <button
+                          type="button"
+                          role="tab"
+                          class="inline-block w-full p-4 sm:rounded-ss-lg bg-gray-200 hover:bg-gray-100 focus:outline-none dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
+                          onclick="showTab('shloka7_1', 'learning7_1','noCharacters')"
+                        >
+                          Shlok
+                        </button>
+                      </li>
+                      <li class="w-full">
+                        <button
+                          type="button"
+                          role="tab"
+                          class="inline-block w-full p-4 bg-gray-200 hover:bg-gray-100 focus:outline-none dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
+                          onclick="showTab('learning7_1', 'shloka7_1','noCharacters')"
+                        >
+                          Learnings
+                        </button>
+                      </li>
+                    </ul>
+                    <div id="shloka7_1" class="mt-4 p-2 sm:p-4">
+                      <h2
+                        class="text-xl font-semibold text-blue-700 mb-2 dark:text-blue-200"
+                      >
+                        श्लोक 7.1
+                      </h2>
+                      <p
+                        class="text-gray-700 font-semibold dark:text-gray-300 mb-2 sm:mb-4"
+                      >
+                        श्रीभगवानुवाच। <br /><br />
+                        मय्यासक्तमनाः पार्थ योगं युञ्जन्मदाश्रयः ।<br />
+                        असंशयं समग्रं मां यथा ज्ञास्यसि तच्छृणु ॥१॥
+                      </p>
+                      <p class="text-gray-600 mt-2 dark:text-gray-200">
+                        <strong>Meaning (Hindi):</strong> भगवान श्रीकृष्ण ने कहा
+                        — हे पार्थ! मुझमें आसक्त मन वाला और मुझ पर आश्रित होकर
+                        योग का अभ्यास करने वाला, तू अब सुन कि किस प्रकार तू मुझे
+                        संदेहरहित और पूर्ण रूप से जान सकेगा।
+                      </p>
+                      <p class="text-gray-600 mt-2 dark:text-gray-200">
+                        <strong>Meaning (English):</strong> Lord Krishna said:
+                        “O Arjuna, with your mind attached to Me and taking
+                        refuge in Me, if you practice yoga (union with the
+                        Divine), then hear how you shall, without doubt, know Me
+                        completely.”
+                      </p>
+                    </div>
+                    <div id="learning7_1" class="mt-4 p-2 sm:p-4 hidden">
+                      <p class="text-gray-600 dark:text-gray-200">
+                        This shloka marks the beginning of Chapter 7 —
+                        “Jnana-Vijnana Yoga”, the Yoga of Knowledge and Wisdom.
+                        <br />
+                        It acts as a bridge between the earlier chapters
+                        (focused on karma and devotion) and the higher spiritual
+                        wisdom that follows.
+                        <br /><br />
+                        <strong>
+                          1. “mayy āsakta-manāḥ” — Mind attached to Me
+                        </strong>
+                        <br />
+                        Krishna begins by emphasizing devotional focus. He tells
+                        Arjuna to fix his mind and heart on God. <br />
+                        “Āsakti” (attachment) is often what binds us to the
+                        world, but here, Krishna redirects it: instead of being
+                        attached to worldly pleasures, attach your mind lovingly
+                        to the Divine.
+                        <br />
+                        👉 This is not forced concentration — it is loving
+                        absorption, like how one naturally remembers someone
+                        dear.
+                        <br /><br />
+                        <strong>
+                          2. “mad-āśrayaḥ” — Taking refuge in Me
+                        </strong>
+                        <br />
+                        To “take refuge” means to trust fully in Krishna, to
+                        rely on His wisdom rather than your ego or intellect.
+                        It's surrender — but not passive surrender. <br />
+                        It's the act of saying, “Let my strength, effort, and
+                        understanding all rest upon You.”
+                        <br />
+                        This makes one's spiritual practice guided and protected
+                        by divine grace.
+                        <br /><br />
+                        <strong> 3. “yogaṁ yuñjan” — Practicing Yoga </strong>
+                        <br />
+                        Here “Yoga” means union, the practical process of
+                        connecting the self with the Divine through devotion,
+                        meditation, and right living. <br />
+                        Krishna's teaching implies that true yoga is not just
+                        postures or control of breath — it's a living connection
+                        between your soul and God.
+                        <br />
+                        When performed with devotion (bhakti), this yoga leads
+                        to spiritual insight.
+                        <br /><br />
+                        <strong>
+                          4. “asaṁśayaṁ samagraṁ māṁ yathā jñāsyasi tac chṛṇu” —
+                          Knowing Me completely and without doubt
+                        </strong>
+                        <br />
+                        Krishna promises that by practicing such divine-oriented
+                        yoga, Arjuna will come to know Him fully, not just
+                        intellectually, but experientially — as the essence of
+                        everything. This “complete knowledge” includes
+                        understanding both Krishna's material (visible) and
+                        spiritual (invisible) aspects.
+                        <br />
+                        He says: Listen carefully (tac chṛṇu) — meaning that
+                        true knowledge begins with attentive listening, not just
+                        hearing but absorbing the wisdom.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex justify-center space-x-2 mt-4 overflow-x-auto max-w-[80%] mx-auto"
+            >
+              <button
+                class="hidden sm:inline-block bg-blue-500 text-white px-3 py-1 rounded"
+                onclick="moveCarousel(-1,'carousel7')"
+              >
+                Previous
+              </button>
+              <div class="flex space-x-2 overflow-x-auto custom-scrollbar">
+                <button
+                  class="shloka-button bg-gray-600 text-white px-3 py-1 rounded dark:bg-white dark:text-gray-900"
+                  onclick="jumpToShloka(0,'carousel7')"
+                >
+                  1
+                </button>
+                <button
+                  class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-white dark:text-gray-900"
+                  onclick="jumpToShloka(1,'carousel7')"
+                >
+                  2
+                </button>
+              </div>
+              <button
+                class="hidden sm:inline-block bg-blue-500 text-white px-3 py-1 rounded"
+                onclick="moveCarousel(1,'carousel7')"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script>
@@ -30784,6 +31021,7 @@
         4: "Jyana Karma Sanyasa Yoga",
         5: "Karma Sanyasa Yoga",
         6: "Dhyana Yoga",
+        7: "Gyana Vigyana Yoga",
       };
 
       const summaries = {
@@ -30811,6 +31049,7 @@
 
         Ultimately, the wise see all beings equally—be it a scholar, a cow, an elephant, or even an outcaste. Such vision, rooted in knowledge and detachment, leads to supreme peace and union with Brahman.`,
         6: `In this chapter, Krishna explains the discipline of meditation and the qualities of a true yogi. He clarifies that a genuine renunciate is not one who merely gives up worldly duties, but one who performs actions without attachment to results. Such a yogi is superior to ascetics, scholars, and ritualists. Krishna describes the ideal practice of yoga: living with discipline, moderation in eating, sleeping, work, and recreation, and meditating in solitude with a steady mind fixed on the Self or God. Through meditation, the yogi attains inner peace, detachment from material desires, and equanimity towards all beings, seeing friend and foe alike with equal vision. Arjuna raises the concern about those who begin the spiritual path but fail to complete it. Krishna assures him that such seekers are never lost; they are reborn in favorable circumstances and continue their journey until perfection is achieved. The chapter culminates with Krishna declaring that among all yogis, the highest is the one who, with unwavering faith and devotion, unites with Him through meditation and love. Thus, Dhyana Yoga establishes meditation as a powerful path to self-realization, while devotion to Krishna is the supreme expression of yoga.`,
+        7: `In Bhagavad Gita Chapter 7 - Jnana Vijnana Yoga (The Yoga of Knowledge and Wisdom), Lord Krishna reveals the complete understanding of His divine nature, both material and spiritual. He explains that all elements of creation — earth, water, fire, air, ether, mind, intelligence, and ego — arise from Him, and that He is the sustaining essence behind everything. Yet, due to Maya (illusion), most people fail to recognize His supreme position. Krishna distinguishes between four types of devotees and those who are deluded by material desires. He emphasizes that true wisdom lies in realizing Him as the ultimate cause and sustainer of all existence. The chapter concludes by describing how those who surrender to Krishna, understanding His divine power, attain liberation and eternal peace.`,
         // Add all 18 summaries here
       };
 
@@ -31041,6 +31280,61 @@
               verses: "45-47",
               description:
                 "Among all yogis, the greatest is the one who, with faith and devotion, unites with Krishna through meditation and love.",
+            },
+          ],
+        },
+        7: {
+          title: "Gyana Vigyana Yoga",
+          verses: 30,
+          summary: [
+            {
+              section: "Introduction: How to Know Krishna Completely",
+              verses: "1-3",
+              description:
+                "Krishna explains that those who engage in devotion with mind attached to Him can know Him completely — both materially and spiritually. He emphasizes that very few strive to know Him in truth.",
+            },
+            {
+              section:
+                "Krishna as the Source of All Material and Spiritual Energies",
+              verses: "4-7",
+              description:
+                "Krishna describes His eightfold material energy (earth, water, fire, air, ether, mind, intelligence, and ego) and distinguishes it from the superior living entities. He declares Himself the origin and essence of all creation.",
+            },
+            {
+              section: "The Divine Energy and Illusion (Maya)",
+              verses: "8-12",
+              description:
+                "Krishna reveals how He pervades the world — as taste in water, light in the sun and moon, sound in ether, and life in all beings. He also explains that the material modes (goodness, passion, and ignorance) act under His direction.",
+            },
+            {
+              section: "Why People Fail to Know Krishna",
+              verses: "13-15",
+              description:
+                "Due to Maya, people are deluded and fail to recognize Krishna’s supreme position. The divine energy makes it hard to perceive Him. He identifies four types of people who do not surrender: the ignorant, the arrogant, the deluded, and the demonic.",
+            },
+            {
+              section: "Four Types of Pious People Who Approach Krishna",
+              verses: "16-19",
+              description:
+                "Krishna describes four kinds of virtuous devotees — those in distress, seekers of wealth, seekers of knowledge, and the wise. Among them, the wise who worship with pure devotion are dearest to Him.",
+            },
+            {
+              section: "Faith in Different Deities",
+              verses: "20-23",
+              description:
+                "Those whose intelligence is stolen by desires worship various deities according to their nature and faith, granted by Krishna Himself. But the results of such worship are temporary and limited.",
+            },
+            {
+              section: "The Ignorance of Materialistic People",
+              verses: "24-25",
+              description:
+                "Foolish people think Krishna was previously impersonal and has now taken form, not understanding His eternal transcendental nature, hidden by His divine energy.",
+            },
+            {
+              section: "The Wise Who Know Krishna as the Supreme Cause",
+              verses: "26-30",
+              description:
+                "Krishna declares that He knows all beings — past, present, and future — but they do not know Him. Those who are free from delusion and have taken refuge in Him strive for liberation and know Him as the Supreme Lord, the origin of all existence.",
             },
           ],
         },
