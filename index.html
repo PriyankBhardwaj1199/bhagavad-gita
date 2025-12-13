@@ -211,6 +211,7 @@
         <!-- Chapter 1 -->
         <div
           class="bg-white p-3 sm:p-4 rounded-lg shadow-md dark:bg-gray-800 flex flex-col items-stretch"
+          onclick="openChapter('chapter1')"
         >
           <div class="flex flex-row">
             <button
@@ -5446,6 +5447,7 @@
         <!-- Chapter 2 -->
         <div
           class="bg-white p-3 sm:p-4 rounded-lg shadow-md dark:bg-gray-800 flex flex-col items-stretch"
+          onclick="openChapter('chapter2')"
         >
           <div class="flex flex-row">
             <button
@@ -12610,6 +12612,7 @@
         <!-- Chapter 3 -->
         <div
           class="bg-white p-3 sm:p-4 rounded-lg shadow-md dark:bg-gray-800 flex flex-col items-stretch"
+          onclick="openChapter('chapter3')"
         >
           <div class="flex flex-row">
             <button
@@ -17108,6 +17111,7 @@
         <!-- Chapter 4 -->
         <div
           class="bg-white p-3 sm:p-4 rounded-lg shadow-md dark:bg-gray-800 flex flex-col items-stretch"
+          onclick="openChapter('chapter4')"
         >
           <div class="flex flex-row">
             <button
@@ -21804,6 +21808,7 @@
         <!-- Chapter 5 -->
         <div
           class="bg-white p-3 sm:p-4 rounded-lg shadow-md dark:bg-gray-800 flex flex-col items-stretch"
+          onclick="openChapter('chapter5')"
         >
           <div class="flex flex-row">
             <button
@@ -25107,6 +25112,7 @@
         <!-- Chapter 6 -->
         <div
           class="bg-white p-3 sm:p-4 rounded-lg shadow-md dark:bg-gray-800 flex flex-col items-stretch"
+          onclick="openChapter('chapter6')"
         >
           <div class="flex flex-row">
             <button
@@ -30776,6 +30782,7 @@
         <!-- Chapter 7 -->
         <div
           class="bg-white p-3 sm:p-4 rounded-lg shadow-md dark:bg-gray-800 flex flex-col items-stretch"
+          onclick="openChapter('chapter7')"
         >
           <div class="flex flex-row">
             <button
@@ -35140,6 +35147,231 @@
           </div>
         </div>
       </div>
+
+      <div class="space-y-4 mb-3">
+        <!-- Chapter 8 -->
+        <div
+          class="bg-white p-3 sm:p-4 rounded-lg shadow-md dark:bg-gray-800 flex flex-col items-stretch"
+          onclick="openChapter('chapter8')"
+        >
+          <div class="flex flex-row">
+            <button
+              class="w-full text-left font-semibold text-lg text-blue-700 dark:text-blue-300"
+              onclick="toggleAccordion('chapter8')"
+            >
+              Chapter 8: Aksara Brahma Yoga
+            </button>
+            <div class="relative group me-2">
+              <button
+                onclick="showItenary(8)"
+                data-modal-target="itenary-modal"
+                data-modal-toggle="itenary-modal"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 text-blue-700 dark:text-blue-300"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z"
+                  />
+                </svg>
+              </button>
+              <span
+                class="absolute hidden group-hover:block bg-gray-800 text-white text-xs rounded-lg py-1 px-2 w-max top-full mt-1 left-2/3 -translate-x-2/3"
+              >
+                Click to view Itinerary
+              </span>
+            </div>
+            <div class="relative group">
+              <button
+                onclick="showSummary(8)"
+                data-modal-target="static-modal"
+                data-modal-toggle="static-modal"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="text-blue-700 dark:text-blue-300 size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"
+                  />
+                </svg>
+              </button>
+              <span
+                class="absolute hidden group-hover:block bg-gray-800 text-white text-xs rounded-lg py-1 px-2 w-max top-full mt-1 left-2/3 -translate-x-2/3"
+              >
+                Click to view summary
+              </span>
+            </div>
+          </div>
+
+          <div id="chapter8" class="hidden mt-4">
+            <div class="relative w-full overflow-hidden">
+              <div
+                id="carousel8"
+                class="flex transition-transform duration-500 ease-in-out"
+              >
+                <!-- Shloka Card 1 -->
+                <div class="w-full sm:p-4 flex-shrink-0">
+                  <div
+                    class="bg-gray-50 min-h-80 rounded-lg shadow-md dark:bg-gray-700"
+                  >
+                    <ul
+                      class="text-sm font-medium text-center text-gray-500 sm:divide-x divide-gray-300 rounded-lg sm:flex dark:divide-gray-600 dark:text-gray-400 rtl:divide-x-reverse"
+                      id="fullWidthTab"
+                      data-tabs-toggle="#fullWidthTabContent"
+                      role="tablist"
+                    >
+                      <li class="w-full">
+                        <button
+                          type="button"
+                          role="tab"
+                          class="inline-block w-full p-4 sm:rounded-ss-lg bg-gray-200 hover:bg-gray-100 focus:outline-none dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
+                          onclick="showTab('shloka8_1', 'learning8_1','noCharacters')"
+                        >
+                          Shlok
+                        </button>
+                      </li>
+                      <li class="w-full">
+                        <button
+                          type="button"
+                          role="tab"
+                          class="inline-block w-full p-4 bg-gray-200 hover:bg-gray-100 focus:outline-none dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
+                          onclick="showTab('learning8_1', 'shloka8_1','noCharacters')"
+                        >
+                          Learnings
+                        </button>
+                      </li>
+                    </ul>
+                    <div id="shloka8_1" class="mt-4 p-2 sm:p-4">
+                      <h2
+                        class="text-xl font-semibold text-blue-700 mb-2 dark:text-blue-200"
+                      >
+                        श्लोक 8.1
+                      </h2>
+                      <p
+                        class="text-gray-700 font-semibold dark:text-gray-300 mb-2 sm:mb-4"
+                      >
+                        अर्जुन उवाच। <br /><br />
+                        किं तद्ब्रह्म किमध्यात्मं किं कर्म पुरुषोत्तम ।<br />
+                        अधिभूतं च किं प्रोक्तमधिदैवं किमुच्यते ॥१॥
+                      </p>
+                      <p class="text-gray-600 mt-2 dark:text-gray-200">
+                        <strong>Meaning (Hindi):</strong> अर्जुन कहते हैं: हे
+                        पुरुषोत्तम (भगवान श्रीकृष्ण)! वह ब्रह्म क्या है?
+                        अध्यात्म क्या है? कर्म किसे कहा जाता है? और अधिभूत क्या
+                        कहा गया है? तथा अधिदैव किसे कहते हैं?
+                      </p>
+                      <p class="text-gray-600 mt-2 dark:text-gray-200">
+                        <strong>Meaning (English):</strong> Arjun asks: O
+                        Supreme Person (Krishna)! What is Brahman (the Absolute
+                        Reality)? What is Adhyatma (the inner Self or spiritual
+                        knowledge)? What is Karma (action)? What is called
+                        Adhibhuta (the perishable material world)? And what is
+                        known as Adhidaiva (the divine principle)?
+                      </p>
+                    </div>
+                    <div id="learning8_1" class="mt-4 p-2 sm:p-4 hidden">
+                      <p class="text-gray-600 dark:text-gray-200">
+                        This verse shows Arjuna's spiritual maturity. He is no
+                        longer asking about war or duty alone — he is asking
+                        about existence itself.
+                        <br /><br />
+                        <strong> 1. What is Brahman? </strong>
+                        <br />
+                        Brahman is the imperishable, eternal Supreme Reality —
+                        beyond time, space, and matter.
+                        <br /><br />
+                        <strong> 2. What is Adhyatma? </strong>
+                        <br />
+                        Adhyatma refers to the individual soul (Atman) and its
+                        true nature — consciousness beyond the body and mind.
+                        <br /><br />
+                        <strong> 3. What is Karma? </strong>
+                        <br />
+                        Karma is action driven by intention, which creates
+                        future consequences and binds the soul to the cycle of
+                        birth and death.
+                        <br /><br />
+                        <strong> 4. What is Adhibhuta? </strong>
+                        <br />
+                        Adhibhuta is the material, perishable world — everything
+                        that changes and eventually decays.
+                        <br /><br />
+                        <strong> 5. What is Adhidaiva? </strong>
+                        <br />
+                        Adhidaiva refers to the cosmic intelligence or divine
+                        forces governing the universe (like the Sun governing
+                        sight, etc.).
+                        <br /><br />
+                        <strong> 6. Who is Adhiyajna? </strong>
+                        <br />
+                        Adhiyajna is God Himself residing in the human body as
+                        the inner witness and sustainer — often understood as
+                        Paramatma.
+                        <br /><br />
+                        <strong> 7. Why is death emphasized? </strong>
+                        <br />
+                        Arjuna realizes that the final moment of life is
+                        decisive. He wants to know:
+                        <br />
+                        How can a person remember God at the moment of death,
+                        when the mind is unstable?
+                        <br />
+                        This question leads Krishna to explain the science of
+                        consciousness, devotion, and remembrance in the coming
+                        verses.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex justify-center space-x-2 mt-4 overflow-x-auto max-w-[80%] mx-auto"
+            >
+              <button
+                class="hidden sm:inline-block bg-blue-500 text-white px-3 py-1 rounded"
+                onclick="moveCarousel(-1,'carousel8')"
+              >
+                Previous
+              </button>
+              <div class="flex space-x-2 overflow-x-auto custom-scrollbar">
+                <button
+                  class="shloka-button bg-gray-600 text-white px-3 py-1 rounded dark:bg-white dark:text-gray-900"
+                  onclick="jumpToShloka(0,'carousel8')"
+                >
+                  1
+                </button>
+                <button
+                  class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-white dark:text-gray-900"
+                  onclick="jumpToShloka(1,'carousel8')"
+                >
+                  2
+                </button>
+              </div>
+              <button
+                class="hidden sm:inline-block bg-blue-500 text-white px-3 py-1 rounded"
+                onclick="moveCarousel(1,'carousel8')"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script>
@@ -35154,6 +35386,7 @@
         5: "Karma Sanyasa Yoga",
         6: "Dhyana Yoga",
         7: "Gyana Vigyana Yoga",
+        8: "Aksara Brahma Yoga",
       };
 
       const summaries = {
@@ -35182,6 +35415,7 @@
         Ultimately, the wise see all beings equally—be it a scholar, a cow, an elephant, or even an outcaste. Such vision, rooted in knowledge and detachment, leads to supreme peace and union with Brahman.`,
         6: `In this chapter, Krishna explains the discipline of meditation and the qualities of a true yogi. He clarifies that a genuine renunciate is not one who merely gives up worldly duties, but one who performs actions without attachment to results. Such a yogi is superior to ascetics, scholars, and ritualists. Krishna describes the ideal practice of yoga: living with discipline, moderation in eating, sleeping, work, and recreation, and meditating in solitude with a steady mind fixed on the Self or God. Through meditation, the yogi attains inner peace, detachment from material desires, and equanimity towards all beings, seeing friend and foe alike with equal vision. Arjuna raises the concern about those who begin the spiritual path but fail to complete it. Krishna assures him that such seekers are never lost; they are reborn in favorable circumstances and continue their journey until perfection is achieved. The chapter culminates with Krishna declaring that among all yogis, the highest is the one who, with unwavering faith and devotion, unites with Him through meditation and love. Thus, Dhyana Yoga establishes meditation as a powerful path to self-realization, while devotion to Krishna is the supreme expression of yoga.`,
         7: `In Bhagavad Gita Chapter 7 - Jnana Vijnana Yoga (The Yoga of Knowledge and Wisdom), Lord Krishna reveals the complete understanding of His divine nature, both material and spiritual. He explains that all elements of creation — earth, water, fire, air, ether, mind, intelligence, and ego — arise from Him, and that He is the sustaining essence behind everything. Yet, due to Maya (illusion), most people fail to recognize His supreme position. Krishna distinguishes between four types of devotees and those who are deluded by material desires. He emphasizes that true wisdom lies in realizing Him as the ultimate cause and sustainer of all existence. The chapter concludes by describing how those who surrender to Krishna, understanding His divine power, attain liberation and eternal peace.`,
+        8: `Chapter 8 of the Bhagavad Gita explains the profound concept of the Imperishable Absolute (Akshara Brahman) and the crucial role of one's final thoughts at the time of death. Lord Krishna answers Arjuna's questions about Brahman, the self (Atma), karma, and the process by which beings depart from the body. He emphasizes that whatever a person remembers at the moment of death determines their next state of existence, making lifelong discipline and remembrance of God essential. Krishna highlights constant devotion (bhakti) as the most reliable path to attain Him, stating that those who remember Him with focused mind and faith at the time of death reach His eternal abode and are freed from rebirth. The chapter also describes the cosmic cycles of creation and dissolution, showing that all worlds are temporary except the Supreme Reality. Additionally, Krishna explains the two paths after death—the bright path leading to liberation and the dark path leading to rebirth. Overall, Chapter 8 teaches the importance of spiritual awareness, self-control, and unwavering devotion, encouraging seekers to live a life centered on God so that liberation becomes natural at life's end.`,
         // Add all 18 summaries here
       };
 
@@ -35470,6 +35704,54 @@
             },
           ],
         },
+        8: {
+          title: "Akshara Brahma Yoga",
+          verses: 28,
+          summary: [
+            {
+              section: "Arjuna's Fundamental Questions",
+              verses: "1-2",
+              description:
+                "Arjuna asks Krishna to explain Brahman, the self, karma, the material world, the divine principle, and how God is remembered at the time of death.",
+            },
+            {
+              section: "Nature of Brahman, Self, and Karma",
+              verses: "3-6",
+              description:
+                "Krishna defines Brahman as the imperishable Absolute, the self as eternal, and karma as actions that create future existence; He explains that one's final thoughts determine the next birth.",
+            },
+            {
+              section: "Importance of Remembering God at Death",
+              verses: "7-10",
+              description:
+                "Krishna urges constant remembrance of Him through disciplined practice, devotion, and meditation so that the mind naturally turns to Him at life's end.",
+            },
+            {
+              section: "The Supreme Abode and Path of Devotion",
+              verses: "11-15",
+              description:
+                "Krishna describes His supreme, eternal abode and declares that devoted souls who attain Him are freed from rebirth and suffering.",
+            },
+            {
+              section: "Cosmic Cycles of Creation and Dissolution",
+              verses: "16-19",
+              description:
+                "The Lord explains the repeated cycles of creation and destruction, emphasizing that all worlds are temporary except the Supreme Reality.",
+            },
+            {
+              section: "The Bright and Dark Paths After Death",
+              verses: "20-26",
+              description:
+                "Krishna describes the path of light leading to liberation and the path of darkness leading to rebirth, based on one's spiritual awareness.",
+            },
+            {
+              section: "Conclusion: Supremacy of Devotion",
+              verses: "27-28",
+              description:
+                "Krishna concludes that knowledge of these truths and unwavering devotion surpass all ritual merits and lead to the highest spiritual goal.",
+            },
+          ],
+        },
       };
 
       const modal = document.getElementById("static-modal");
@@ -35744,6 +36026,16 @@
           }
         });
       });
+
+      function openChapter(targetId) {
+        const chapterDiv = document.getElementById(targetId);
+        if (!chapterDiv) return;
+
+        chapterDiv.scrollIntoView({
+          behavior: "smooth",
+          block: "center",
+        });
+      }
     </script>
   </body>
 </html>
