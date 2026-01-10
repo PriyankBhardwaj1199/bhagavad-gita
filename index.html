@@ -38923,6 +38923,245 @@
           </div>
         </div>
       </div>
+
+      <div class="space-y-4 mb-3">
+        <!-- Chapter 9 -->
+        <div
+          class="bg-white p-3 sm:p-4 rounded-lg shadow-md dark:bg-gray-800 flex flex-col items-stretch"
+          onclick="openChapter('chapter9')"
+        >
+          <div class="flex flex-row">
+            <button
+              class="w-full text-left font-semibold text-lg text-blue-700 dark:text-blue-300"
+              onclick="toggleAccordion('chapter9')"
+            >
+              Chapter 9: Raja Vidya Raja Guhya Yoga
+            </button>
+            <div class="relative group me-2">
+              <button
+                onclick="showItenary(9)"
+                data-modal-target="itenary-modal"
+                data-modal-toggle="itenary-modal"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 text-blue-700 dark:text-blue-300"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z"
+                  />
+                </svg>
+              </button>
+              <span
+                class="absolute hidden group-hover:block bg-gray-800 text-white text-xs rounded-lg py-1 px-2 w-max top-full mt-1 left-2/3 -translate-x-2/3"
+              >
+                Click to view Itinerary
+              </span>
+            </div>
+            <div class="relative group">
+              <button
+                onclick="showSummary(9)"
+                data-modal-target="static-modal"
+                data-modal-toggle="static-modal"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="text-blue-700 dark:text-blue-300 size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"
+                  />
+                </svg>
+              </button>
+              <span
+                class="absolute hidden group-hover:block bg-gray-800 text-white text-xs rounded-lg py-1 px-2 w-max top-full mt-1 left-2/3 -translate-x-2/3"
+              >
+                Click to view summary
+              </span>
+            </div>
+          </div>
+
+          <div id="chapter9" class="hidden mt-4">
+            <div class="relative w-full overflow-hidden">
+              <div
+                id="carousel9"
+                class="flex transition-transform duration-500 ease-in-out"
+              >
+                <!-- Shloka Card 1 -->
+                <div class="w-full sm:p-4 flex-shrink-0">
+                  <div
+                    class="bg-gray-50 min-h-80 rounded-lg shadow-md dark:bg-gray-700"
+                  >
+                    <ul
+                      class="text-sm font-medium text-center text-gray-500 sm:divide-x divide-gray-300 rounded-lg sm:flex dark:divide-gray-600 dark:text-gray-400 rtl:divide-x-reverse"
+                      id="fullWidthTab"
+                      data-tabs-toggle="#fullWidthTabContent"
+                      role="tablist"
+                    >
+                      <li class="w-full">
+                        <button
+                          type="button"
+                          role="tab"
+                          class="inline-block w-full p-4 sm:rounded-ss-lg bg-gray-200 hover:bg-gray-100 focus:outline-none dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
+                          onclick="showTab('shloka9_1', 'learning9_1','noCharacters')"
+                        >
+                          Shlok
+                        </button>
+                      </li>
+                      <li class="w-full">
+                        <button
+                          type="button"
+                          role="tab"
+                          class="inline-block w-full p-4 bg-gray-200 hover:bg-gray-100 focus:outline-none dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
+                          onclick="showTab('learning9_1', 'shloka9_1','noCharacters')"
+                        >
+                          Learnings
+                        </button>
+                      </li>
+                    </ul>
+                    <div id="shloka9_1" class="mt-4 p-2 sm:p-4">
+                      <h2
+                        class="text-xl font-semibold text-blue-700 mb-2 dark:text-blue-200"
+                      >
+                        श्लोक 9.1
+                      </h2>
+                      <p
+                        class="text-gray-700 font-semibold dark:text-gray-300 mb-2 sm:mb-4"
+                      >
+                        श्रीभगवानुवाच । <br /><br />
+                        इदं तु ते गुह्यतमं प्रवक्ष्याम्यनसूयवे ।<br />
+                        ज्ञानं विज्ञानसहितं यज्ज्ञात्वा मोक्ष्यसेऽशुभात् ॥१॥
+                      </p>
+                      <p class="text-gray-600 mt-2 dark:text-gray-200">
+                        <strong>Meaning (Hindi):</strong> श्रीभगवान बोले — हे
+                        अर्जुन! तुम दोष-दृष्टि से रहित हो, इसलिए मैं तुम्हें यह
+                        अत्यन्त गोपनीय ज्ञान और उसका व्यावहारिक अनुभव (विज्ञान)
+                        सहित बताऊँगा। इसे जानकर तुम संसार के सभी अशुभ बंधनों से
+                        मुक्त हो जाओगे।
+                      </p>
+                      <p class="text-gray-600 mt-2 dark:text-gray-200">
+                        <strong>Meaning (English):</strong> Krishna said: “O
+                        Arjuna, since you are free from envy and disbelief, I
+                        shall impart to you this most confidential knowledge,
+                        along with realized wisdom. Knowing this, you shall be
+                        liberated from all suffering and inauspiciousness.”
+                      </p>
+                    </div>
+                    <div id="learning9_1" class="mt-4 p-2 sm:p-4 hidden">
+                      <p class="text-gray-600 dark:text-gray-200">
+                        This verse is the gateway to Chapter 9, which is called
+                        “Raja Vidya Raja Guhya Yoga” — The King of Knowledge and
+                        the Most Confidential Wisdom.
+                        <br /><br />
+                        <strong>
+                          1. “Guhyatamam” - The Most Confidential Knowledge
+                        </strong>
+                        <br />
+                        Krishna is not talking about ordinary intellectual
+                        knowledge. This is spiritual truth about God, devotion
+                        (Bhakti), and the soul's relationship with the Divine.
+                        <br />
+                        It is “confidential” not because it is secretive, but
+                        because:
+                        <br />
+                        It cannot be understood by ego, pride, or skepticism
+                        <br />
+                        It requires humility, faith, and openness
+                        <br /><br />
+                        <strong> 2. “Anasūyave” - Free from Envy </strong>
+                        <br />
+                        Krishna emphasizes Arjuna's qualification:
+                        <br />
+                        Arjuna does not question with arrogance
+                        <br />
+                        He does not doubt Krishna's divinity
+                        <br />
+                        He listens with sincerity
+                        <br />
+                        Spiritual knowledge flows only where there is humility.
+                        <br /><br />
+                        <strong>
+                          3. “Jñānam + Vijñānam” - Knowledge with Realization
+                        </strong>
+                        <br />
+                        Jñānam = theoretical understanding (what is truth)
+                        <br />
+                        Vijñānam = lived experience (how it transforms life)
+                        <br />
+                        Krishna promises both: Not just philosophy, but
+                        practical spiritual transformation.
+                        <br /><br />
+                        <strong>
+                          4. “Mokṣyase Aśubhāt” - Freedom from All
+                          Inauspiciousness
+                        </strong>
+                        <br />
+                        Knowing this wisdom:
+                        <br />
+                        Destroys ignorance (avidyā)
+                        <br />
+                        Ends fear, guilt, anxiety, and karmic bondage
+                        <br />
+                        Leads to moksha — inner freedom, not just after death
+                        but here and now
+                        <br />
+                        This verse sets the tone:
+                        <br />
+                        <i>
+                          Devotion combined with true knowledge liberates the
+                          soul.
+                        </i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex justify-center space-x-2 mt-4 overflow-x-auto max-w-[80%] mx-auto"
+            >
+              <button
+                class="hidden sm:inline-block bg-blue-500 text-white px-3 py-1 rounded"
+                onclick="moveCarousel(-1,'carousel9')"
+              >
+                Previous
+              </button>
+              <div class="flex space-x-2 overflow-x-auto custom-scrollbar">
+                <button
+                  class="shloka-button bg-gray-600 text-white px-3 py-1 rounded dark:bg-white dark:text-gray-900"
+                  onclick="jumpToShloka(0,'carousel9')"
+                >
+                  1
+                </button>
+                <button
+                  class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-white dark:text-gray-900"
+                  onclick="jumpToShloka(1,'carousel9')"
+                >
+                  2
+                </button>
+              </div>
+              <button
+                class="hidden sm:inline-block bg-blue-500 text-white px-3 py-1 rounded"
+                onclick="moveCarousel(1,'carousel9')"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script>
@@ -38938,6 +39177,7 @@
         6: "Dhyana Yoga",
         7: "Gyana Vigyana Yoga",
         8: "Aksara Brahma Yoga",
+        9: "Raja Vidya Raja Guhya Yoga",
       };
 
       const summaries = {
@@ -38967,6 +39207,11 @@
         6: `In this chapter, Krishna explains the discipline of meditation and the qualities of a true yogi. He clarifies that a genuine renunciate is not one who merely gives up worldly duties, but one who performs actions without attachment to results. Such a yogi is superior to ascetics, scholars, and ritualists. Krishna describes the ideal practice of yoga: living with discipline, moderation in eating, sleeping, work, and recreation, and meditating in solitude with a steady mind fixed on the Self or God. Through meditation, the yogi attains inner peace, detachment from material desires, and equanimity towards all beings, seeing friend and foe alike with equal vision. Arjuna raises the concern about those who begin the spiritual path but fail to complete it. Krishna assures him that such seekers are never lost; they are reborn in favorable circumstances and continue their journey until perfection is achieved. The chapter culminates with Krishna declaring that among all yogis, the highest is the one who, with unwavering faith and devotion, unites with Him through meditation and love. Thus, Dhyana Yoga establishes meditation as a powerful path to self-realization, while devotion to Krishna is the supreme expression of yoga.`,
         7: `In Bhagavad Gita Chapter 7 - Jnana Vijnana Yoga (The Yoga of Knowledge and Wisdom), Lord Krishna reveals the complete understanding of His divine nature, both material and spiritual. He explains that all elements of creation — earth, water, fire, air, ether, mind, intelligence, and ego — arise from Him, and that He is the sustaining essence behind everything. Yet, due to Maya (illusion), most people fail to recognize His supreme position. Krishna distinguishes between four types of devotees and those who are deluded by material desires. He emphasizes that true wisdom lies in realizing Him as the ultimate cause and sustainer of all existence. The chapter concludes by describing how those who surrender to Krishna, understanding His divine power, attain liberation and eternal peace.`,
         8: `Chapter 8 of the Bhagavad Gita explains the profound concept of the Imperishable Absolute (Akshara Brahman) and the crucial role of one's final thoughts at the time of death. Lord Krishna answers Arjuna's questions about Brahman, the self (Atma), karma, and the process by which beings depart from the body. He emphasizes that whatever a person remembers at the moment of death determines their next state of existence, making lifelong discipline and remembrance of God essential. Krishna highlights constant devotion (bhakti) as the most reliable path to attain Him, stating that those who remember Him with focused mind and faith at the time of death reach His eternal abode and are freed from rebirth. The chapter also describes the cosmic cycles of creation and dissolution, showing that all worlds are temporary except the Supreme Reality. Additionally, Krishna explains the two paths after death—the bright path leading to liberation and the dark path leading to rebirth. Overall, Chapter 8 teaches the importance of spiritual awareness, self-control, and unwavering devotion, encouraging seekers to live a life centered on God so that liberation becomes natural at life's end.`,
+        9: `Chapter 9 of the Bhagavad Gita reveals Krishna's most confidential and supreme knowledge, known as the “King of Knowledge and the King of Secrets.” Krishna explains the glory of bhakti (devotion) and how it leads to liberation. He describes Himself as the supreme reality who pervades the entire universe, yet remains unattached and beyond material nature. All beings arise from Him, exist in Him, and ultimately return to Him, though He is not bound by their actions.
+
+Krishna emphasizes that ignorance causes people to misunderstand His divine nature, leading them away from true devotion. In contrast, wise devotees recognize Him as the supreme Lord and worship Him with faith and surrender. He assures that even those who have committed sins can attain salvation if they sincerely devote themselves to Him.
+
+The chapter highlights that Krishna accepts even simple offerings—such as a leaf, flower, fruit, or water—when offered with pure devotion. He declares that all devotees, regardless of caste, gender, or background, can attain the highest goal through bhakti. Chapter 9 ultimately teaches that loving devotion, faith, and surrender to God are the easiest and most powerful paths to spiritual liberation.`,
         // Add all 18 summaries here
       };
 
@@ -39300,6 +39545,60 @@
               verses: "27-28",
               description:
                 "Krishna concludes that knowledge of these truths and unwavering devotion surpass all ritual merits and lead to the highest spiritual goal.",
+            },
+          ],
+        },
+        9: {
+          title: "Raja Vidya Raja Guhya Yoga",
+          verses: 34,
+          summary: [
+            {
+              section: "Supreme Knowledge Revealed",
+              verses: "1-3",
+              description:
+                "Krishna reveals the most confidential knowledge that leads to liberation and explains why faith is essential to understand it.",
+            },
+            {
+              section: "Krishna as the Supreme Reality",
+              verses: "4-10",
+              description:
+                "Krishna explains His all-pervading nature, how all beings exist in Him, and how creation functions under His divine supervision.",
+            },
+            {
+              section: "Ignorance and Divine Understanding",
+              verses: "11-12",
+              description:
+                "People who fail to recognize Krishna's divine nature fall into ignorance and futile hopes.",
+            },
+            {
+              section: "The Nature of True Devotees",
+              verses: "13-15",
+              description:
+                "Great souls recognize Krishna as the Supreme Lord and worship Him with unwavering devotion and discipline.",
+            },
+            {
+              section: "Forms of Worship and Universal Acceptance",
+              verses: "16-19",
+              description:
+                "Krishna declares that He is the essence of all rituals, sacrifices, and Vedic practices.",
+            },
+            {
+              section: "Temporary vs Eternal Results",
+              verses: "20-25",
+              description:
+                "Those who worship demigods attain temporary results, while Krishna's devotees attain eternal liberation.",
+            },
+            {
+              section: "Power of Pure Devotion",
+              verses: "26-29",
+              description:
+                "Krishna accepts even the simplest offerings when made with devotion and assures equality toward all beings.",
+            },
+            {
+              section: "Assurance of Salvation",
+              verses: "30-34",
+              description:
+                "Even sinful devotees can attain righteousness through sincere devotion; Krishna urges Arjuna to surrender fully and attain peace.",
             },
           ],
         },
