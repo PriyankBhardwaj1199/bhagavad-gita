@@ -48661,6 +48661,206 @@
           </div>
         </div>
       </div>
+
+      <div class="space-y-4 mb-3">
+        <!-- Chapter 11 -->
+        <div
+          class="bg-white p-3 sm:p-4 rounded-lg shadow-md dark:bg-gray-800 flex flex-col items-stretch"
+          onclick="openChapter('chapter11')"
+        >
+          <div class="flex flex-row">
+            <button
+              class="w-full text-left font-semibold text-lg text-blue-700 dark:text-blue-300"
+              onclick="toggleAccordion('chapter11')"
+            >
+              Chapter 11: Vishvarupa Darshan Yoga
+            </button>
+            <div class="relative group me-2">
+              <button
+                onclick="showItenary(11)"
+                data-modal-target="itenary-modal"
+                data-modal-toggle="itenary-modal"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 text-blue-700 dark:text-blue-300"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z"
+                  />
+                </svg>
+              </button>
+              <span
+                class="absolute hidden group-hover:block bg-gray-800 text-white text-xs rounded-lg py-1 px-2 w-max top-full mt-1 left-2/3 -translate-x-2/3"
+              >
+                Click to view Itinerary
+              </span>
+            </div>
+            <div class="relative group">
+              <button
+                onclick="showSummary(11)"
+                data-modal-target="static-modal"
+                data-modal-toggle="static-modal"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="text-blue-700 dark:text-blue-300 size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"
+                  />
+                </svg>
+              </button>
+              <span
+                class="absolute hidden group-hover:block bg-gray-800 text-white text-xs rounded-lg py-1 px-2 w-max top-full mt-1 left-2/3 -translate-x-2/3"
+              >
+                Click to view summary
+              </span>
+            </div>
+          </div>
+
+          <div id="chapter11" class="hidden mt-4">
+            <div class="relative w-full overflow-hidden">
+              <div
+                id="carousel11"
+                class="flex transition-transform duration-500 ease-in-out"
+              >
+                <!-- Shloka Card 1 -->
+                <div class="w-full sm:p-4 flex-shrink-0">
+                  <div
+                    class="bg-gray-50 min-h-80 rounded-lg shadow-md dark:bg-gray-700"
+                  >
+                    <ul
+                      class="text-sm font-medium text-center text-gray-500 sm:divide-x divide-gray-300 rounded-lg sm:flex dark:divide-gray-600 dark:text-gray-400 rtl:divide-x-reverse"
+                      id="fullWidthTab"
+                      data-tabs-toggle="#fullWidthTabContent"
+                      role="tablist"
+                    >
+                      <li class="w-full">
+                        <button
+                          type="button"
+                          role="tab"
+                          class="inline-block w-full p-4 sm:rounded-ss-lg bg-gray-200 hover:bg-gray-100 focus:outline-none dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
+                          onclick="showTab('shloka11_1', 'learning11_1','noCharacters')"
+                        >
+                          Shlok
+                        </button>
+                      </li>
+                      <li class="w-full">
+                        <button
+                          type="button"
+                          role="tab"
+                          class="inline-block w-full p-4 bg-gray-200 hover:bg-gray-100 focus:outline-none dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
+                          onclick="showTab('learning11_1', 'shloka11_1','noCharacters')"
+                        >
+                          Learnings
+                        </button>
+                      </li>
+                    </ul>
+                    <div id="shloka11_1" class="mt-4 p-2 sm:p-4">
+                      <h2
+                        class="text-xl font-semibold text-blue-700 mb-2 dark:text-blue-200"
+                      >
+                        श्लोक 11.1
+                      </h2>
+                      <p
+                        class="text-gray-700 font-semibold dark:text-gray-300 mb-2 sm:mb-4"
+                      >
+                        अर्जुन उवाच। <br /><br />
+                        मदनुग्रहाय परमं गुह्यमध्यात्मसंज्ञितम् ।<br />
+                        यत्त्वयोक्तं वचस्तेन मोहोऽयं विगतो मम ॥१॥
+                      </p>
+                      <p class="text-gray-600 mt-2 dark:text-gray-200">
+                        <strong>Meaning (Hindi):</strong> इस श्लोक में अर्जुन
+                        भगवान श्रीकृष्ण से कहते हैं: हे कृष्ण! आपने मुझ पर कृपा
+                        करके जो परम गोपनीय अध्यात्म ज्ञान बताया है, उससे मेरा
+                        मोह (अज्ञान और भ्रम) अब दूर हो गया है।
+                      </p>
+                      <p class="text-gray-600 mt-2 dark:text-gray-200">
+                        <strong>Meaning (English):</strong> In this verse,
+                        Arjuna speaks to Lord Krishna: "O Krishna! By Your
+                        grace, You have explained the supreme spiritual
+                        knowledge, which is very confidential. By hearing this,
+                        my illusion (confusion and ignorance) has now been
+                        dispelled."
+                      </p>
+                    </div>
+                    <div id="learning11_1" class="mt-4 p-2 sm:p-4 hidden">
+                      <p class="text-gray-600 dark:text-gray-200">
+                        This verse marks a turning point in the dialogue of the
+                        Bhagavad Gita.
+                        <br /><br />
+                        <strong> Acknowledgment of Divine Grace </strong> <br />
+                        Arjuna clearly says that the knowledge he received is
+                        due to Krishna's grace ("mad-anugrahaya"). → This
+                        highlights that spiritual understanding is not just
+                        intellectual—it requires openness and humility. “Paramam
+                        Guhyam” - Supreme Secret Knowledge The knowledge Krishna
+                        shared is described as very confidential. → Why? Because
+                        it deals with: Nature of the self (Atman) Reality of the
+                        universe Relationship with the divine
+                        <br /><br />
+                        <strong> Removal of Delusion (Moha) </strong> <br />
+                        Arjuna's confusion at the beginning (Chapter 1) was
+                        about: Duty vs emotion, Right vs wrong, Fear of
+                        consequences. Now he says: “Moho'yam vigato mama” → “My
+                        illusion is gone.”
+                        <br /><br />
+                        <strong> Transition to Divine Vision </strong> <br />
+                        This verse prepares the ground for what comes
+                        next—Arjuna will soon ask Krishna to reveal His
+                        universal form (Vishwaroopa).
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex justify-center space-x-2 mt-4 overflow-x-auto max-w-[80%] mx-auto"
+            >
+              <button
+                class="hidden sm:inline-block bg-blue-500 text-white px-3 py-1 rounded"
+                onclick="moveCarousel(-1,'carousel11')"
+              >
+                Previous
+              </button>
+              <div class="flex space-x-2 overflow-x-auto custom-scrollbar">
+                <button
+                  class="shloka-button bg-gray-600 text-white px-3 py-1 rounded dark:bg-white dark:text-gray-900"
+                  onclick="jumpToShloka(0,'carousel11')"
+                >
+                  1
+                </button>
+                <button
+                  class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-white dark:text-gray-900"
+                  onclick="jumpToShloka(1,'carousel11')"
+                >
+                  2
+                </button>
+              </div>
+              <button
+                class="hidden sm:inline-block bg-blue-500 text-white px-3 py-1 rounded"
+                onclick="moveCarousel(1,'carousel11')"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script>
@@ -48678,6 +48878,7 @@
         8: "Aksara Brahma Yoga",
         9: "Raja Vidya Raja Guhya Yoga",
         10: "Vibhuti Yoga",
+        11: "Vishvarupa Darshan Yoga",
       };
 
       const summaries = {
@@ -48715,6 +48916,13 @@
         10: `Chapter 10 of the Bhagavad Gita, titled Vibhuti Yoga (The Yoga of Divine Glories), reveals the supreme nature and divine manifestations of Krishna. In this chapter, Krishna explains to Arjuna that He is the ultimate source of all creation, the origin of gods, sages, and the universe itself. He emphasizes that those who understand His divine nature with devotion and wisdom worship Him wholeheartedly and receive spiritual enlightenment through His grace.
 
         Arjuna, deeply convinced of Krishna's supreme divinity, praises Him as the Supreme Brahman and requests to hear more about His divine glories. In response, Krishna describes His vibhutis—His manifestations in the world—showing how He is present in the greatest and most magnificent aspects of creation, such as among gods, sages, mountains, rivers, and virtues. Through these examples, Krishna teaches that all power, beauty, and excellence originate from Him. The chapter concludes with Krishna explaining that the entire universe is sustained by just a fraction of His divine energy, inspiring devotion, awe, and a deeper understanding of God's omnipresence.`,
+        11: `In Chapter 11 of the Bhagavad Gita, Arjuna requests Krishna to reveal His divine, cosmic form. Granting divine vision, Krishna manifests His Vishvarupa (Universal Form), displaying an विराट and awe-inspiring vision that contains all creation—gods, beings, time, and the universe—within Himself.
+
+Arjuna sees countless faces, eyes, and divine ornaments, with blazing radiance like thousands of suns. He witnesses all warriors of the battlefield rushing into Krishna's fiery mouths, symbolizing destruction. Krishna explains that He is Time (Kala), the ultimate destroyer, already destined to eliminate these warriors. Arjuna realizes that he is merely an instrument in the divine plan.
+
+Overwhelmed with fear and devotion, Arjuna praises Krishna, seeks forgiveness for past casual behavior, and requests Him to return to His gentle human form. Krishna reassumes His familiar form and teaches that such a divine vision is attainable only through pure devotion (Bhakti), not by rituals or knowledge alone.
+
+This chapter emphasizes surrender, devotion, and understanding the divine as the ultimate reality controlling creation, preservation, and destruction.`,
         // Add all 18 summaries here
       };
 
@@ -49138,6 +49346,54 @@
               verses: "39-42",
               description:
                 "Krishna explains that all opulence and power arise from Him and that the entire universe exists within just a fragment of His divine energy.",
+            },
+          ],
+        },
+        11: {
+          title: "Vishvarupa Darshana Yoga",
+          verses: 55,
+          summary: [
+            {
+              section: "Arjuna's Request to See the Divine Form",
+              verses: "1-4",
+              description:
+                "Arjuna expresses gratitude and requests Krishna to reveal His supreme universal form.",
+            },
+            {
+              section: "Krishna Grants Divine Vision",
+              verses: "5-14",
+              description:
+                "Krishna grants Arjuna divine eyes and begins revealing His विराट (cosmic) form filled with countless wonders.",
+            },
+            {
+              section: "Description of the Universal Form",
+              verses: "15-30",
+              description:
+                "Arjuna sees infinite forms, gods, beings, and the entire universe within Krishna, including the terrifying aspect of destruction.",
+            },
+            {
+              section: "Krishna as Time - The Destroyer",
+              verses: "31-34",
+              description:
+                "Krishna declares Himself as Time (Kala), the destroyer of worlds, and explains that all warriors are already destined to perish.",
+            },
+            {
+              section: "Arjuna's Prayers and Surrender",
+              verses: "35-44",
+              description:
+                "Overwhelmed with awe and fear, Arjuna praises Krishna, apologizes for past familiarity, and fully surrenders to Him.",
+            },
+            {
+              section: "Return to the Gentle Form",
+              verses: "45-51",
+              description:
+                "Arjuna requests Krishna to return to His human form; Krishna reassumes His calm and pleasing appearance.",
+            },
+            {
+              section: "Path to Realize the Divine",
+              verses: "52-55",
+              description:
+                "Krishna explains that His universal form can be realized only through pure devotion (Bhakti), not by rituals or knowledge alone.",
             },
           ],
         },
