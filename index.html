@@ -59741,6 +59741,251 @@
           </div>
         </div>
       </div>
+
+      <div class="space-y-4 mb-3">
+        <!-- Chapter 12 -->
+        <div
+          class="bg-white p-3 sm:p-4 rounded-lg shadow-md dark:bg-gray-800 flex flex-col items-stretch"
+          onclick="openChapter('chapter12')"
+        >
+          <div class="flex flex-row">
+            <button
+              class="w-full text-left font-semibold text-lg text-blue-700 dark:text-blue-300"
+              onclick="toggleAccordion('chapter12')"
+            >
+              Chapter 12: Bhakti Yoga
+            </button>
+            <div class="relative group me-2">
+              <button
+                onclick="showItenary(12)"
+                data-modal-target="itenary-modal"
+                data-modal-toggle="itenary-modal"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 text-blue-700 dark:text-blue-300"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z"
+                  />
+                </svg>
+              </button>
+              <span
+                class="absolute hidden group-hover:block bg-gray-800 text-white text-xs rounded-lg py-1 px-2 w-max top-full mt-1 left-2/3 -translate-x-2/3"
+              >
+                Click to view Itinerary
+              </span>
+            </div>
+            <div class="relative group">
+              <button
+                onclick="showSummary(12)"
+                data-modal-target="static-modal"
+                data-modal-toggle="static-modal"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="text-blue-700 dark:text-blue-300 size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"
+                  />
+                </svg>
+              </button>
+              <span
+                class="absolute hidden group-hover:block bg-gray-800 text-white text-xs rounded-lg py-1 px-2 w-max top-full mt-1 left-2/3 -translate-x-2/3"
+              >
+                Click to view summary
+              </span>
+            </div>
+          </div>
+
+          <div id="chapter12" class="hidden mt-4">
+            <div class="relative w-full overflow-hidden">
+              <div
+                id="carousel12"
+                class="flex transition-transform duration-500 ease-in-out"
+              >
+                <!-- Shloka Card 1 -->
+                <div class="w-full sm:p-4 flex-shrink-0">
+                  <div
+                    class="bg-gray-50 min-h-80 rounded-lg shadow-md dark:bg-gray-700"
+                  >
+                    <ul
+                      class="text-sm font-medium text-center text-gray-500 sm:divide-x divide-gray-300 rounded-lg sm:flex dark:divide-gray-600 dark:text-gray-400 rtl:divide-x-reverse"
+                      id="fullWidthTab"
+                      data-tabs-toggle="#fullWidthTabContent"
+                      role="tablist"
+                    >
+                      <li class="w-full">
+                        <button
+                          type="button"
+                          role="tab"
+                          class="inline-block w-full p-4 sm:rounded-ss-lg bg-gray-200 hover:bg-gray-100 focus:outline-none dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
+                          onclick="
+                            showTab(
+                              'shloka12_1',
+                              'learning12_1',
+                              'noCharacters',
+                            )
+                          "
+                        >
+                          Shlok
+                        </button>
+                      </li>
+                      <li class="w-full">
+                        <button
+                          type="button"
+                          role="tab"
+                          class="inline-block w-full p-4 bg-gray-200 hover:bg-gray-100 focus:outline-none dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
+                          onclick="
+                            showTab(
+                              'learning12_1',
+                              'shloka12_1',
+                              'noCharacters',
+                            )
+                          "
+                        >
+                          Learnings
+                        </button>
+                      </li>
+                    </ul>
+                    <div id="shloka12_1" class="mt-4 p-2 sm:p-4">
+                      <h2
+                        class="text-xl font-semibold text-blue-700 mb-2 dark:text-blue-200"
+                      >
+                        श्लोक 12.1
+                      </h2>
+                      <p
+                        class="text-gray-700 font-semibold dark:text-gray-300 mb-2 sm:mb-4"
+                      >
+                        अर्जुन उवाच। <br /><br />
+                        एवं सततयुक्ता ये भक्तास्त्वां पर्युपासते ।<br />
+                        ये चाप्यक्षरमव्यक्तं तेषां के योगवित्तमाः ॥१॥
+                      </p>
+                      <p class="text-gray-600 mt-2 dark:text-gray-200">
+                        <strong>Meaning (Hindi):</strong> अर्जुन बोले: “जो भक्त
+                        निरंतर आपकी भक्ति और उपासना करते हैं, तथा जो अविनाशी और
+                        निराकार ब्रह्म की उपासना करते हैं — उनमें से योग को
+                        भली-भांति जानने वाला श्रेष्ठ कौन है?”
+                      </p>
+                      <p class="text-gray-600 mt-2 dark:text-gray-200">
+                        <strong>Meaning (English):</strong> Arjuna said: “Among
+                        those devotees who always worship You with devotion and
+                        those who worship the imperishable, unmanifest Brahman —
+                        who among them is considered more perfect in Yoga?”
+                      </p>
+                    </div>
+                    <div id="learning12_1" class="mt-4 p-2 sm:p-4 hidden">
+                      <p class="text-gray-600 dark:text-gray-200">
+                        This verse begins Chapter 12 of the Bhagavad Gita, known
+                        as Bhakti Yoga — the Yoga of Devotion. Arjuna asks a
+                        very deep spiritual question. Until this point in the
+                        Gita, Arjuna has heard about different spiritual paths
+                        from Krishna: Devotion to the personal form of God
+                        (Saguna Bhakti) Meditation on the formless Absolute
+                        (Nirguna Brahman) Now Arjuna wants clarity: Which path
+                        is superior? He compares two kinds of seekers:
+                        <br /><br />
+                        <strong> 1. Devotees of the Personal God </strong>
+                        <br />
+                        These are people who: Worship Krishna with love Pray,
+                        chant, remember, and surrender emotionally Build a
+                        personal relationship with God They see God as: Loving
+                        Accessible Personal Full of qualities and divine form
+                        This path is called Bhakti.
+                        <br /><br />
+                        <strong>
+                          2. Worshippers of the Formless Absolute
+                        </strong>
+                        <br />
+                        These seekers meditate on: The unmanifest reality The
+                        invisible, formless Brahman Pure consciousness beyond
+                        attributes They focus on: Detachment Meditation
+                        Knowledge Abstract spiritual truth This path is often
+                        associated with Jnana Yoga (the path of knowledge).
+                        <br /><br />
+                        <strong> Why Is Arjuna Asking This? </strong>
+                        <br />
+                        Arjuna represents every spiritual seeker who wonders:
+                        Should I worship God with emotion and devotion? Or
+                        should I meditate on the abstract, formless truth? Is
+                        love greater, or is pure philosophical realization
+                        greater? This question is timeless because different
+                        people are naturally drawn toward different spiritual
+                        temperaments. The Deeper Spiritual Insight This verse
+                        teaches that spirituality has multiple valid approaches.
+                        Some people connect through: Love Prayer Surrender
+                        Relationship with God Others connect through: Silence
+                        Meditation Self-inquiry Philosophical contemplation
+                        Arjuna is not asking out of curiosity alone. He wants to
+                        know: Which path is easier, more effective, and more
+                        complete for an ordinary human being living in the
+                        world? The answer Krishna gives in the following verses
+                        becomes one of the most important teachings on devotion
+                        in the entire Gita.
+                        <br /><br />
+                        <strong> Philosophical Significance </strong>
+                        <br />
+                        This verse introduces a major philosophical contrast:
+                        Personal God - Formless Absolute Saguna - Nirguna With
+                        attributes - Without attributes Emotional devotion -
+                        Intellectual contemplation Easier for most people -
+                        Difficult for embodied beings Relationship-based -
+                        Identity-based realization Krishna later explains that
+                        both paths can lead to the Divine, but devotion to the
+                        personal form is generally easier and more natural for
+                        most humans.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex justify-center space-x-2 mt-4 overflow-x-auto max-w-[80%] mx-auto"
+            >
+              <button
+                class="hidden sm:inline-block bg-blue-500 text-white px-3 py-1 rounded"
+                onclick="moveCarousel(-1, 'carousel12')"
+              >
+                Previous
+              </button>
+              <div class="flex space-x-2 overflow-x-auto custom-scrollbar">
+                <button
+                  class="shloka-button bg-gray-600 text-white px-3 py-1 rounded dark:bg-white dark:text-gray-900"
+                  onclick="jumpToShloka(0, 'carousel12')"
+                >
+                  1
+                </button>
+                <button
+                  class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-white dark:text-gray-900"
+                  onclick="jumpToShloka(1, 'carousel12')"
+                >
+                  2
+                </button>
+              </div>
+              <button
+                class="hidden sm:inline-block bg-blue-500 text-white px-3 py-1 rounded"
+                onclick="moveCarousel(1, 'carousel12')"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script>
@@ -59759,6 +60004,7 @@
         9: "Raja Vidya Raja Guhya Yoga",
         10: "Vibhuti Yoga",
         11: "Vishvarupa Darshan Yoga",
+        12: "Bhakti Yoga",
       };
 
       const summaries = {
@@ -59803,6 +60049,11 @@ Arjuna sees countless faces, eyes, and divine ornaments, with blazing radiance l
 Overwhelmed with fear and devotion, Arjuna praises Krishna, seeks forgiveness for past casual behavior, and requests Him to return to His gentle human form. Krishna reassumes His familiar form and teaches that such a divine vision is attainable only through pure devotion (Bhakti), not by rituals or knowledge alone.
 
 This chapter emphasizes surrender, devotion, and understanding the divine as the ultimate reality controlling creation, preservation, and destruction.`,
+        12: `Chapter 12 of the Bhagavad Gita, called Bhakti Yoga or the Yoga of Devotion, explains the path of loving devotion toward God. Arjuna asks Krishna whether worshipping God in a personal form or as the formless Absolute is better. Krishna replies that both paths lead to the Divine, but devotion to God with love, faith, and surrender is easier for most people.
+
+Krishna emphasizes that a true devotee should have qualities such as compassion, humility, self-control, forgiveness, freedom from ego, and equal-mindedness in happiness and sorrow. A devoted person remains calm, harms no one, and performs actions without selfish desires. Such devotees are very dear to God.
+
+The chapter also teaches that if someone cannot completely focus the mind on God, they should practice devotion gradually through discipline, selfless action, and renunciation of the fruits of work. Overall, Chapter 12 highlights devotion, faith, and purity of heart as powerful means to attain peace and union with the Divine.`,
         // Add all 18 summaries here
       };
 
@@ -60274,6 +60525,42 @@ This chapter emphasizes surrender, devotion, and understanding the divine as the
               verses: "52-55",
               description:
                 "Krishna explains that His universal form can be realized only through pure devotion (Bhakti), not by rituals or knowledge alone.",
+            },
+          ],
+        },
+        12: {
+          title: "Bhakti Yoga",
+          verses: 20,
+          summary: [
+            {
+              section: "Arjuna's Question on Worship",
+              verses: "1",
+              description:
+                "Arjuna asks whether worship of the personal form of God or the formless Absolute is superior.",
+            },
+            {
+              section: "Personal and Impersonal Devotion",
+              verses: "2-7",
+              description:
+                "Krishna explains that both paths lead to Him, but devotion to His personal form is easier for most people.",
+            },
+            {
+              section: "Steps to Spiritual Practice",
+              verses: "8-12",
+              description:
+                "Krishna describes gradual paths such as fixing the mind on God, practicing devotion, selfless work, and renouncing results.",
+            },
+            {
+              section: "Qualities of a True Devotee",
+              verses: "13-19",
+              description:
+                "Krishna lists the virtues of dear devotees, including compassion, humility, self-control, forgiveness, and equanimity.",
+            },
+            {
+              section: "Conclusion of Bhakti Yoga",
+              verses: "20",
+              description:
+                "Krishna concludes that those who follow the path of devotion with faith are exceedingly dear to Him.",
             },
           ],
         },
