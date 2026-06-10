@@ -62883,6 +62883,246 @@
           </div>
         </div>
       </div>
+
+      <div class="space-y-4 mb-3">
+        <!-- Chapter 13 -->
+        <div
+          class="bg-white p-3 sm:p-4 rounded-lg shadow-md dark:bg-gray-800 flex flex-col items-stretch"
+          onclick="openChapter('chapter13')"
+        >
+          <div class="flex flex-row">
+            <button
+              class="w-full text-left font-semibold text-lg text-blue-700 dark:text-blue-300"
+              onclick="toggleAccordion('chapter13')"
+            >
+              Chapter 13: Kshetra-Kshetrajna Vibhaga Yoga
+            </button>
+            <div class="relative group me-2">
+              <button
+                onclick="showItenary(13)"
+                data-modal-target="itenary-modal"
+                data-modal-toggle="itenary-modal"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 text-blue-700 dark:text-blue-300"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z"
+                  />
+                </svg>
+              </button>
+              <span
+                class="absolute hidden group-hover:block bg-gray-800 text-white text-xs rounded-lg py-1 px-2 w-max top-full mt-1 left-2/3 -translate-x-2/3"
+              >
+                Click to view Itinerary
+              </span>
+            </div>
+            <div class="relative group">
+              <button
+                onclick="showSummary(13)"
+                data-modal-target="static-modal"
+                data-modal-toggle="static-modal"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="text-blue-700 dark:text-blue-300 size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"
+                  />
+                </svg>
+              </button>
+              <span
+                class="absolute hidden group-hover:block bg-gray-800 text-white text-xs rounded-lg py-1 px-2 w-max top-full mt-1 left-2/3 -translate-x-2/3"
+              >
+                Click to view summary
+              </span>
+            </div>
+          </div>
+
+          <div id="chapter13" class="hidden mt-4">
+            <div class="relative w-full overflow-hidden">
+              <div
+                id="carousel13"
+                class="flex transition-transform duration-500 ease-in-out"
+              >
+                <!-- Shloka Card 1 -->
+                <div class="w-full sm:p-4 flex-shrink-0">
+                  <div
+                    class="bg-gray-50 min-h-80 rounded-lg shadow-md dark:bg-gray-700"
+                  >
+                    <ul
+                      class="text-sm font-medium text-center text-gray-500 sm:divide-x divide-gray-300 rounded-lg sm:flex dark:divide-gray-600 dark:text-gray-400 rtl:divide-x-reverse"
+                      id="fullWidthTab"
+                      data-tabs-toggle="#fullWidthTabContent"
+                      role="tablist"
+                    >
+                      <li class="w-full">
+                        <button
+                          type="button"
+                          role="tab"
+                          class="inline-block w-full p-4 sm:rounded-ss-lg bg-gray-200 hover:bg-gray-100 focus:outline-none dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
+                          onclick="
+                            showTab(
+                              'shloka13_1',
+                              'learning13_1',
+                              'noCharacters',
+                            )
+                          "
+                        >
+                          Shlok
+                        </button>
+                      </li>
+                      <li class="w-full">
+                        <button
+                          type="button"
+                          role="tab"
+                          class="inline-block w-full p-4 bg-gray-200 hover:bg-gray-100 focus:outline-none dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
+                          onclick="
+                            showTab(
+                              'learning13_1',
+                              'shloka13_1',
+                              'noCharacters',
+                            )
+                          "
+                        >
+                          Learnings
+                        </button>
+                      </li>
+                    </ul>
+                    <div id="shloka13_1" class="mt-4 p-2 sm:p-4">
+                      <h2
+                        class="text-xl font-semibold text-blue-700 mb-2 dark:text-blue-200"
+                      >
+                        श्लोक 13.1
+                      </h2>
+                      <p
+                        class="text-gray-700 font-semibold dark:text-gray-300 mb-2 sm:mb-4"
+                      >
+                        श्रीभगवानुवाच। <br /><br />
+                        इदं शरीरं कौन्तेय क्षेत्रमित्यभिधीयते ।<br />
+                        एतद्यो वेत्ति तं प्राहुः क्षेत्रज्ञ इति तद्विदः ॥१॥
+                      </p>
+                      <p class="text-gray-600 mt-2 dark:text-gray-200">
+                        <strong>Meaning (Hindi):</strong> भगवान श्रीकृष्ण बोले:
+                        "हे कुन्तीपुत्र अर्जुन! यह शरीर 'क्षेत्र' कहलाता है और
+                        जो इस शरीर को जानता है, उसे तत्त्वज्ञानी लोग
+                        'क्षेत्रज्ञ' कहते हैं।"
+                      </p>
+                      <p class="text-gray-600 mt-2 dark:text-gray-200">
+                        <strong>Meaning (English):</strong> Lord Krishna said:
+                        "O son of Kunti, this body is called the Field
+                        (Kshetra), and one who knows this body is called the
+                        Knower of the Field (Kshetrajna) by those who understand
+                        the truth."
+                      </p>
+                    </div>
+                    <div id="learning13_1" class="mt-4 p-2 sm:p-4 hidden">
+                      <p class="text-gray-600 dark:text-gray-200">
+                        This verse introduces one of the most profound
+                        distinctions in spiritual philosophy:
+                        <br /><br />
+                        <strong>
+                          The Difference Between "What You Have" and "Who You
+                          Are"
+                        </strong>
+                        <br />
+                        Krishna begins by saying: The body is the field. You are
+                        the knower of the field. Most people identify themselves
+                        with the body: I am tall. I am old. I am beautiful. I am
+                        sick. But Krishna asks us to look deeper.
+                        <br /><br />
+                        If you can observe your body, then the observer cannot
+                        be the body itself. For example: You can say: My hand,
+                        My brain, My thoughts, My emotions. Notice that you
+                        naturally say "my", not "I". The owner and the owned are
+                        different. The body belongs to you, but it is not the
+                        deepest level of who you are.
+                        <br /><br />
+                        <strong> Why Is the Body Called a Field? </strong>
+                        <br />
+                        Think of a farmer and his field. In a field: Seeds are
+                        planted. Crops grow. Harvest is reaped. Similarly, in
+                        the body: Thoughts are planted. Habits grow. Actions are
+                        performed. Consequences are experienced. Every action
+                        (karma) produces results in this field. Thus, the
+                        body-mind complex becomes the place where our karmas
+                        unfold.
+                        <br /><br />
+                        <strong> The Witness Principle </strong>
+                        <br />
+                        The most important teaching here is the idea of the
+                        witness consciousness. Suppose you observe: Hunger,
+                        Happiness, Anger, fear.
+                        <br /><br />
+                        <strong> Who is observing them? </strong>
+                        <br />
+                        The observer cannot be the emotion itself. When anger
+                        comes and goes, something remains aware of it. That
+                        unchanging awareness is what Krishna calls the
+                        Kshetrajna.
+                        <br /><br />
+                        <strong>
+                          The Spiritual Revolution in This Verse
+                        </strong>
+                        <br />
+                        This verse shifts our identity from: "I am the body" to
+                        "I am the knower of the body." This is the starting
+                        point of self-realization. The moment we begin observing
+                        the body and mind instead of completely identifying with
+                        them, spiritual growth begins.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex justify-center space-x-2 mt-4 overflow-x-auto max-w-[80%] mx-auto"
+            >
+              <button
+                class="hidden sm:inline-block bg-blue-500 text-white px-3 py-1 rounded"
+                onclick="moveCarousel(-1, 'carousel13')"
+              >
+                Previous
+              </button>
+              <div class="flex space-x-2 overflow-x-auto custom-scrollbar">
+                <button
+                  class="shloka-button bg-gray-600 text-white px-3 py-1 rounded dark:bg-white dark:text-gray-900"
+                  onclick="jumpToShloka(0, 'carousel13')"
+                >
+                  1
+                </button>
+                <button
+                  class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-white dark:text-gray-900"
+                  onclick="jumpToShloka(1, 'carousel13')"
+                >
+                  2
+                </button>
+              </div>
+              <button
+                class="hidden sm:inline-block bg-blue-500 text-white px-3 py-1 rounded"
+                onclick="moveCarousel(1, 'carousel13')"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script>
@@ -62902,6 +63142,7 @@
         10: "Vibhuti Yoga",
         11: "Vishvarupa Darshan Yoga",
         12: "Bhakti Yoga",
+        13: "Kshetra-Kshetrajna Vibhaga Yoga",
       };
 
       const summaries = {
@@ -62941,16 +63182,23 @@
         Arjuna, deeply convinced of Krishna's supreme divinity, praises Him as the Supreme Brahman and requests to hear more about His divine glories. In response, Krishna describes His vibhutis—His manifestations in the world—showing how He is present in the greatest and most magnificent aspects of creation, such as among gods, sages, mountains, rivers, and virtues. Through these examples, Krishna teaches that all power, beauty, and excellence originate from Him. The chapter concludes with Krishna explaining that the entire universe is sustained by just a fraction of His divine energy, inspiring devotion, awe, and a deeper understanding of God's omnipresence.`,
         11: `In Chapter 11 of the Bhagavad Gita, Arjuna requests Krishna to reveal His divine, cosmic form. Granting divine vision, Krishna manifests His Vishvarupa (Universal Form), displaying an विराट and awe-inspiring vision that contains all creation—gods, beings, time, and the universe—within Himself.
 
-Arjuna sees countless faces, eyes, and divine ornaments, with blazing radiance like thousands of suns. He witnesses all warriors of the battlefield rushing into Krishna's fiery mouths, symbolizing destruction. Krishna explains that He is Time (Kala), the ultimate destroyer, already destined to eliminate these warriors. Arjuna realizes that he is merely an instrument in the divine plan.
+        Arjuna sees countless faces, eyes, and divine ornaments, with blazing radiance like thousands of suns. He witnesses all warriors of the battlefield rushing into Krishna's fiery mouths, symbolizing destruction. Krishna explains that He is Time (Kala), the ultimate destroyer, already destined to eliminate these warriors. Arjuna realizes that he is merely an instrument in the divine plan.
 
-Overwhelmed with fear and devotion, Arjuna praises Krishna, seeks forgiveness for past casual behavior, and requests Him to return to His gentle human form. Krishna reassumes His familiar form and teaches that such a divine vision is attainable only through pure devotion (Bhakti), not by rituals or knowledge alone.
+        Overwhelmed with fear and devotion, Arjuna praises Krishna, seeks forgiveness for past casual behavior, and requests Him to return to His gentle human form. Krishna reassumes His familiar form and teaches that such a divine vision is attainable only through pure devotion (Bhakti), not by rituals or knowledge alone.
 
-This chapter emphasizes surrender, devotion, and understanding the divine as the ultimate reality controlling creation, preservation, and destruction.`,
+        This chapter emphasizes surrender, devotion, and understanding the divine as the ultimate reality controlling creation, preservation, and destruction.`,
         12: `Chapter 12 of the Bhagavad Gita, called Bhakti Yoga or the Yoga of Devotion, explains the path of loving devotion toward God. Arjuna asks Krishna whether worshipping God in a personal form or as the formless Absolute is better. Krishna replies that both paths lead to the Divine, but devotion to God with love, faith, and surrender is easier for most people.
 
-Krishna emphasizes that a true devotee should have qualities such as compassion, humility, self-control, forgiveness, freedom from ego, and equal-mindedness in happiness and sorrow. A devoted person remains calm, harms no one, and performs actions without selfish desires. Such devotees are very dear to God.
+        Krishna emphasizes that a true devotee should have qualities such as compassion, humility, self-control, forgiveness, freedom from ego, and equal-mindedness in happiness and sorrow. A devoted person remains calm, harms no one, and performs actions without selfish desires. Such devotees are very dear to God.
 
-The chapter also teaches that if someone cannot completely focus the mind on God, they should practice devotion gradually through discipline, selfless action, and renunciation of the fruits of work. Overall, Chapter 12 highlights devotion, faith, and purity of heart as powerful means to attain peace and union with the Divine.`,
+        The chapter also teaches that if someone cannot completely focus the mind on God, they should practice devotion gradually through discipline, selfless action, and renunciation of the fruits of work. Overall, Chapter 12 highlights devotion, faith, and purity of heart as powerful means to attain peace and union with the Divine.`,
+        13: `Chapter 13 of the Bhagavad Gita is called Kshetra-Kshetrajna Vibhaga Yoga (The Yoga of Distinguishing the Field and the Knower of the Field). In this chapter, Lord Krishna explains the difference between the body (Kshetra) and the soul (Kshetrajna). The body is the field where actions, experiences, and changes occur, while the soul is the conscious knower and observer of the body.
+
+        Krishna describes true knowledge as the cultivation of virtues such as humility, non-violence, self-control, detachment, and devotion to God. He emphasizes that understanding the distinction between matter and consciousness is essential for spiritual wisdom.
+
+        The chapter also explains Prakriti (material nature) and Purusha (the conscious self). Material nature is responsible for all physical activities and transformations, whereas the soul experiences the results of these activities. Beyond both resides the Supreme Lord, who is the ultimate witness, supporter, and controller of all beings.
+
+        By realizing that the soul is eternal, untouched by bodily changes, and connected to the Supreme, a person transcends ignorance and attains liberation. Thus, Chapter 13 teaches self-awareness, spiritual knowledge, and the path to freedom from material bondage.`,
         // Add all 18 summaries here
       };
 
@@ -63458,6 +63706,54 @@ The chapter also teaches that if someone cannot completely focus the mind on God
               verses: "20",
               description:
                 "Krishna concludes that those who follow the path of devotion with faith are exceedingly dear to Him.",
+            },
+          ],
+        },
+        13: {
+          title: "Kshetra-Kshetrajna Vibhaga Yoga",
+          verses: 35,
+          summary: [
+            {
+              section: "The Field and the Knower of the Field",
+              verses: "1-7",
+              description:
+                "Krishna introduces Kshetra (the body) and Kshetrajna (the knower of the body), explaining their distinction.",
+            },
+            {
+              section: "Components of the Field",
+              verses: "8-12",
+              description:
+                "Description of the body, mind, senses, desires, and other elements that constitute the field of material existence.",
+            },
+            {
+              section: "Qualities of True Knowledge",
+              verses: "13-19",
+              description:
+                "Krishna outlines virtues such as humility, non-violence, self-control, detachment, and devotion as the path to true knowledge.",
+            },
+            {
+              section: "The Supreme Reality",
+              verses: "20-24",
+              description:
+                "Explanation of the Supreme Brahman, which pervades all existence, transcends matter, and is the ultimate object of knowledge.",
+            },
+            {
+              section: "Prakriti and Purusha",
+              verses: "25-29",
+              description:
+                "Krishna describes the relationship between material nature (Prakriti) and the conscious self (Purusha), and how their interaction causes worldly experience.",
+            },
+            {
+              section: "Vision of Unity",
+              verses: "30-32",
+              description:
+                "The wise perceive the same eternal Self present equally in all beings despite external differences.",
+            },
+            {
+              section: "Liberation Through Knowledge",
+              verses: "33-35",
+              description:
+                "By understanding the distinction between the field and its knower, one transcends ignorance and attains liberation.",
             },
           ],
         },
