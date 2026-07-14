@@ -68369,6 +68369,260 @@
           </div>
         </div>
       </div>
+
+      <div class="space-y-4 mb-3">
+        <!-- Chapter 14 -->
+        <div
+          class="bg-white p-3 sm:p-4 rounded-lg shadow-md dark:bg-gray-800 flex flex-col items-stretch"
+          onclick="openChapter('chapter14')"
+        >
+          <div class="flex flex-row">
+            <button
+              class="w-full text-left font-semibold text-lg text-blue-700 dark:text-blue-300"
+              onclick="toggleAccordion('chapter14')"
+            >
+              Chapter 14: Gunatraya Vibhaga Yoga
+            </button>
+            <div class="relative group me-2">
+              <button
+                onclick="showItenary(14)"
+                data-modal-target="itenary-modal"
+                data-modal-toggle="itenary-modal"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 text-blue-700 dark:text-blue-300"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z"
+                  />
+                </svg>
+              </button>
+              <span
+                class="absolute hidden group-hover:block bg-gray-800 text-white text-xs rounded-lg py-1 px-2 w-max top-full mt-1 left-2/3 -translate-x-2/3"
+              >
+                Click to view Itinerary
+              </span>
+            </div>
+            <div class="relative group">
+              <button
+                onclick="showSummary(14)"
+                data-modal-target="static-modal"
+                data-modal-toggle="static-modal"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="text-blue-700 dark:text-blue-300 size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"
+                  />
+                </svg>
+              </button>
+              <span
+                class="absolute hidden group-hover:block bg-gray-800 text-white text-xs rounded-lg py-1 px-2 w-max top-full mt-1 left-2/3 -translate-x-2/3"
+              >
+                Click to view summary
+              </span>
+            </div>
+          </div>
+
+          <div id="chapter14" class="hidden mt-4">
+            <div class="relative w-full overflow-hidden">
+              <div
+                id="carousel14"
+                class="flex transition-transform duration-500 ease-in-out"
+              >
+                <!-- Shloka Card 1 -->
+                <div class="w-full sm:p-4 flex-shrink-0">
+                  <div
+                    class="bg-gray-50 min-h-80 rounded-lg shadow-md dark:bg-gray-700"
+                  >
+                    <ul
+                      class="text-sm font-medium text-center text-gray-500 sm:divide-x divide-gray-300 rounded-lg sm:flex dark:divide-gray-600 dark:text-gray-400 rtl:divide-x-reverse"
+                      id="fullWidthTab"
+                      data-tabs-toggle="#fullWidthTabContent"
+                      role="tablist"
+                    >
+                      <li class="w-full">
+                        <button
+                          type="button"
+                          role="tab"
+                          class="inline-block w-full p-4 sm:rounded-ss-lg bg-gray-200 hover:bg-gray-100 focus:outline-none dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
+                          onclick="
+                            showTab(
+                              'shloka14_1',
+                              'learning14_1',
+                              'noCharacters',
+                            )
+                          "
+                        >
+                          Shlok
+                        </button>
+                      </li>
+                      <li class="w-full">
+                        <button
+                          type="button"
+                          role="tab"
+                          class="inline-block w-full p-4 bg-gray-200 hover:bg-gray-100 focus:outline-none dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
+                          onclick="
+                            showTab(
+                              'learning14_1',
+                              'shloka14_1',
+                              'noCharacters',
+                            )
+                          "
+                        >
+                          Learnings
+                        </button>
+                      </li>
+                    </ul>
+                    <div id="shloka14_1" class="mt-4 p-2 sm:p-4">
+                      <h2
+                        class="text-xl font-semibold text-blue-700 mb-2 dark:text-blue-200"
+                      >
+                        श्लोक 14.1
+                      </h2>
+                      <p
+                        class="text-gray-700 font-semibold dark:text-gray-300 mb-2 sm:mb-4"
+                      >
+                        श्रीभगवानुवाच। <br /><br />
+                        परं भूयः प्रवक्ष्यामि ज्ञानानां ज्ञानमुत्तमम् ।<br />
+                        यज्ज्ञात्वा मुनयः सर्वे परां सिद्धिमितो गताः ॥१॥
+                      </p>
+                      <p class="text-gray-600 mt-2 dark:text-gray-200">
+                        <strong>Meaning (Hindi):</strong> "मैं फिर से तुम्हें
+                        समस्त ज्ञानों में श्रेष्ठ और परम ज्ञान कहूँगा, जिसे
+                        जानकर सभी मुनियों ने इस संसार से ऊपर उठकर परम सिद्धि
+                        (मोक्ष) को प्राप्त किया है।"
+                      </p>
+                      <p class="text-gray-600 mt-2 dark:text-gray-200">
+                        <strong>Meaning (English):</strong> "I shall once again
+                        explain to you the supreme knowledge, the highest among
+                        all forms of knowledge. By knowing this, all sages have
+                        attained the highest perfection and liberation from this
+                        material existence."
+                      </p>
+                    </div>
+                    <div id="learning14_1" class="mt-4 p-2 sm:p-4 hidden">
+                      <p class="text-gray-600 dark:text-gray-200">
+                        <strong> 1. Why does Krishna say "once again"? </strong>
+                        <br />
+                        Krishna has already explained many spiritual truths in
+                        the previous chapters. Yet He says "I shall explain
+                        again." This teaches an important principle: Spiritual
+                        wisdom is so profound that it requires repeated hearing
+                        and contemplation. Even intelligent seekers need
+                        reminders because the mind easily forgets higher truths
+                        and becomes absorbed in worldly concerns. Just as a
+                        student revises important concepts before an exam,
+                        Krishna revisits the most essential teachings before
+                        introducing the doctrine of the three gunas (Sattva,
+                        Rajas, and Tamas) in Chapter 14.
+                        <br /><br />
+                        <strong> 2. What is "the highest knowledge"? </strong>
+                        <br />
+                        Krishna calls it: "ज्ञानानां ज्ञानमुत्तमम्" "The highest
+                        among all knowledge." There are many kinds of knowledge:
+                        Scientific knowledge, Technical knowledge, Business
+                        knowledge, Political knowledge, Psychological knowledge.
+                        These help us understand and manage the external world.
+                        However, Krishna is speaking about knowledge that
+                        answers: Who am I? What is the nature of consciousness?
+                        Why do I suffer? What binds me to repeated birth and
+                        death? How can I attain lasting freedom? This knowledge
+                        is considered supreme because it solves the fundamental
+                        problem of human existence rather than merely improving
+                        external circumstances.
+                        <br /><br />
+                        <strong>
+                          3. What is "Parāṁ Siddhim" (Highest Perfection)?
+                        </strong>
+                        <br />
+                        Krishna says that sages attained: "परां सिद्धिम्"
+                        (Supreme Perfection) This does not refer to: Wealth,
+                        Fame, Power, Supernatural abilities. Instead, it means:
+                        Realization of one's true spiritual nature, Freedom from
+                        ignorance, Freedom from bondage to material nature,
+                        Union with the Divine, Liberation (Moksha). The highest
+                        perfection is not becoming something new; it is
+                        realizing what we truly are.
+                        <br /><br />
+                        <strong>
+                          4. Why is this knowledge so important?
+                        </strong>
+                        <br />
+                        Most people spend their lives improving external
+                        conditions: Better career, Better income, Better
+                        relationships, Better possessions. While these are
+                        valuable, they do not completely remove anxiety, fear,
+                        aging, or death. Krishna points toward knowledge that
+                        transforms the very basis of our identity. Instead of
+                        identifying solely with: "I am this body" "I am my job"
+                        "I am my status" one realizes: "I am the eternal soul,
+                        temporarily residing in a body." This shift changes the
+                        entire way a person experiences life.
+                        <br /><br />
+                        <strong> 5. Connection to Chapter 14 </strong>
+                        <br />
+                        Chapter 14 discusses the three gunas: Sattva (Purity and
+                        Harmony) Rajas (Passion and Activity) Tamas (Ignorance
+                        and Inertia) The supreme knowledge Krishna is about to
+                        explain helps us understand: How these gunas influence
+                        our thoughts and actions. Why we behave the way we do.
+                        How we become bound by nature. How we can transcend
+                        these forces and attain freedom.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex justify-center space-x-2 mt-4 overflow-x-auto max-w-[80%] mx-auto"
+            >
+              <button
+                class="hidden sm:inline-block bg-blue-500 text-white px-3 py-1 rounded"
+                onclick="moveCarousel(-1, 'carousel14')"
+              >
+                Previous
+              </button>
+              <div class="flex space-x-2 overflow-x-auto custom-scrollbar">
+                <button
+                  class="shloka-button bg-gray-600 text-white px-3 py-1 rounded dark:bg-white dark:text-gray-900"
+                  onclick="jumpToShloka(0, 'carousel14')"
+                >
+                  1
+                </button>
+                <button
+                  class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-white dark:text-gray-900"
+                  onclick="jumpToShloka(1, 'carousel14')"
+                >
+                  2
+                </button>
+              </div>
+              <button
+                class="hidden sm:inline-block bg-blue-500 text-white px-3 py-1 rounded"
+                onclick="moveCarousel(1, 'carousel14')"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script>
@@ -68389,6 +68643,7 @@
         11: "Vishvarupa Darshan Yoga",
         12: "Bhakti Yoga",
         13: "Kshetra-Kshetrajna Vibhaga Yoga",
+        14: "Gunatraya Vibhaga Yoga",
       };
 
       const summaries = {
@@ -68445,6 +68700,11 @@
         The chapter also explains Prakriti (material nature) and Purusha (the conscious self). Material nature is responsible for all physical activities and transformations, whereas the soul experiences the results of these activities. Beyond both resides the Supreme Lord, who is the ultimate witness, supporter, and controller of all beings.
 
         By realizing that the soul is eternal, untouched by bodily changes, and connected to the Supreme, a person transcends ignorance and attains liberation. Thus, Chapter 13 teaches self-awareness, spiritual knowledge, and the path to freedom from material bondage.`,
+        14: `In Chapter 14 of the Bhagavad Gita, Lord Krishna explains the three fundamental qualities (gunas) of material nature that influence all living beings: Sattva (goodness), Rajas (passion), and Tamas (ignorance). Sattva is pure and illuminating, leading to wisdom, peace, and happiness. Rajas is driven by desire and attachment, causing restless activity and ambition. Tamas arises from ignorance and results in laziness, confusion, and delusion.
+
+        Krishna describes how these gunas bind the eternal soul to the material world. Depending on which guna predominates, a person's thoughts, actions, and destiny are shaped accordingly. Sattvic individuals attain higher states of existence, rajasic individuals remain attached to worldly pursuits, and tamasic individuals move toward lower states due to ignorance.
+
+        The chapter further explains the signs by which one can recognize the dominance of each guna and the outcomes they produce. Krishna then teaches the path to transcend all three gunas by remaining detached, balanced in success and failure, and devoted to Him with unwavering faith. Such a person becomes free from the cycle of birth and death and attains the supreme spiritual state. Thus, the chapter emphasizes self-awareness, inner purity, and devotion as the means to liberation.`,
         // Add all 18 summaries here
       };
 
@@ -69000,6 +69260,42 @@
               verses: "33-35",
               description:
                 "By understanding the distinction between the field and its knower, one transcends ignorance and attains liberation.",
+            },
+          ],
+        },
+        14: {
+          title: "Gunatraya Vibhaga Yoga",
+          verses: 27,
+          summary: [
+            {
+              section: "Supreme Knowledge and the Origin of Beings",
+              verses: "1-4",
+              description:
+                "Krishna reveals the highest knowledge and explains how all living beings take birth through the union of material nature and the Supreme Lord.",
+            },
+            {
+              section: "The Three Gunas and Their Nature",
+              verses: "5-9",
+              description:
+                "Introduction to Sattva (goodness), Rajas (passion), and Tamas (ignorance), and how each binds the soul to the material world.",
+            },
+            {
+              section: "Characteristics and Influence of the Gunas",
+              verses: "10-18",
+              description:
+                "The signs, effects, and dominance of each guna, along with the destinations attained by those influenced by them.",
+            },
+            {
+              section: "Transcending the Three Gunas",
+              verses: "19-25",
+              description:
+                "Krishna describes the qualities of a person who has risen above the gunas and remains balanced amidst all dualities.",
+            },
+            {
+              section: "The Path to Liberation",
+              verses: "26-27",
+              description:
+                "Through unwavering devotion to Krishna, one transcends the gunas, attains Brahman, and reaches the supreme spiritual state.",
             },
           ],
         },
