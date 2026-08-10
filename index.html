@@ -72441,6 +72441,285 @@
           </div>
         </div>
       </div>
+
+      <div class="space-y-4 mb-3">
+        <!-- Chapter 15 -->
+        <div
+          class="bg-white p-3 sm:p-4 rounded-lg shadow-md dark:bg-gray-800 flex flex-col items-stretch"
+          onclick="openChapter('chapter15')"
+        >
+          <div class="flex flex-row">
+            <button
+              class="w-full text-left font-semibold text-lg text-blue-700 dark:text-blue-300"
+              onclick="toggleAccordion('chapter15')"
+            >
+              Chapter 15: Purushottam Yoga
+            </button>
+            <div class="relative group me-2">
+              <button
+                onclick="showItenary(15)"
+                data-modal-target="itenary-modal"
+                data-modal-toggle="itenary-modal"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 text-blue-700 dark:text-blue-300"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z"
+                  />
+                </svg>
+              </button>
+              <span
+                class="absolute hidden group-hover:block bg-gray-800 text-white text-xs rounded-lg py-1 px-2 w-max top-full mt-1 left-2/3 -translate-x-2/3"
+              >
+                Click to view Itinerary
+              </span>
+            </div>
+            <div class="relative group">
+              <button
+                onclick="showSummary(15)"
+                data-modal-target="static-modal"
+                data-modal-toggle="static-modal"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="text-blue-700 dark:text-blue-300 size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"
+                  />
+                </svg>
+              </button>
+              <span
+                class="absolute hidden group-hover:block bg-gray-800 text-white text-xs rounded-lg py-1 px-2 w-max top-full mt-1 left-2/3 -translate-x-2/3"
+              >
+                Click to view summary
+              </span>
+            </div>
+          </div>
+
+          <div id="chapter15" class="hidden mt-4">
+            <div class="relative w-full overflow-hidden">
+              <div
+                id="carousel15"
+                class="flex transition-transform duration-500 ease-in-out"
+              >
+                <!-- Shloka Card 1 -->
+                <div class="w-full sm:p-4 flex-shrink-0">
+                  <div
+                    class="bg-gray-50 min-h-80 rounded-lg shadow-md dark:bg-gray-700"
+                  >
+                    <ul
+                      class="text-sm font-medium text-center text-gray-500 sm:divide-x divide-gray-300 rounded-lg sm:flex dark:divide-gray-600 dark:text-gray-400 rtl:divide-x-reverse"
+                      id="fullWidthTab"
+                      data-tabs-toggle="#fullWidthTabContent"
+                      role="tablist"
+                    >
+                      <li class="w-full">
+                        <button
+                          type="button"
+                          role="tab"
+                          class="inline-block w-full p-4 sm:rounded-ss-lg bg-gray-200 hover:bg-gray-100 focus:outline-none dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
+                          onclick="
+                            showTab(
+                              'shloka15_1',
+                              'learning15_1',
+                              'noCharacters',
+                            )
+                          "
+                        >
+                          Shlok
+                        </button>
+                      </li>
+                      <li class="w-full">
+                        <button
+                          type="button"
+                          role="tab"
+                          class="inline-block w-full p-4 bg-gray-200 hover:bg-gray-100 focus:outline-none dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
+                          onclick="
+                            showTab(
+                              'learning15_1',
+                              'shloka15_1',
+                              'noCharacters',
+                            )
+                          "
+                        >
+                          Learnings
+                        </button>
+                      </li>
+                    </ul>
+                    <div id="shloka15_1" class="mt-4 p-2 sm:p-4">
+                      <h2
+                        class="text-xl font-semibold text-blue-700 mb-2 dark:text-blue-200"
+                      >
+                        श्लोक 15.1
+                      </h2>
+                      <p
+                        class="text-gray-700 font-semibold dark:text-gray-300 mb-2 sm:mb-4"
+                      >
+                        श्रीभगवानुवाच। <br /><br />
+                        ऊर्ध्वमूलमधःशाखमश्वत्थं प्राहुरव्ययम् ।<br />
+                        छन्दांसि यस्य पर्णानि यस्तं वेद स वेदवित् ॥१॥
+                      </p>
+                      <p class="text-gray-600 mt-2 dark:text-gray-200">
+                        <strong>Meaning (Hindi):</strong> भगवान श्रीकृष्ण कहते
+                        हैं: इस संसार रूपी वृक्ष की जड़ ऊपर है और इसकी शाखाएँ
+                        नीचे की ओर फैली हुई हैं। इसे अविनाशी अश्वत्थ वृक्ष कहा
+                        गया है। इसके पत्ते वेदों के मंत्र हैं। जो व्यक्ति इस
+                        संसार-वृक्ष के वास्तविक स्वरूप को समझ लेता है, वही
+                        वास्तव में वेदों को जानने वाला है।
+                      </p>
+                      <p class="text-gray-600 mt-2 dark:text-gray-200">
+                        <strong>Meaning (English):</strong> The entire material
+                        existence is compared to an upside-down tree. Its roots
+                        are above, while its branches spread downward. The roots
+                        represent the Supreme Reality / Supreme Being, from whom
+                        the entire manifested world originates. The branches
+                        represent the countless manifestations and experiences
+                        of material existence. The leaves are compared to the
+                        Vedic teachings, because they provide knowledge about
+                        how this world works and how a human being can
+                        ultimately transcend it.
+                      </p>
+                    </div>
+                    <div id="learning15_1" class="mt-4 p-2 sm:p-4 hidden">
+                      <p class="text-gray-600 dark:text-gray-200">
+                        Let's break the verse down philosophically.
+                        <br /><br />
+                        <strong> 1. Why is the tree upside down? </strong>
+                        <br />
+                        Imagine looking at the reflection of a tree in water.
+                        The actual tree is standing normally, but its reflection
+                        appears upside down: The metaphor suggests that the
+                        world we experience is not self-sufficient. Everything
+                        we experience has a deeper source. Just as branches
+                        cannot exist independently of the root, our existence
+                        cannot ultimately be understood independently of its
+                        spiritual source.
+                        <br /><br />
+                        <strong> 2. The "root" represents the Supreme </strong>
+                        <br />
+                        The root is above because the ultimate cause of
+                        existence is beyond the ordinary material world. This is
+                        a crucial philosophical point. We normally start our
+                        thinking from: "I am this body." Then: "I have a
+                        family." Then: "I have a career." Then: "I want money,
+                        success, recognition and happiness." Krishna reverses
+                        this perspective. He essentially asks us to start from
+                        the root, rather than becoming lost among the branches.
+                        Instead of asking: "How can I make my branch better?" we
+                        should eventually ask: "Where does this entire tree come
+                        from?" That is a much deeper question.
+                        <br /><br />
+                        <strong>
+                          3. The branches represent material existence
+                        </strong>
+                        <br />
+                        The branches can represent: different forms of life,
+                        different experiences, relationships, desires, social
+                        structures, actions, consequences of actions, material
+                        pleasures, suffering, attachment, ambition. We keep
+                        moving from one branch to another. For example: Student
+                        → Job → Promotion → Money → Family → Responsibilities →
+                        More desires → More actions → More consequences We may
+                        spend our entire life moving around the branches without
+                        ever asking about the root. That's one of the central
+                        messages of this chapter.
+                        <br /><br />
+                        <strong>
+                          4. Why are the Vedas called the leaves?
+                        </strong>
+                        <br />
+                        Think about a tree. Leaves are extremely important for
+                        the functioning and nourishment of a tree. Similarly,
+                        the Vedic teachings provide knowledge about the
+                        structure of existence and how human beings should live
+                        within it. But there is another beautiful implication:
+                        Knowledge is meant to help us understand the tree, not
+                        merely become more attached to the branches. In other
+                        words, spiritual knowledge should eventually lead us
+                        beyond superficial material identification.
+                        <br /><br />
+                        <strong>
+                          5. "He who knows this tree knows the Vedas"
+                        </strong>
+                        <br />
+                        This is perhaps the most profound part of the verse.
+                        Krishna does not say: "The person who memorizes the
+                        Vedas knows the Vedas." He says, essentially: The person
+                        who understands the reality represented by this tree
+                        truly understands the Vedic knowledge. This is an
+                        important distinction between information and
+                        realization. You can read hundreds of spiritual books.
+                        You can memorize thousands of verses. But if you still
+                        don't understand: Who am I?, What is temporary?, What is
+                        permanent?, Why am I attached?, What is the purpose of
+                        life?. What is the relationship between the individual
+                        and the Supreme? then the deeper purpose of spiritual
+                        knowledge has not yet been realized.
+                        <br /><br />
+                        <strong> The deeper philosophical meaning </strong>
+                        <br />
+                        The verse is essentially asking us to change our
+                        perspective. Most people see life horizontally: Birth →
+                        education → career → money → relationships → aging →
+                        death Krishna asks us to see vertically: Supreme Reality
+                        -> Existence -> Individual life -> Experiences and
+                        actions The second perspective helps us understand that
+                        our everyday life is only one part of a much larger
+                        reality.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex justify-center space-x-2 mt-4 overflow-x-auto max-w-[80%] mx-auto"
+            >
+              <button
+                class="hidden sm:inline-block bg-blue-500 text-white px-3 py-1 rounded"
+                onclick="moveCarousel(-1, 'carousel15')"
+              >
+                Previous
+              </button>
+              <div class="flex space-x-2 overflow-x-auto custom-scrollbar">
+                <button
+                  class="shloka-button bg-gray-600 text-white px-3 py-1 rounded dark:bg-white dark:text-gray-900"
+                  onclick="jumpToShloka(0, 'carousel15')"
+                >
+                  1
+                </button>
+                <button
+                  class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-white dark:text-gray-900"
+                  onclick="jumpToShloka(1, 'carousel15')"
+                >
+                  2
+                </button>
+              </div>
+              <button
+                class="hidden sm:inline-block bg-blue-500 text-white px-3 py-1 rounded"
+                onclick="moveCarousel(1, 'carousel15')"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script>
@@ -72462,6 +72741,7 @@
         12: "Bhakti Yoga",
         13: "Kshetra-Kshetrajna Vibhaga Yoga",
         14: "Gunatraya Vibhaga Yoga",
+        15: "Purushottam Yoga",
       };
 
       const summaries = {
@@ -72523,6 +72803,15 @@
         Krishna describes how these gunas bind the eternal soul to the material world. Depending on which guna predominates, a person's thoughts, actions, and destiny are shaped accordingly. Sattvic individuals attain higher states of existence, rajasic individuals remain attached to worldly pursuits, and tamasic individuals move toward lower states due to ignorance.
 
         The chapter further explains the signs by which one can recognize the dominance of each guna and the outcomes they produce. Krishna then teaches the path to transcend all three gunas by remaining detached, balanced in success and failure, and devoted to Him with unwavering faith. Such a person becomes free from the cycle of birth and death and attains the supreme spiritual state. Thus, the chapter emphasizes self-awareness, inner purity, and devotion as the means to liberation.`,
+        15: `Chapter 15 of the Bhagavad Gita, known as Purushottama Yoga (The Yoga of the Supreme Person), explains the nature of the material world, the individual soul, and the Supreme Being.
+
+Lord Krishna compares the material world to an upside-down Ashvattha tree, whose roots are above and branches below. Its roots represent the Supreme Reality, while its branches represent worldly existence, desires, actions, and attachments. Krishna advises Arjuna to cut this tree with the strong weapon of detachment and seek the eternal Supreme abode.
+
+Krishna then explains that every living being contains an eternal soul (Atman), which is a part of Him. The soul carries the mind and senses from one body to another, just as a person changes clothes. However, people attached to material existence fail to recognize this spiritual truth.
+
+Krishna describes Himself as the divine presence behind the sun, moon, fire, digestion, memory, knowledge, and understanding. He declares that He is beyond both the perishable world and the imperishable soul, and therefore is known as Purushottama—the Supreme Person.
+
+The chapter ultimately teaches that recognizing the Supreme Being and developing detachment, wisdom, and devotion leads a person toward liberation.`,
         // Add all 18 summaries here
       };
 
@@ -73114,6 +73403,48 @@
               verses: "26-27",
               description:
                 "Through unwavering devotion to Krishna, one transcends the gunas, attains Brahman, and reaches the supreme spiritual state.",
+            },
+          ],
+        },
+        15: {
+          title: "Purushottama Yoga",
+          verses: 20,
+          summary: [
+            {
+              section: "The Eternal Ashvattha Tree",
+              verses: "1-4",
+              description:
+                "Krishna describes the material world as an upside-down Ashvattha tree and explains how attachment and worldly desires keep beings bound to it.",
+            },
+            {
+              section: "The Path to the Supreme Abode",
+              verses: "5-6",
+              description:
+                "Krishna describes the qualities of those who attain the eternal Supreme abode through freedom from pride, attachment, and desire.",
+            },
+            {
+              section: "The Journey of the Individual Soul",
+              verses: "7-11",
+              description:
+                "Krishna explains that every living being carries an eternal soul, which moves from one body to another along with the mind and senses.",
+            },
+            {
+              section: "The Divine Presence in Creation",
+              verses: "12-15",
+              description:
+                "Krishna reveals His presence in the sun, moon, fire, earth, plants, digestion, memory, knowledge, and understanding.",
+            },
+            {
+              section: "The Perishable and Imperishable",
+              verses: "16-18",
+              description:
+                "Krishna distinguishes between the perishable material world, the imperishable soul, and the Supreme Being who transcends both.",
+            },
+            {
+              section: "Realization of the Supreme Person",
+              verses: "19-20",
+              description:
+                "Krishna declares Himself as Purushottama, the Supreme Person, and explains that understanding this truth leads to wisdom and complete devotion.",
             },
           ],
         },
