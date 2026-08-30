@@ -76281,6 +76281,396 @@
           </div>
         </div>
       </div>
+
+      <div class="space-y-4 mb-3">
+        <!-- Chapter 16 -->
+        <div
+          class="bg-white p-3 sm:p-4 rounded-lg shadow-md dark:bg-gray-800 flex flex-col items-stretch"
+          onclick="openChapter('chapter16')"
+        >
+          <div class="flex flex-row">
+            <button
+              class="w-full text-left font-semibold text-lg text-blue-700 dark:text-blue-300"
+              onclick="toggleAccordion('chapter16')"
+            >
+              Chapter 16: Daivasura Sampad Vibhaga Yoga
+            </button>
+            <div class="relative group me-2">
+              <button
+                onclick="showItenary(15)"
+                data-modal-target="itenary-modal"
+                data-modal-toggle="itenary-modal"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 text-blue-700 dark:text-blue-300"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z"
+                  />
+                </svg>
+              </button>
+              <span
+                class="absolute hidden group-hover:block bg-gray-800 text-white text-xs rounded-lg py-1 px-2 w-max top-full mt-1 left-2/3 -translate-x-2/3"
+              >
+                Click to view Itinerary
+              </span>
+            </div>
+            <div class="relative group">
+              <button
+                onclick="showSummary(16)"
+                data-modal-target="static-modal"
+                data-modal-toggle="static-modal"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="text-blue-700 dark:text-blue-300 size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"
+                  />
+                </svg>
+              </button>
+              <span
+                class="absolute hidden group-hover:block bg-gray-800 text-white text-xs rounded-lg py-1 px-2 w-max top-full mt-1 left-2/3 -translate-x-2/3"
+              >
+                Click to view summary
+              </span>
+            </div>
+          </div>
+
+          <div id="chapter16" class="hidden mt-4">
+            <div class="relative w-full overflow-hidden">
+              <div
+                id="carousel16"
+                class="flex transition-transform duration-500 ease-in-out"
+              >
+                <!-- Shloka Card 1 -->
+                <div class="w-full sm:p-4 flex-shrink-0">
+                  <div
+                    class="bg-gray-50 min-h-80 rounded-lg shadow-md dark:bg-gray-700"
+                  >
+                    <ul
+                      class="text-sm font-medium text-center text-gray-500 sm:divide-x divide-gray-300 rounded-lg sm:flex dark:divide-gray-600 dark:text-gray-400 rtl:divide-x-reverse"
+                      id="fullWidthTab"
+                      data-tabs-toggle="#fullWidthTabContent"
+                      role="tablist"
+                    >
+                      <li class="w-full">
+                        <button
+                          type="button"
+                          role="tab"
+                          class="inline-block w-full p-4 sm:rounded-ss-lg bg-gray-200 hover:bg-gray-100 focus:outline-none dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
+                          onclick="
+                            showTab(
+                              'shloka16_1',
+                              'learning16_1',
+                              'noCharacters',
+                            )
+                          "
+                        >
+                          Shlok
+                        </button>
+                      </li>
+                      <li class="w-full">
+                        <button
+                          type="button"
+                          role="tab"
+                          class="inline-block w-full p-4 bg-gray-200 hover:bg-gray-100 focus:outline-none dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
+                          onclick="
+                            showTab(
+                              'learning16_1',
+                              'shloka16_1',
+                              'noCharacters',
+                            )
+                          "
+                        >
+                          Learnings
+                        </button>
+                      </li>
+                    </ul>
+                    <div id="shloka16_1" class="mt-4 p-2 sm:p-4">
+                      <h2
+                        class="text-xl font-semibold text-blue-700 mb-2 dark:text-blue-200"
+                      >
+                        श्लोक 16.1
+                      </h2>
+                      <p
+                        class="text-gray-700 font-semibold dark:text-gray-300 mb-2 sm:mb-4"
+                      >
+                        श्रीभगवानुवाच। <br /><br />
+                        अभयं सत्त्वसंशुद्धिर्ज्ञानयोगव्यवस्थितिः ।<br />
+                        दानं दमश्च यज्ञश्च स्वाध्यायस्तप आर्जवम् ॥१॥
+                      </p>
+                      <p class="text-gray-600 mt-2 dark:text-gray-200">
+                        <strong>Meaning (Hindi):</strong> भगवान श्रीकृष्ण इस
+                        श्लोक में उन गुणों का वर्णन करना शुरू करते हैं जो मनुष्य
+                        के दैवी स्वभाव को दर्शाते हैं। यहाँ श्रीकृष्ण नौ
+                        महत्वपूर्ण गुण बताते हैं:
+                        <br />
+                        अभयम् — निर्भयता: ऐसा जीवन जिसमें मनुष्य सत्य और धर्म के
+                        मार्ग पर चलते हुए भय से नियंत्रित न हो। इसका अर्थ
+                        लापरवाह होना नहीं है, बल्कि सही कार्य करने का साहस रखना
+                        है।
+                        <br />
+                        सत्त्वसंशुद्धिः — अंतःकरण की शुद्धता: अपने मन, विचारों
+                        और उद्देश्यों को ईर्ष्या, द्वेष, छल और स्वार्थ से मुक्त
+                        करने का प्रयास करना। केवल अच्छे कार्य करना पर्याप्त नहीं
+                        है; उन कार्यों के पीछे की भावना भी शुद्ध होनी चाहिए।
+                        <br />
+                        ज्ञानयोगव्यवस्थितिः — ज्ञान में दृढ़ता: आत्मज्ञान और
+                        सत्य को केवल सुनना या पढ़ना नहीं, बल्कि उसे समझकर अपने
+                        जीवन में स्थापित करना।
+                        <br />
+                        दानम् — दान: अपनी सामर्थ्य के अनुसार दूसरों की सहायता
+                        करना। दान केवल धन का नहीं होता—समय, ज्ञान, भोजन, सहायता
+                        और मार्गदर्शन देना भी दान है।
+                        <br />
+                        दमः — इन्द्रिय संयम: अपनी इच्छाओं और इन्द्रियों का दास न
+                        बनना। मन जो चाहता है, उसे तुरंत पूरा करना आवश्यक नहीं
+                        है। व्यक्ति में यह क्षमता होनी चाहिए कि वह स्वयं तय करे
+                        कि उसके लिए क्या उचित है।
+                        <br />
+                        यज्ञः — यज्ञ/समर्पण: व्यापक अर्थ में अपने कर्मों को केवल
+                        निजी लाभ के लिए न करके किसी उच्च उद्देश्य के लिए करना।
+                        अपने कर्तव्य को समर्पण की भावना से करना भी यज्ञ की भावना
+                        है।
+                        <br />
+                        स्वाध्यायः — स्वाध्याय: ज्ञानवर्धक और आध्यात्मिक ग्रंथों
+                        का अध्ययन तथा स्वयं के विचारों और व्यवहार का निरीक्षण
+                        करना।
+                        <br />
+                        तपः — तप/अनुशासन: कठिनाई आने पर भी सही मार्ग पर बने रहने
+                        का अनुशासन। उदाहरण के लिए क्रोध आने पर स्वयं को
+                        नियंत्रित करना, आलस्य के बावजूद कर्तव्य पूरा करना, या
+                        किसी अच्छे संकल्प को लगातार निभाना।
+                        <br />
+                        आर्जवम् — सरलता और निष्कपटता: मन, वाणी और कर्म में
+                        एकरूपता। अंदर कुछ और सोचना और बाहर कुछ और दिखाना आर्जव
+                        के विपरीत है।
+                        <br />
+                        इस श्लोक का संदेश यह है कि दैवी स्वभाव जन्म से प्राप्त
+                        कोई विशेष पहचान नहीं है। वह हमारे द्वारा विकसित किए गए
+                        गुणों में दिखाई देता है।
+                      </p>
+                      <p class="text-gray-600 mt-2 dark:text-gray-200">
+                        <strong>Meaning (English):</strong> Krishna says:
+                        Fearlessness, purity of mind, steadfastness in spiritual
+                        knowledge, charity, control of the senses, sacrifice,
+                        study of sacred knowledge, discipline, and
+                        straightforwardness are qualities of a person endowed
+                        with a divine nature.
+                      </p>
+                    </div>
+                    <div id="learning16_1" class="mt-4 p-2 sm:p-4 hidden">
+                      <p class="text-gray-600 dark:text-gray-200">
+                        One of the most interesting things about this verse is
+                        where Krishna starts. He does not begin the description
+                        of a spiritually developed person with rituals,
+                        intelligence, wealth, status, or even religious
+                        identity. He begins with:
+                        <br /><br />
+                        <strong> 1. Abhayam — Fearlessness </strong>
+                        <br />
+                        Fearlessness does not mean that you never experience
+                        fear. It means fear does not become the master of your
+                        decisions. A person may know something is right but
+                        avoid doing it because of fear: fear of failure, fear of
+                        criticism, fear of losing something, fear of rejection,
+                        fear of uncertainty. Krishna places fearlessness among
+                        divine qualities because living according to one's
+                        principles often requires courage. There is also a
+                        deeper spiritual interpretation. Much fear originates
+                        from attachment: What if I lose this? What if things
+                        don't happen the way I want? As attachment and
+                        insecurity decrease, fear naturally begins to decrease.
+                        So courage in the Gita isn't necessarily: "Nothing can
+                        hurt me." It is closer to: "Whatever happens, I will try
+                        to respond according to what is right."
+                        <br /><br />
+                        <strong> 2. Sattva-saṁśuddhi — Purity of Mind </strong>
+                        <br />
+                        This goes deeper than behaving politely. Two people can
+                        perform exactly the same action while having completely
+                        different motivations. Suppose two people donate money.
+                        One thinks: "I genuinely want this to help someone."
+                        Another thinks: "I hope everyone notices how generous I
+                        am." Externally, both performed charity. Internally,
+                        however, their actions are different. Krishna therefore
+                        draws attention not merely to what we do, but also to
+                        why we do it. Purification of mind means gradually
+                        reducing things such as jealousy, resentment,
+                        manipulation, excessive ego and selfish motives. A
+                        useful question arising from this quality is: "What is
+                        actually motivating me right now?" That question alone
+                        can reveal a great deal about ourselves.
+                        <br /><br />
+                        <strong>
+                          3. Jñāna-yoga-vyavasthiti — Steadiness in Knowledge
+                        </strong>
+                        <br />
+                        Knowing something intellectually and living according to
+                        it are very different things. You might know: "I
+                        shouldn't become angry over small things." But when
+                        something irritating happens, anger still controls you.
+                        You might know: "I shouldn't constantly compare myself
+                        with others." Yet you continue comparing. The Gita
+                        therefore emphasizes being established in knowledge, not
+                        merely collecting knowledge. Knowledge becomes wisdom
+                        when it begins changing your behaviour. This gives us a
+                        useful progression: Information → Understanding →
+                        Reflection → Practice → Transformation Reading
+                        philosophy is relatively easy. Living it during a
+                        difficult situation is the real test.
+                        <br /><br />
+                        <strong> 4. Dānam — Generosity </strong>
+                        <br />
+                        Dāna is normally translated as charity, but generosity
+                        can be understood much more broadly. You can give:
+                        Money, Time, Knowledge, Attention, Food, Encouragement,
+                        Opportunity, Skills. Someone who possesses knowledge but
+                        deliberately prevents others from growing may be
+                        materially generous but intellectually possessive.
+                        Someone who freely teaches others something useful is
+                        also practicing a form of dāna. The deeper lesson is:
+                        Don't allow everything you possess to become something
+                        you desperately cling to. Generosity weakens
+                        possessiveness.
+                        <br /><br />
+                        <strong> 5. Dama — Control of the Senses </strong>
+                        <br />
+                        This idea is remarkably relevant to modern life. Our
+                        senses continuously demand stimulation: "Check your
+                        phone." "Watch another video." "Eat this." "Buy that."
+                        "Respond immediately." Dama does not mean rejecting
+                        every pleasure. It means being capable of saying no to
+                        yourself. There is a huge difference between: "I enjoy
+                        this." and "I cannot stop myself from doing this." The
+                        first can coexist with freedom. The second suggests
+                        dependence. Self-control therefore isn't merely
+                        restriction. It creates inner freedom.
+                        <br /><br />
+                        <strong>
+                          6. Yajña — Sacrifice / Dedicated Action
+                        </strong>
+                        <br />
+                        Historically, yajña has a ritual meaning involving
+                        sacrifice and offerings. But within the broader
+                        philosophy of the Gita, sacrifice also carries the idea
+                        of acting for something greater than one's immediate
+                        selfish interest. A parent sacrificing comfort for a
+                        child, someone fulfilling a responsibility despite
+                        inconvenience, or a person contributing to society
+                        without constantly asking "What do I get from this?" all
+                        reflect something of this principle. Yajña challenges
+                        the mentality: "Everything I do must benefit me."
+                        Instead: "What can I contribute?" becomes equally
+                        important.
+                        <br /><br />
+                        <strong>
+                          7. Svādhyāya — Study and Self-Reflection
+                        </strong>
+                        <br />
+                        Traditionally, svādhyāya involves study and recitation
+                        of sacred texts. But there is also a valuable personal
+                        dimension to the idea: learning should lead us toward
+                        examining ourselves. You can read hundreds of books and
+                        still understand very little about your own behaviour.
+                        Ask yourself: Why did that comment make me angry?, Why
+                        am I jealous of this person?, Why do I need their
+                        approval?, Why am I avoiding this responsibility?, What
+                        patterns keep repeating in my life?. In that sense,
+                        there are two books worth studying: the book containing
+                        wisdom, and the book of your own mind.
+                        <br /><br />
+                        <strong> 8. Tapas — Discipline </strong>
+                        <br />
+                        Tapas is often translated as austerity, but disciplined
+                        effort captures an important practical aspect of it.
+                        Many valuable things involve temporary discomfort:
+                        Studying when you would rather procrastinate. Exercising
+                        when you feel lazy. Keeping a promise when breaking it
+                        would be convenient. Remaining calm when anger would
+                        feel satisfying. Working toward a long-term goal when
+                        immediate pleasure is available. Tapas teaches: Do not
+                        automatically interpret discomfort as a signal to stop.
+                        Sometimes discomfort is simply the price of growth.
+                        <br /><br />
+                        <strong> 9. Ārjavam — Straightforwardness </strong>
+                        <br />
+                        Ārjavam represents sincerity, honesty and
+                        straightforwardness. Ideally there should be alignment
+                        between: what you think → what you say → what you do.
+                        Imagine someone who praises another person face-to-face
+                        but immediately insults them when they leave. There is
+                        fragmentation between thought, speech and action.
+                        Ārjavam tries to reduce this fragmentation. It does not
+                        mean saying every thought that enters your mind. Wisdom
+                        and kindness still matter. Rather, it means not
+                        constructing a false personality for manipulation or
+                        selfish advantage. The deeper structure of the verse The
+                        nine qualities are not random. Notice how they
+                        collectively develop different dimensions of a person:
+                        Mind: purity and fearlessness, Intellect: knowledge and
+                        self-study, Desires: self-control, Resources:
+                        generosity, Actions: sacrifice, Character: discipline,
+                        Relationships: sincerity. Krishna is describing
+                        something resembling integrated character development.
+                        Spirituality here isn't separated from ordinary
+                        behaviour. How you handle money, impulses, knowledge,
+                        fear, relationships and responsibilities all become part
+                        of spiritual development.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex justify-center space-x-2 mt-4 overflow-x-auto max-w-[80%] mx-auto"
+            >
+              <button
+                class="hidden sm:inline-block bg-blue-500 text-white px-3 py-1 rounded"
+                onclick="moveCarousel(-1, 'carousel16')"
+              >
+                Previous
+              </button>
+              <div class="flex space-x-2 overflow-x-auto custom-scrollbar">
+                <button
+                  class="shloka-button bg-gray-600 text-white px-3 py-1 rounded dark:bg-white dark:text-gray-900"
+                  onclick="jumpToShloka(0, 'carousel16')"
+                >
+                  1
+                </button>
+                <button
+                  class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-white dark:text-gray-900"
+                  onclick="jumpToShloka(1, 'carousel16')"
+                >
+                  2
+                </button>
+              </div>
+              <button
+                class="hidden sm:inline-block bg-blue-500 text-white px-3 py-1 rounded"
+                onclick="moveCarousel(1, 'carousel16')"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script>
@@ -76303,6 +76693,7 @@
         13: "Kshetra-Kshetrajna Vibhaga Yoga",
         14: "Gunatraya Vibhaga Yoga",
         15: "Purushottam Yoga",
+        16: "Daivasura Sampad Vibhaga Yoga",
       };
 
       const summaries = {
@@ -76366,13 +76757,22 @@
         The chapter further explains the signs by which one can recognize the dominance of each guna and the outcomes they produce. Krishna then teaches the path to transcend all three gunas by remaining detached, balanced in success and failure, and devoted to Him with unwavering faith. Such a person becomes free from the cycle of birth and death and attains the supreme spiritual state. Thus, the chapter emphasizes self-awareness, inner purity, and devotion as the means to liberation.`,
         15: `Chapter 15 of the Bhagavad Gita, known as Purushottama Yoga (The Yoga of the Supreme Person), explains the nature of the material world, the individual soul, and the Supreme Being.
 
-Lord Krishna compares the material world to an upside-down Ashvattha tree, whose roots are above and branches below. Its roots represent the Supreme Reality, while its branches represent worldly existence, desires, actions, and attachments. Krishna advises Arjuna to cut this tree with the strong weapon of detachment and seek the eternal Supreme abode.
+        Lord Krishna compares the material world to an upside-down Ashvattha tree, whose roots are above and branches below. Its roots represent the Supreme Reality, while its branches represent worldly existence, desires, actions, and attachments. Krishna advises Arjuna to cut this tree with the strong weapon of detachment and seek the eternal Supreme abode.
 
-Krishna then explains that every living being contains an eternal soul (Atman), which is a part of Him. The soul carries the mind and senses from one body to another, just as a person changes clothes. However, people attached to material existence fail to recognize this spiritual truth.
+        Krishna then explains that every living being contains an eternal soul (Atman), which is a part of Him. The soul carries the mind and senses from one body to another, just as a person changes clothes. However, people attached to material existence fail to recognize this spiritual truth.
 
-Krishna describes Himself as the divine presence behind the sun, moon, fire, digestion, memory, knowledge, and understanding. He declares that He is beyond both the perishable world and the imperishable soul, and therefore is known as Purushottama—the Supreme Person.
+        Krishna describes Himself as the divine presence behind the sun, moon, fire, digestion, memory, knowledge, and understanding. He declares that He is beyond both the perishable world and the imperishable soul, and therefore is known as Purushottama—the Supreme Person.
 
-The chapter ultimately teaches that recognizing the Supreme Being and developing detachment, wisdom, and devotion leads a person toward liberation.`,
+        The chapter ultimately teaches that recognizing the Supreme Being and developing detachment, wisdom, and devotion leads a person toward liberation.`,
+        16: `Chapter 16 of the Bhagavad Gita, titled “Daivasura Sampad Vibhaga Yoga” (The Yoga of the Divine and Demoniac Qualities), explains the two kinds of tendencies present in human nature: divine (Daivi) and demoniac (Asuri).
+
+        Lord Krishna describes divine qualities such as fearlessness, purity of mind, self-control, compassion, truthfulness, humility, forgiveness, non-violence, and freedom from anger and greed. These qualities lead a person toward spiritual growth, inner peace, and ultimately liberation.
+
+        In contrast, demoniac qualities include arrogance, pride, anger, harshness, ignorance, hypocrisy, uncontrolled desires, and greed. People dominated by these tendencies become attached to material pleasures and believe that satisfying desires is the main purpose of life. Such an attitude creates anxiety, selfishness, conflict, and further bondage.
+
+        Krishna identifies desire (kama), anger (krodha), and greed (lobha) as the three gates leading to downfall. A wise person should therefore abandon them and live according to righteous principles.
+
+        The chapter ultimately teaches that spiritual progress depends not merely on knowledge, but on developing divine character, controlling destructive impulses, and choosing actions guided by wisdom and dharma.`,
         // Add all 18 summaries here
       };
 
@@ -77006,6 +77406,54 @@ The chapter ultimately teaches that recognizing the Supreme Being and developing
               verses: "19-20",
               description:
                 "Krishna declares Himself as Purushottama, the Supreme Person, and explains that understanding this truth leads to wisdom and complete devotion.",
+            },
+          ],
+        },
+        16: {
+          title: "Daivasura Sampad Vibhaga Yoga",
+          verses: 24,
+          summary: [
+            {
+              section: "Divine Qualities",
+              verses: "1-3",
+              description:
+                "Krishna describes the divine qualities such as fearlessness, purity, self-control, truthfulness, compassion, humility, forgiveness, and freedom from anger.",
+            },
+            {
+              section: "Demoniac Qualities",
+              verses: "4-6",
+              description:
+                "Krishna contrasts divine nature with demoniac traits such as hypocrisy, arrogance, pride, anger, harshness, and ignorance.",
+            },
+            {
+              section: "Nature of the Demoniac",
+              verses: "7-12",
+              description:
+                "Those with demoniac tendencies disregard righteous conduct, deny moral order, pursue endless desires, and become trapped by anxiety and material attachment.",
+            },
+            {
+              section: "Pride, Desire, and Delusion",
+              verses: "13-18",
+              description:
+                "Krishna explains how ego, wealth, ambition, pride, and uncontrolled desires lead people toward selfish actions and spiritual ignorance.",
+            },
+            {
+              section: "Consequences of Demoniac Nature",
+              verses: "19-20",
+              description:
+                "Those who persist in hatred, cruelty, and ignorance move further away from spiritual realization and remain bound by destructive tendencies.",
+            },
+            {
+              section: "Three Gates to Downfall",
+              verses: "21-22",
+              description:
+                "Krishna identifies desire, anger, and greed as the three gates leading to downfall and advises abandoning them to pursue spiritual well-being.",
+            },
+            {
+              section: "Following Shastra and Dharma",
+              verses: "23-24",
+              description:
+                "Krishna concludes that actions should be guided by scriptural wisdom and dharma rather than uncontrolled desires and personal impulses.",
             },
           ],
         },
