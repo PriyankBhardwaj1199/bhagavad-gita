@@ -81153,6 +81153,285 @@
           </div>
         </div>
       </div>
+
+      <div class="space-y-4 mb-3">
+        <!-- Chapter 17 -->
+        <div
+          class="bg-white p-3 sm:p-4 rounded-lg shadow-md dark:bg-gray-800 flex flex-col items-stretch"
+          onclick="openChapter('chapter17')"
+        >
+          <div class="flex flex-row">
+            <button
+              class="w-full text-left font-semibold text-lg text-blue-700 dark:text-blue-300"
+              onclick="toggleAccordion('chapter17')"
+            >
+              Chapter 17: Shraddhatraya Vibhaga Yoga
+            </button>
+            <div class="relative group me-2">
+              <button
+                onclick="showItenary(17)"
+                data-modal-target="itenary-modal"
+                data-modal-toggle="itenary-modal"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6 text-blue-700 dark:text-blue-300"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z"
+                  />
+                </svg>
+              </button>
+              <span
+                class="absolute hidden group-hover:block bg-gray-800 text-white text-xs rounded-lg py-1 px-2 w-max top-full mt-1 left-2/3 -translate-x-2/3"
+              >
+                Click to view Itinerary
+              </span>
+            </div>
+            <div class="relative group">
+              <button
+                onclick="showSummary(17)"
+                data-modal-target="static-modal"
+                data-modal-toggle="static-modal"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="text-blue-700 dark:text-blue-300 size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"
+                  />
+                </svg>
+              </button>
+              <span
+                class="absolute hidden group-hover:block bg-gray-800 text-white text-xs rounded-lg py-1 px-2 w-max top-full mt-1 left-2/3 -translate-x-2/3"
+              >
+                Click to view summary
+              </span>
+            </div>
+          </div>
+
+          <div id="chapter17" class="hidden mt-4">
+            <div class="relative w-full overflow-hidden">
+              <div
+                id="carousel17"
+                class="flex transition-transform duration-500 ease-in-out"
+              >
+                <!-- Shloka Card 1 -->
+                <div class="w-full sm:p-4 flex-shrink-0">
+                  <div
+                    class="bg-gray-50 min-h-80 rounded-lg shadow-md dark:bg-gray-700"
+                  >
+                    <ul
+                      class="text-sm font-medium text-center text-gray-500 sm:divide-x divide-gray-300 rounded-lg sm:flex dark:divide-gray-600 dark:text-gray-400 rtl:divide-x-reverse"
+                      id="fullWidthTab"
+                      data-tabs-toggle="#fullWidthTabContent"
+                      role="tablist"
+                    >
+                      <li class="w-full">
+                        <button
+                          type="button"
+                          role="tab"
+                          class="inline-block w-full p-4 sm:rounded-ss-lg bg-gray-200 hover:bg-gray-100 focus:outline-none dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
+                          onclick="
+                            showTab(
+                              'shloka17_1',
+                              'learning17_1',
+                              'noCharacters',
+                            )
+                          "
+                        >
+                          Shlok
+                        </button>
+                      </li>
+                      <li class="w-full">
+                        <button
+                          type="button"
+                          role="tab"
+                          class="inline-block w-full p-4 bg-gray-200 hover:bg-gray-100 focus:outline-none dark:bg-gray-900 dark:text-white dark:hover:bg-gray-800"
+                          onclick="
+                            showTab(
+                              'learning17_1',
+                              'shloka17_1',
+                              'noCharacters',
+                            )
+                          "
+                        >
+                          Learnings
+                        </button>
+                      </li>
+                    </ul>
+                    <div id="shloka17_1" class="mt-4 p-2 sm:p-4">
+                      <h2
+                        class="text-xl font-semibold text-blue-700 mb-2 dark:text-blue-200"
+                      >
+                        श्लोक 17.1
+                      </h2>
+                      <p
+                        class="text-gray-700 font-semibold dark:text-gray-300 mb-2 sm:mb-4"
+                      >
+                        अर्जुन उवाच । <br /><br />
+                        ये शास्त्रविधिमुत्सृज्य यजन्ते श्रद्धयान्विताः ।<br />
+                        तेषां निष्ठा तु का कृष्ण सत्त्वमाहो रजस्तमः ॥१॥
+                      </p>
+                      <p class="text-gray-600 mt-2 dark:text-gray-200">
+                        <strong>Meaning (Hindi):</strong> अर्जुन श्रीकृष्ण से
+                        पूछते हैं: “हे कृष्ण! जो लोग शास्त्रों में बताए गए
+                        नियमों का पालन नहीं करते, लेकिन फिर भी पूरी श्रद्धा और
+                        विश्वास के साथ पूजा करते हैं, उनकी श्रद्धा किस प्रकार की
+                        मानी जाएगी? सात्त्विक, राजसिक या तामसिक?”
+                      </p>
+                      <p class="text-gray-600 mt-2 dark:text-gray-200">
+                        <strong>Meaning (English):</strong> Arjuna asks: “O
+                        Krishna, what is the condition of those who possess
+                        faith and worship with devotion, but do not follow the
+                        prescribed rules of the scriptures? Is their faith
+                        characterized by sattva (goodness), rajas (passion), or
+                        tamas (ignorance)?”
+                      </p>
+                    </div>
+                    <div id="learning17_1" class="mt-4 p-2 sm:p-4 hidden">
+                      <p class="text-gray-600 dark:text-gray-200">
+                        There is a surprisingly deep philosophical problem
+                        hidden inside Arjuna's question: Can sincerity alone
+                        make a belief or action right? Suppose two people are
+                        equally sincere. One person's faith leads them toward
+                        compassion, discipline and selflessness. Another
+                        person's faith leads them toward ego, superstition or
+                        even harmful practices. Both might say: “But I genuinely
+                        believe in what I'm doing.” Arjuna's question forces us
+                        to recognize that strength of belief and quality of
+                        belief are not necessarily the same thing.
+                        <br /><br />
+                        <strong>
+                          1. “Śraddhā” is more than simply believing in God
+                        </strong>
+                        <br />
+                        The Sanskrit word śraddhā (श्रद्धा) is often translated
+                        as faith, but its meaning is broader. It can be
+                        understood as the deep conviction, trust or orientation
+                        within a person that influences how they live. Your
+                        śraddhā affects: what you consider important, what you
+                        pursue, whom you admire, what sacrifices you are willing
+                        to make, and ultimately what kind of person you become.
+                        So Chapter 17 is not merely discussing religious belief.
+                        It is also examining the inner motivations behind human
+                        behaviour.
+                        <br /><br />
+                        <strong>
+                          2. Arjuna distinguishes faith from guidance
+                        </strong>
+                        <br />
+                        The important phrase is: “śāstra-vidhim utsṛjya” —
+                        setting aside the prescribed guidance of the śāstras.
+                        Arjuna describes someone who has faith but lacks an
+                        established framework for evaluating that faith. This
+                        creates an important distinction: Sincerity ≠
+                        correctness. A person can sincerely believe something
+                        that is mistaken. Think about a traveller who
+                        confidently walks in the wrong direction. Their
+                        confidence does not make the direction correct.
+                        Similarly, the Gita raises the question of whether faith
+                        needs wisdom, knowledge and discernment to guide it.
+                        <br /><br />
+                        <strong>
+                          3. Why does Arjuna ask about Sattva, Rajas and Ta mas?
+                        </strong>
+                        <br />
+                        Arjuna already knows Krishna's teaching about the three
+                        gunas: Sattva — clarity, harmony, knowledge and balance.
+                        Rajas — desire, ambition, attachment, restlessness and
+                        passion. Tamas — ignorance, inertia, confusion and
+                        delusion. So Arjuna is essentially asking: “If someone's
+                        behaviour isn't being guided by scripture, what
+                        determines the nature of their faith?” Is sincere faith
+                        automatically sattvic? Or can faith itself arise from
+                        ambition, fear, ego or ignorance? Krishna's answer in
+                        the following verses is that faith itself takes
+                        different forms according to the nature of the person.
+                        That makes Arjuna's question extremely important.
+                        <br /><br />
+                        <strong> A Modern Example </strong>
+                        <br />
+                        Imagine three people doing charity. All three donate
+                        ₹10,000. Externally, their actions look identical. But
+                        internally: Person A thinks: “I have enough. Perhaps
+                        this can genuinely improve someone's life.” This
+                        resembles Sattva. Person B thinks: “I hope people notice
+                        how generous I am.” This resembles Rajas. Person C gives
+                        money to something harmful because they blindly believe
+                        misinformation without examining it. This resembles
+                        Tamas. The external action alone doesn't reveal
+                        everything. The intention, understanding and
+                        consciousness behind the action matter. That idea
+                        becomes central to Chapter 17.
+                        <br /><br />
+                        <strong> Deeper Philosophical Interpretation </strong>
+                        <br />
+                        One of the most valuable ideas behind this shloka is the
+                        difference between: “I strongly believe this.” and “I
+                        have examined whether this belief deserves to be
+                        believed.” Humans naturally acquire beliefs from family,
+                        culture, society, personal experiences, teachers and
+                        communities. Over time, those beliefs can become so
+                        deeply rooted that we stop examining them. Arjuna's
+                        question therefore has relevance far beyond religious
+                        practice. It can apply to: belief → decision → behaviour
+                        → character What you deeply believe influences what you
+                        repeatedly do. What you repeatedly do gradually shapes
+                        who you become. This is why Krishna's subsequent
+                        discussion of the quality of faith matters so much.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex justify-center space-x-2 mt-4 overflow-x-auto max-w-[80%] mx-auto"
+            >
+              <button
+                class="hidden sm:inline-block bg-blue-500 text-white px-3 py-1 rounded"
+                onclick="moveCarousel(-1, 'carousel17')"
+              >
+                Previous
+              </button>
+              <div class="flex space-x-2 overflow-x-auto custom-scrollbar">
+                <button
+                  class="shloka-button bg-gray-600 text-white px-3 py-1 rounded dark:bg-white dark:text-gray-900"
+                  onclick="jumpToShloka(0, 'carousel17')"
+                >
+                  1
+                </button>
+                <button
+                  class="shloka-button bg-gray-300 text-gray-900 px-3 py-1 rounded dark:bg-white dark:text-gray-900"
+                  onclick="jumpToShloka(1, 'carousel17')"
+                >
+                  2
+                </button>
+              </div>
+              <button
+                class="hidden sm:inline-block bg-blue-500 text-white px-3 py-1 rounded"
+                onclick="moveCarousel(1, 'carousel17')"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script>
@@ -81176,6 +81455,7 @@
         14: "Gunatraya Vibhaga Yoga",
         15: "Purushottam Yoga",
         16: "Daivasura Sampad Vibhaga Yoga",
+        17: "Shraddhatraya Vibhaga Yoga",
       };
 
       const summaries = {
@@ -81255,6 +81535,13 @@
         Krishna identifies desire (kama), anger (krodha), and greed (lobha) as the three gates leading to downfall. A wise person should therefore abandon them and live according to righteous principles.
 
         The chapter ultimately teaches that spiritual progress depends not merely on knowledge, but on developing divine character, controlling destructive impulses, and choosing actions guided by wisdom and dharma.`,
+        17: `Chapter 17 of the Bhagavad Gita, called Shraddhatraya Vibhaga Yoga (The Yoga of the Threefold Faith), explains how a person's faith and actions are influenced by the three gunas—Sattva (goodness), Rajas (passion), and Tamas (ignorance).
+
+        Shri Krishna explains that everyone naturally develops faith according to their inner nature. Sattvic faith is pure, balanced, and directed toward spiritual growth; Rajasic faith is driven by desires, ambition, and worldly rewards; while Tamasic faith arises from ignorance and can lead to harmful or misguided practices.
+
+        Krishna further classifies food, sacrifice (yajna), austerity (tapas), and charity (dana) according to these three qualities. Actions performed sincerely, selflessly, and without expecting rewards are Sattvic. Actions motivated by recognition or personal gain are Rajasic, while actions performed carelessly, disrespectfully, or without proper understanding are Tamasic.
+
+        The chapter concludes with the sacred expression “Om Tat Sat,” representing the Supreme Reality. Krishna emphasizes that spiritual practices should be performed with faith, sincerity, and without attachment to their results. Actions performed without genuine faith are called “Asat” and bring no lasting spiritual benefit.`,
         // Add all 18 summaries here
       };
 
@@ -81936,6 +82223,60 @@
               verses: "23-24",
               description:
                 "Krishna concludes that actions should be guided by scriptural wisdom and dharma rather than uncontrolled desires and personal impulses.",
+            },
+          ],
+        },
+        17: {
+          title: "Shraddhatraya Vibhaga Yoga",
+          verses: 28,
+          summary: [
+            {
+              section: "Arjuna's Question About Faith",
+              verses: "1-3",
+              description:
+                "Arjuna asks about those who worship with faith but do not follow scriptural rules; Krishna explains that faith arises according to one's nature.",
+            },
+            {
+              section: "Three Types of Faith and Worship",
+              verses: "4-6",
+              description:
+                "Krishna describes Sattvic, Rajasic, and Tamasic forms of worship and warns against severe austerities performed out of ego and desire.",
+            },
+            {
+              section: "Three Types of Food",
+              verses: "7-10",
+              description:
+                "Food is classified according to the three gunas: Sattvic food promotes health and vitality, Rajasic food causes agitation, and Tamasic food is stale or impure.",
+            },
+            {
+              section: "Three Types of Sacrifice",
+              verses: "11-13",
+              description:
+                "Sacrifice is classified as Sattvic when performed selflessly, Rajasic when performed for rewards or recognition, and Tamasic when performed without proper faith or discipline.",
+            },
+            {
+              section: "Three Forms of Austerity",
+              verses: "14-19",
+              description:
+                "Krishna explains austerities of the body, speech, and mind, and classifies austerity as Sattvic, Rajasic, or Tamasic according to the intention behind it.",
+            },
+            {
+              section: "Three Types of Charity",
+              verses: "20-22",
+              description:
+                "Charity given selflessly to a deserving person is Sattvic; charity given for reward is Rajasic; and charity given disrespectfully or improperly is Tamasic.",
+            },
+            {
+              section: "Meaning of Om Tat Sat",
+              verses: "23-27",
+              description:
+                "Krishna explains 'Om Tat Sat' as a threefold designation of the Supreme and describes its use in sacrifice, austerity, charity, and other spiritual activities.",
+            },
+            {
+              section: "Importance of Faith",
+              verses: "28",
+              description:
+                "Actions such as sacrifice, charity, and austerity performed without faith are called Asat and bring no lasting spiritual benefit.",
             },
           ],
         },
